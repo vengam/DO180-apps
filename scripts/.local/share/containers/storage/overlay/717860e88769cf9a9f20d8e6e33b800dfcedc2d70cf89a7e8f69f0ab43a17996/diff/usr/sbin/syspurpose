@@ -1,0 +1,10 @@
+#!/usr/bin/python2
+# EASY-INSTALL-ENTRY-SCRIPT: 'syspurpose==1.24.51','console_scripts','syspurpose'
+__requires__ = 'syspurpose==1.24.51'
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.exit(
+        load_entry_point('syspurpose==1.24.51', 'console_scripts', 'syspurpose')()
+    )

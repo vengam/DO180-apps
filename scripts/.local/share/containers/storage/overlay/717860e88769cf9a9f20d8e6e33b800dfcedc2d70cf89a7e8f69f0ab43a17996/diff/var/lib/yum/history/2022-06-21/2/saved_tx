@@ -1,0 +1,12 @@
+163:f9db2df9a293a93601910eb55c84f23078544ee2
+0
+1
+installed:162:29a95c99fad3a9d96c32ad717b8dd8b41caed7ce
+1
+mbr: qemu-guest-agent,x86_64,10,2.12.0,3.el7 20
+  repo: installed
+  ts_state: e
+  output_state: 40
+  isDep: False
+  reason: user
+  reinstall: False

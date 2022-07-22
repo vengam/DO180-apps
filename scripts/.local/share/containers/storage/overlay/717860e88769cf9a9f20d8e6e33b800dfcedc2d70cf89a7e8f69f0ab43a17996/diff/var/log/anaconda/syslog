@@ -1,0 +1,1473 @@
+13:09:22,714 INFO journal:Runtime journal is using 8.0M (max allowed 197.5M, trying to leave 296.2M free of 1.9G available → current limit 197.5M).
+13:09:22,714 INFO kernel:Initializing cgroup subsys cpuset
+13:09:22,714 INFO kernel:Initializing cgroup subsys cpu
+13:09:22,714 INFO kernel:Initializing cgroup subsys cpuacct
+13:09:22,714 NOTICE kernel:Linux version 3.10.0-1160.71.1.el7.x86_64 (mockbuild@x86-vm-37.build.eng.bos.redhat.com) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) ) #1 SMP Wed Jun 15 08:55:08 UTC 2022
+13:09:22,714 INFO kernel:Command line: method=http://download.eng.bos.redhat.com/rhel-7/devel/candidate-trees/RHEL-7/RHEL-7.9-updates-20220621.2/compose/Server/x86_64/os/ ks=file:/ks.cfg
+13:09:22,714 INFO kernel:e820: BIOS-provided physical RAM map:
+13:09:22,714 INFO kernel:BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+13:09:22,714 INFO kernel:BIOS-e820: [mem 0x000000000009fc00-0x000000000009ffff] reserved
+13:09:22,714 INFO kernel:BIOS-e820: [mem 0x00000000000f0000-0x00000000000fffff] reserved
+13:09:22,714 INFO kernel:BIOS-e820: [mem 0x0000000000100000-0x00000000bffdbfff] usable
+13:09:22,714 INFO kernel:BIOS-e820: [mem 0x00000000bffdc000-0x00000000bfffffff] reserved
+13:09:22,714 INFO kernel:BIOS-e820: [mem 0x00000000feffc000-0x00000000feffffff] reserved
+13:09:22,714 INFO kernel:BIOS-e820: [mem 0x00000000fffc0000-0x00000000ffffffff] reserved
+13:09:22,714 INFO kernel:BIOS-e820: [mem 0x0000000100000000-0x000000013fffffff] usable
+13:09:22,714 INFO kernel:NX (Execute Disable) protection: active
+13:09:22,714 INFO kernel:SMBIOS 2.8 present.
+13:09:22,714 INFO kernel:DMI: Red Hat KVM, BIOS 1.11.0-2.el7 04/01/2014
+13:09:22,714 INFO kernel:Hypervisor detected: KVM
+13:09:22,714 DEBUG kernel:e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+13:09:22,714 DEBUG kernel:e820: remove [mem 0x000a0000-0x000fffff] usable
+13:09:22,714 INFO kernel:e820: last_pfn = 0x140000 max_arch_pfn = 0x400000000
+13:09:22,714 DEBUG kernel:MTRR default type: write-back
+13:09:22,714 DEBUG kernel:MTRR fixed ranges enabled:
+13:09:22,714 DEBUG kernel:  00000-9FFFF write-back
+13:09:22,714 DEBUG kernel:  A0000-BFFFF uncachable
+13:09:22,715 DEBUG kernel:  C0000-FFFFF write-protect
+13:09:22,715 DEBUG kernel:MTRR variable ranges enabled:
+13:09:22,715 DEBUG kernel:  0 base 0000C0000000 mask 3FFFC0000000 uncachable
+13:09:22,715 DEBUG kernel:  1 disabled
+13:09:22,715 DEBUG kernel:  2 disabled
+13:09:22,715 DEBUG kernel:  3 disabled
+13:09:22,715 DEBUG kernel:  4 disabled
+13:09:22,715 DEBUG kernel:  5 disabled
+13:09:22,715 DEBUG kernel:  6 disabled
+13:09:22,715 DEBUG kernel:  7 disabled
+13:09:22,715 INFO kernel:PAT configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- UC  
+13:09:22,715 INFO kernel:e820: last_pfn = 0xbffdc max_arch_pfn = 0x400000000
+13:09:22,715 INFO kernel:found SMP MP-table at [mem 0x000f6380-0x000f638f] mapped at [ffffffffff200380]
+13:09:22,715 DEBUG kernel:Base memory trampoline at [ffff898a00099000] 99000 size 24576
+13:09:22,715 INFO kernel:Using GB pages for direct mapping
+13:09:22,715 DEBUG kernel:BRK [0x25274000, 0x25274fff] PGTABLE
+13:09:22,715 DEBUG kernel:BRK [0x25275000, 0x25275fff] PGTABLE
+13:09:22,715 DEBUG kernel:BRK [0x25276000, 0x25276fff] PGTABLE
+13:09:22,715 DEBUG kernel:BRK [0x25277000, 0x25277fff] PGTABLE
+13:09:22,715 INFO kernel:RAMDISK: [mem 0x7cf00000-0x7fffffff]
+13:09:22,715 INFO kernel:Early table checksum verification disabled
+13:09:22,715 WARNING kernel:ACPI: RSDP 00000000000f60f0 00014 (v00 BOCHS )
+13:09:22,715 WARNING kernel:ACPI: RSDT 00000000bffe16e5 00030 (v01 BOCHS  BXPCRSDT 00000001 BXPC 00000001)
+13:09:22,715 WARNING kernel:ACPI: FACP 00000000bffe0c14 00074 (v01 BOCHS  BXPCFACP 00000001 BXPC 00000001)
+13:09:22,715 WARNING kernel:ACPI: DSDT 00000000bffe0040 00BD4 (v01 BOCHS  BXPCDSDT 00000001 BXPC 00000001)
+13:09:22,715 WARNING kernel:ACPI: FACS 00000000bffe0000 00040
+13:09:22,715 WARNING kernel:ACPI: SSDT 00000000bffe0c88 009DD (v01 BOCHS  BXPCSSDT 00000001 BXPC 00000001)
+13:09:22,715 WARNING kernel:ACPI: APIC 00000000bffe1665 00080 (v01 BOCHS  BXPCAPIC 00000001 BXPC 00000001)
+13:09:22,715 DEBUG kernel:ACPI: Local APIC address 0xfee00000
+13:09:22,715 INFO kernel:No NUMA configuration found
+13:09:22,715 INFO kernel:Faking a node at [mem 0x0000000000000000-0x000000013fffffff]
+13:09:22,715 INFO kernel:NODE_DATA(0) allocated [mem 0x13ffd7000-0x13fffdfff]
+13:09:22,715 INFO kernel:kvm-clock: cpu 0, msr 1:3ff86001, primary cpu clock
+13:09:22,715 INFO kernel:kvm-clock: Using msrs 4b564d01 and 4b564d00
+13:09:22,715 INFO kernel:kvm-clock: using sched offset of 6195947981 cycles
+13:09:22,715 WARNING kernel:Zone ranges:
+13:09:22,715 WARNING kernel:  DMA      [mem 0x00001000-0x00ffffff]
+13:09:22,715 WARNING kernel:  DMA32    [mem 0x01000000-0xffffffff]
+13:09:22,715 WARNING kernel:  Normal   [mem 0x100000000-0x13fffffff]
+13:09:22,715 WARNING kernel:Movable zone start for each node
+13:09:22,715 WARNING kernel:Early memory node ranges
+13:09:22,715 WARNING kernel:  node   0: [mem 0x00001000-0x0009efff]
+13:09:22,715 WARNING kernel:  node   0: [mem 0x00100000-0xbffdbfff]
+13:09:22,715 WARNING kernel:  node   0: [mem 0x100000000-0x13fffffff]
+13:09:22,715 INFO kernel:Initmem setup node 0 [mem 0x00001000-0x13fffffff]
+13:09:22,715 DEBUG kernel:On node 0 totalpages: 1048442
+13:09:22,715 DEBUG kernel:  DMA zone: 64 pages used for memmap
+13:09:22,715 DEBUG kernel:  DMA zone: 21 pages reserved
+13:09:22,715 DEBUG kernel:  DMA zone: 3998 pages, LIFO batch:0
+13:09:22,715 DEBUG kernel:  DMA32 zone: 12224 pages used for memmap
+13:09:22,715 DEBUG kernel:  DMA32 zone: 782300 pages, LIFO batch:31
+13:09:22,715 DEBUG kernel:  Normal zone: 4096 pages used for memmap
+13:09:22,715 DEBUG kernel:  Normal zone: 262144 pages, LIFO batch:31
+13:09:22,715 INFO kernel:ACPI: PM-Timer IO Port: 0x608
+13:09:22,715 DEBUG kernel:ACPI: Local APIC address 0xfee00000
+13:09:22,715 INFO kernel:ACPI: LAPIC (acpi_id[0x00] lapic_id[0x00] enabled)
+13:09:22,715 INFO kernel:ACPI: LAPIC (acpi_id[0x01] lapic_id[0x01] enabled)
+13:09:22,715 INFO kernel:ACPI: LAPIC_NMI (acpi_id[0xff] dfl dfl lint[0x1])
+13:09:22,715 INFO kernel:ACPI: IOAPIC (id[0x00] address[0xfec00000] gsi_base[0])
+13:09:22,715 INFO kernel:IOAPIC[0]: apic_id 0, version 17, address 0xfec00000, GSI 0-23
+13:09:22,715 INFO kernel:ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+13:09:22,715 INFO kernel:ACPI: INT_SRC_OVR (bus 0 bus_irq 5 global_irq 5 high level)
+13:09:22,715 INFO kernel:ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+13:09:22,715 INFO kernel:ACPI: INT_SRC_OVR (bus 0 bus_irq 10 global_irq 10 high level)
+13:09:22,715 INFO kernel:ACPI: INT_SRC_OVR (bus 0 bus_irq 11 global_irq 11 high level)
+13:09:22,715 DEBUG kernel:ACPI: IRQ0 used by override.
+13:09:22,715 DEBUG kernel:ACPI: IRQ5 used by override.
+13:09:22,715 DEBUG kernel:ACPI: IRQ9 used by override.
+13:09:22,715 DEBUG kernel:ACPI: IRQ10 used by override.
+13:09:22,715 DEBUG kernel:ACPI: IRQ11 used by override.
+13:09:22,715 INFO kernel:Using ACPI (MADT) for SMP configuration information
+13:09:22,715 INFO kernel:smpboot: Allowing 2 CPUs, 0 hotplug CPUs
+13:09:22,715 INFO kernel:PM: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+13:09:22,715 INFO kernel:PM: Registered nosave memory: [mem 0x000a0000-0x000effff]
+13:09:22,715 INFO kernel:PM: Registered nosave memory: [mem 0x000f0000-0x000fffff]
+13:09:22,715 INFO kernel:PM: Registered nosave memory: [mem 0xbffdc000-0xbfffffff]
+13:09:22,715 INFO kernel:PM: Registered nosave memory: [mem 0xc0000000-0xfeffbfff]
+13:09:22,715 INFO kernel:PM: Registered nosave memory: [mem 0xfeffc000-0xfeffffff]
+13:09:22,715 INFO kernel:PM: Registered nosave memory: [mem 0xff000000-0xfffbffff]
+13:09:22,715 INFO kernel:PM: Registered nosave memory: [mem 0xfffc0000-0xffffffff]
+13:09:22,715 INFO kernel:e820: [mem 0xc0000000-0xfeffbfff] available for PCI devices
+13:09:22,715 INFO kernel:Booting paravirtualized kernel on KVM
+13:09:22,716 INFO kernel:setup_percpu: NR_CPUS:5120 nr_cpumask_bits:2 nr_cpu_ids:2 nr_node_ids:1
+13:09:22,716 INFO kernel:percpu: Embedded 38 pages/cpu s118784 r8192 d28672 u1048576
+13:09:22,716 DEBUG kernel:pcpu-alloc: s118784 r8192 d28672 u1048576 alloc=1*2097152
+13:09:22,716 DEBUG kernel:pcpu-alloc: [0] 0 1 
+13:09:22,716 INFO kernel:KVM setup async PF for cpu 0
+13:09:22,716 INFO kernel:kvm-stealtime: cpu 0, msr 13fc1c040
+13:09:22,716 INFO kernel:PV qspinlock hash table entries: 256 (order: 0, 4096 bytes)
+13:09:22,716 WARNING kernel:Built 1 zonelists in Node order, mobility grouping on.  Total pages: 1032037
+13:09:22,716 WARNING kernel:Policy zone: Normal
+13:09:22,716 NOTICE kernel:Kernel command line: method=http://download.eng.bos.redhat.com/rhel-7/devel/candidate-trees/RHEL-7/RHEL-7.9-updates-20220621.2/compose/Server/x86_64/os/ ks=file:/ks.cfg
+13:09:22,716 INFO kernel:PID hash table entries: 4096 (order: 3, 32768 bytes)
+13:09:22,716 INFO kernel:x86/fpu: xstate_offset[2]: 0240, xstate_sizes[2]: 0100
+13:09:22,716 INFO kernel:xsave: enabled xstate_bv 0x7, cntxt size 0x340 using standard form
+13:09:22,716 INFO kernel:Memory: 3991924k/5242880k available (7812k kernel code, 1049112k absent, 201844k reserved, 5932k data, 1980k init)
+13:09:22,716 INFO kernel:SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+13:09:22,716 INFO kernel:x86/pti: Unmapping kernel while in userspace
+13:09:22,716 INFO kernel:Hierarchical RCU implementation.
+13:09:22,716 INFO kernel:#011RCU restricting CPUs from NR_CPUS=5120 to nr_cpu_ids=2.
+13:09:22,716 INFO kernel:NR_IRQS:327936 nr_irqs:440 0
+13:09:22,716 INFO kernel:Console: colour VGA+ 80x25
+13:09:22,716 INFO kernel:console [tty0] enabled
+13:09:22,716 INFO kernel:allocated 33554432 bytes of page_cgroup
+13:09:22,716 INFO kernel:please try 'cgroup_disable=memory' option if you don't want memory cgroups
+13:09:22,716 INFO kernel:tsc: Detected 2399.998 MHz processor
+13:09:22,716 INFO kernel:Calibrating delay loop (skipped) preset value.. 4799.99 BogoMIPS (lpj=2399998)
+13:09:22,716 INFO kernel:pid_max: default: 32768 minimum: 301
+13:09:22,716 INFO kernel:Security Framework initialized
+13:09:22,716 INFO kernel:SELinux:  Initializing.
+13:09:22,716 DEBUG kernel:SELinux:  Starting in permissive mode
+13:09:22,716 INFO kernel:Yama: becoming mindful.
+13:09:22,716 INFO kernel:Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes)
+13:09:22,716 INFO kernel:Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes)
+13:09:22,716 INFO kernel:Mount-cache hash table entries: 8192 (order: 4, 65536 bytes)
+13:09:22,716 INFO kernel:Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes)
+13:09:22,716 INFO kernel:Initializing cgroup subsys memory
+13:09:22,716 INFO kernel:Initializing cgroup subsys devices
+13:09:22,716 INFO kernel:Initializing cgroup subsys freezer
+13:09:22,716 INFO kernel:Initializing cgroup subsys net_cls
+13:09:22,716 INFO kernel:Initializing cgroup subsys blkio
+13:09:22,716 INFO kernel:Initializing cgroup subsys perf_event
+13:09:22,716 INFO kernel:Initializing cgroup subsys hugetlb
+13:09:22,716 INFO kernel:Initializing cgroup subsys pids
+13:09:22,716 INFO kernel:Initializing cgroup subsys net_prio
+13:09:22,716 INFO kernel:Last level iTLB entries: 4KB 512, 2MB 0, 4MB 0
+13:09:22,716 INFO kernel:Last level dTLB entries: 4KB 512, 2MB 32, 4MB 32
+13:09:22,716 INFO kernel:tlb_flushall_shift: 6
+13:09:22,716 INFO kernel:FEATURE SPEC_CTRL Not Present
+13:09:22,716 INFO kernel:FEATURE IBPB_SUPPORT Not Present
+13:09:22,716 INFO kernel:Spectre V1 : Mitigation: Load fences, usercopy/swapgs barriers and __user pointer sanitization
+13:09:22,716 INFO kernel:Spectre V2 : Vulnerable: Retpoline without IBPB
+13:09:22,716 INFO kernel:Speculative Store Bypass: Vulnerable
+13:09:22,716 INFO kernel:MDS: Vulnerable: Clear CPU buffers attempted, no microcode
+13:09:22,716 INFO kernel:Freeing SMP alternatives: 28k freed
+13:09:22,716 INFO kernel:ACPI: Core revision 20130517
+13:09:22,716 WARNING kernel:ACPI: All ACPI Tables successfully acquired
+13:09:22,716 INFO kernel:ftrace: allocating 29697 entries in 117 pages
+13:09:22,716 INFO kernel:Enabling x2apic
+13:09:22,716 INFO kernel:Enabled x2apic
+13:09:22,716 INFO kernel:Switched APIC routing to physical x2apic.
+13:09:22,716 INFO kernel:..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+13:09:22,716 INFO kernel:smpboot: CPU0: Intel(R) Xeon(R) CPU E5-2609 0 @ 2.40GHz (fam: 06, model: 2d, stepping: 07)
+13:09:22,716 DEBUG kernel:TSC deadline timer enabled
+13:09:22,716 INFO kernel:Performance Events: SandyBridge events, Intel PMU driver.
+13:09:22,716 INFO kernel:core: PEBS disabled due to CPU errata, please upgrade microcode
+13:09:22,716 INFO kernel:... version:                2
+13:09:22,716 INFO kernel:... bit width:              48
+13:09:22,716 INFO kernel:... generic registers:      8
+13:09:22,716 INFO kernel:... value mask:             0000ffffffffffff
+13:09:22,716 INFO kernel:... max period:             000000007fffffff
+13:09:22,716 INFO kernel:... fixed-purpose events:   3
+13:09:22,716 INFO kernel:... event mask:             00000007000000ff
+13:09:22,716 INFO kernel:KVM setup paravirtual spinlock
+13:09:22,716 INFO kernel:smpboot: Booting Node   0, Processors  #1 OK
+13:09:22,717 INFO kernel:kvm-clock: cpu 1, msr 1:3ff86041, secondary cpu clock
+13:09:22,717 INFO kernel:smpboot: CPU 1 Converting physical 0 to logical die 1
+13:09:22,717 INFO kernel:Brought up 2 CPUs
+13:09:22,717 INFO kernel:KVM setup async PF for cpu 1
+13:09:22,717 INFO kernel:kvm-stealtime: cpu 1, msr 13fd1c040
+13:09:22,717 INFO kernel:smpboot: Max logical packages: 2
+13:09:22,717 INFO kernel:smpboot: Total of 2 processors activated (9599.99 BogoMIPS)
+13:09:22,717 INFO kernel:devtmpfs: initialized
+13:09:22,717 INFO kernel:x86/mm: Memory block size: 128MB
+13:09:22,717 INFO kernel:EVM: security.selinux
+13:09:22,717 INFO kernel:EVM: security.ima
+13:09:22,717 INFO kernel:EVM: security.capability
+13:09:22,717 INFO kernel:atomic64 test passed for x86-64 platform with CX8 and with SSE
+13:09:22,717 INFO kernel:pinctrl core: initialized pinctrl subsystem
+13:09:22,717 INFO kernel:RTC time: 13:09:11, date: 06/21/22
+13:09:22,717 INFO kernel:NET: Registered protocol family 16
+13:09:22,717 INFO kernel:cpuidle: using governor haltpoll
+13:09:22,717 INFO kernel:ACPI: bus type PCI registered
+13:09:22,717 INFO kernel:acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+13:09:22,717 INFO kernel:PCI: Using configuration type 1 for base access
+13:09:22,717 INFO kernel:core: PMU erratum BJ122, BV98, HSD29 workaround disabled, HT off
+13:09:22,717 INFO kernel:ACPI: Added _OSI(Module Device)
+13:09:22,717 INFO kernel:ACPI: Added _OSI(Processor Device)
+13:09:22,717 INFO kernel:ACPI: Added _OSI(3.0 _SCP Extensions)
+13:09:22,717 INFO kernel:ACPI: Added _OSI(Processor Aggregator Device)
+13:09:22,717 INFO kernel:ACPI: Added _OSI(Linux-Dell-Video)
+13:09:22,717 DEBUG kernel:ACPI: EC: Look up EC in DSDT
+13:09:22,717 INFO kernel:ACPI: Interpreter enabled
+13:09:22,717 INFO kernel:ACPI: (supports S0 S5)
+13:09:22,717 INFO kernel:ACPI: Using IOAPIC for interrupt routing
+13:09:22,717 INFO kernel:PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+13:09:22,717 WARNING kernel:ACPI: Enabled 16 GPEs in block 00 to 0F
+13:09:22,717 INFO kernel:ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+13:09:22,717 INFO kernel:acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI]
+13:09:22,717 INFO kernel:acpi PNP0A03:00: _OSC failed (AE_NOT_FOUND); disabling ASPM
+13:09:22,717 WARNING kernel:acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
+13:09:22,717 INFO kernel:acpiphp: Slot [3] registered
+13:09:22,717 INFO kernel:acpiphp: Slot [4] registered
+13:09:22,717 INFO kernel:acpiphp: Slot [5] registered
+13:09:22,717 INFO kernel:acpiphp: Slot [6] registered
+13:09:22,717 INFO kernel:acpiphp: Slot [7] registered
+13:09:22,717 INFO kernel:acpiphp: Slot [8] registered
+13:09:22,717 INFO kernel:acpiphp: Slot [9] registered
+13:09:22,717 INFO kernel:acpiphp: Slot [10] registered
+13:09:22,717 INFO kernel:acpiphp: Slot [11] registered
+13:09:22,717 INFO kernel:acpiphp: Slot [12] registered
+13:09:22,717 INFO kernel:acpiphp: Slot [13] registered
+13:09:22,717 INFO kernel:acpiphp: Slot [14] registered
+13:09:22,717 INFO kernel:acpiphp: Slot [15] registered
+13:09:22,717 INFO kernel:acpiphp: Slot [16] registered
+13:09:22,717 INFO kernel:acpiphp: Slot [17] registered
+13:09:22,718 INFO kernel:acpiphp: Slot [18] registered
+13:09:22,718 INFO kernel:acpiphp: Slot [19] registered
+13:09:22,718 INFO kernel:acpiphp: Slot [20] registered
+13:09:22,718 INFO kernel:acpiphp: Slot [21] registered
+13:09:22,718 INFO kernel:acpiphp: Slot [22] registered
+13:09:22,718 INFO kernel:acpiphp: Slot [23] registered
+13:09:22,718 INFO kernel:acpiphp: Slot [24] registered
+13:09:22,718 INFO kernel:acpiphp: Slot [25] registered
+13:09:22,718 INFO kernel:acpiphp: Slot [26] registered
+13:09:22,718 INFO kernel:acpiphp: Slot [27] registered
+13:09:22,718 INFO kernel:acpiphp: Slot [28] registered
+13:09:22,718 INFO kernel:acpiphp: Slot [29] registered
+13:09:22,718 INFO kernel:acpiphp: Slot [30] registered
+13:09:22,718 INFO kernel:acpiphp: Slot [31] registered
+13:09:22,718 INFO kernel:PCI host bridge to bus 0000:00
+13:09:22,718 INFO kernel:pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+13:09:22,718 INFO kernel:pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+13:09:22,718 INFO kernel:pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+13:09:22,718 INFO kernel:pci_bus 0000:00: root bus resource [mem 0xc0000000-0xfebfffff window]
+13:09:22,718 INFO kernel:pci_bus 0000:00: root bus resource [bus 00-ff]
+13:09:22,718 DEBUG kernel:pci 0000:00:00.0: [8086:1237] type 00 class 0x060000
+13:09:22,718 DEBUG kernel:pci 0000:00:01.0: [8086:7000] type 00 class 0x060100
+13:09:22,718 DEBUG kernel:pci 0000:00:01.1: [8086:7010] type 00 class 0x010180
+13:09:22,719 DEBUG kernel:pci 0000:00:01.1: reg 0x20: [io  0xc0e0-0xc0ef]
+13:09:22,719 INFO kernel:pci 0000:00:01.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+13:09:22,719 INFO kernel:pci 0000:00:01.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+13:09:22,719 INFO kernel:pci 0000:00:01.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+13:09:22,719 INFO kernel:pci 0000:00:01.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+13:09:22,719 DEBUG kernel:pci 0000:00:01.2: [8086:7020] type 00 class 0x0c0300
+13:09:22,719 DEBUG kernel:pci 0000:00:01.2: reg 0x20: [io  0xc040-0xc05f]
+13:09:22,719 DEBUG kernel:pci 0000:00:01.3: [8086:7113] type 00 class 0x068000
+13:09:22,719 INFO kernel:pci 0000:00:01.3: quirk: [io  0x0600-0x063f] claimed by PIIX4 ACPI
+13:09:22,719 INFO kernel:pci 0000:00:01.3: quirk: [io  0x0700-0x070f] claimed by PIIX4 SMB
+13:09:22,719 DEBUG kernel:pci 0000:00:02.0: [1013:00b8] type 00 class 0x030000
+13:09:22,720 DEBUG kernel:pci 0000:00:02.0: reg 0x10: [mem 0xfc000000-0xfdffffff pref]
+13:09:22,720 DEBUG kernel:pci 0000:00:02.0: reg 0x14: [mem 0xfebd0000-0xfebd0fff]
+13:09:22,720 DEBUG kernel:pci 0000:00:02.0: reg 0x30: [mem 0xfebc0000-0xfebcffff pref]
+13:09:22,720 DEBUG kernel:pci 0000:00:03.0: [1af4:1000] type 00 class 0x020000
+13:09:22,720 DEBUG kernel:pci 0000:00:03.0: reg 0x10: [io  0xc060-0xc07f]
+13:09:22,720 DEBUG kernel:pci 0000:00:03.0: reg 0x14: [mem 0xfebd1000-0xfebd1fff]
+13:09:22,720 DEBUG kernel:pci 0000:00:03.0: reg 0x30: [mem 0xfeb80000-0xfebbffff pref]
+13:09:22,720 DEBUG kernel:pci 0000:00:04.0: [1af4:1003] type 00 class 0x078000
+13:09:22,720 DEBUG kernel:pci 0000:00:04.0: reg 0x10: [io  0xc080-0xc09f]
+13:09:22,720 DEBUG kernel:pci 0000:00:04.0: reg 0x14: [mem 0xfebd2000-0xfebd2fff]
+13:09:22,720 DEBUG kernel:pci 0000:00:05.0: [1af4:1001] type 00 class 0x010000
+13:09:22,721 DEBUG kernel:pci 0000:00:05.0: reg 0x10: [io  0xc000-0xc03f]
+13:09:22,721 DEBUG kernel:pci 0000:00:05.0: reg 0x14: [mem 0xfebd3000-0xfebd3fff]
+13:09:22,721 DEBUG kernel:pci 0000:00:06.0: [1af4:1002] type 00 class 0x00ff00
+13:09:22,721 DEBUG kernel:pci 0000:00:06.0: reg 0x10: [io  0xc0a0-0xc0bf]
+13:09:22,721 DEBUG kernel:pci 0000:00:07.0: [1af4:1005] type 00 class 0x00ff00
+13:09:22,721 DEBUG kernel:pci 0000:00:07.0: reg 0x10: [io  0xc0c0-0xc0df]
+13:09:22,721 INFO kernel:ACPI: PCI Interrupt Link [LNKA] (IRQs 5 *10 11)
+13:09:22,721 INFO kernel:ACPI: PCI Interrupt Link [LNKB] (IRQs 5 *10 11)
+13:09:22,721 INFO kernel:ACPI: PCI Interrupt Link [LNKC] (IRQs 5 10 *11)
+13:09:22,721 INFO kernel:ACPI: PCI Interrupt Link [LNKD] (IRQs 5 10 *11)
+13:09:22,721 INFO kernel:ACPI: PCI Interrupt Link [LNKS] (IRQs *9)
+13:09:22,721 INFO kernel:vgaarb: device added: PCI:0000:00:02.0,decodes=io+mem,owns=io+mem,locks=none
+13:09:22,721 INFO kernel:vgaarb: loaded
+13:09:22,721 INFO kernel:vgaarb: bridge control possible 0000:00:02.0
+13:09:22,721 NOTICE kernel:SCSI subsystem initialized
+13:09:22,721 INFO kernel:ACPI: bus type USB registered
+13:09:22,721 INFO kernel:usbcore: registered new interface driver usbfs
+13:09:22,721 INFO kernel:usbcore: registered new interface driver hub
+13:09:22,721 INFO kernel:usbcore: registered new device driver usb
+13:09:22,721 INFO kernel:EDAC MC: Ver: 3.0.0
+13:09:22,721 INFO kernel:PCI: Using ACPI for IRQ routing
+13:09:22,721 DEBUG kernel:PCI: pci_cache_line_size set to 64 bytes
+13:09:22,721 DEBUG kernel:e820: reserve RAM buffer [mem 0x0009fc00-0x0009ffff]
+13:09:22,721 DEBUG kernel:e820: reserve RAM buffer [mem 0xbffdc000-0xbfffffff]
+13:09:22,721 INFO kernel:NetLabel: Initializing
+13:09:22,721 INFO kernel:NetLabel:  domain hash size = 128
+13:09:22,721 INFO kernel:NetLabel:  protocols = UNLABELED CIPSOv4
+13:09:22,721 INFO kernel:NetLabel:  unlabeled traffic allowed by default
+13:09:22,721 NOTICE kernel:amd_nb: Cannot enumerate AMD northbridges
+13:09:22,721 INFO kernel:Switched to clocksource kvm-clock
+13:09:22,721 INFO kernel:pnp: PnP ACPI init
+13:09:22,721 INFO kernel:ACPI: bus type PNP registered
+13:09:22,721 DEBUG kernel:pnp 00:00: Plug and Play ACPI device, IDs PNP0b00 (active)
+13:09:22,722 DEBUG kernel:pnp 00:01: Plug and Play ACPI device, IDs PNP0303 (active)
+13:09:22,722 DEBUG kernel:pnp 00:02: Plug and Play ACPI device, IDs PNP0f13 (active)
+13:09:22,722 DEBUG kernel:pnp 00:03: [dma 2]
+13:09:22,722 DEBUG kernel:pnp 00:03: Plug and Play ACPI device, IDs PNP0700 (active)
+13:09:22,722 DEBUG kernel:pnp 00:04: Plug and Play ACPI device, IDs PNP0501 (active)
+13:09:22,722 DEBUG kernel:pnp 00:05: Plug and Play ACPI device, IDs PNP0501 (active)
+13:09:22,722 INFO kernel:pnp: PnP ACPI: found 6 devices
+13:09:22,722 INFO kernel:ACPI: bus type PNP unregistered
+13:09:22,722 DEBUG kernel:pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+13:09:22,722 DEBUG kernel:pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+13:09:22,722 DEBUG kernel:pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+13:09:22,722 DEBUG kernel:pci_bus 0000:00: resource 7 [mem 0xc0000000-0xfebfffff window]
+13:09:22,722 INFO kernel:NET: Registered protocol family 2
+13:09:22,722 INFO kernel:TCP established hash table entries: 32768 (order: 6, 262144 bytes)
+13:09:22,722 INFO kernel:TCP bind hash table entries: 32768 (order: 7, 524288 bytes)
+13:09:22,722 INFO kernel:TCP: Hash tables configured (established 32768 bind 32768)
+13:09:22,722 INFO kernel:TCP: reno registered
+13:09:22,722 INFO kernel:UDP hash table entries: 2048 (order: 4, 65536 bytes)
+13:09:22,722 INFO kernel:UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes)
+13:09:22,722 INFO kernel:NET: Registered protocol family 1
+13:09:22,722 INFO kernel:pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+13:09:22,723 INFO kernel:pci 0000:00:01.0: PIIX3: Enabling Passive Release
+13:09:22,723 INFO kernel:pci 0000:00:01.0: Activating ISA DMA hang workarounds
+13:09:22,723 WARNING kernel:ACPI: PCI Interrupt Link [LNKD] enabled at IRQ 11
+13:09:22,723 DEBUG kernel:pci 0000:00:02.0: Boot video device
+13:09:22,723 DEBUG kernel:PCI: CLS 0 bytes, default 64
+13:09:22,723 INFO kernel:Unpacking initramfs...
+13:09:22,723 WARNING kernel:sched: RT throttling activated
+13:09:22,723 INFO kernel:Freeing initrd memory: 50176k freed
+13:09:22,723 INFO kernel:PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+13:09:22,723 INFO kernel:software IO TLB [mem 0xbbfdc000-0xbffdc000] (64MB) mapped at [ffff898abbfdc000-ffff898abffdbfff]
+13:09:22,723 INFO kernel:sha1_ssse3: Using AVX optimized SHA-1 implementation
+13:09:22,723 INFO kernel:sha256_ssse3: Using AVX optimized SHA-256 implementation
+13:09:22,723 INFO kernel:futex hash table entries: 512 (order: 3, 32768 bytes)
+13:09:22,723 NOTICE kernel:Initialise system trusted keyring
+13:09:22,723 INFO kernel:audit: initializing netlink socket (disabled)
+13:09:22,723 NOTICE kernel:type=2000 audit(1655817489.830:1): initialized
+13:09:22,723 INFO kernel:HugeTLB registered 1 GB page size, pre-allocated 0 pages
+13:09:22,723 INFO kernel:HugeTLB registered 2 MB page size, pre-allocated 0 pages
+13:09:22,723 INFO kernel:zpool: loaded
+13:09:22,723 INFO kernel:zbud: loaded
+13:09:22,723 NOTICE kernel:VFS: Disk quotas dquot_6.5.2
+13:09:22,723 WARNING kernel:Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+13:09:22,723 NOTICE kernel:Key type big_key registered
+13:09:22,723 DEBUG kernel:SELinux:  Registering netfilter hooks
+13:09:22,723 INFO kernel:NET: Registered protocol family 38
+13:09:22,723 NOTICE kernel:Key type asymmetric registered
+13:09:22,723 NOTICE kernel:Asymmetric key parser 'x509' registered
+13:09:22,723 INFO kernel:Block layer SCSI generic (bsg) driver version 0.4 loaded (major 248)
+13:09:22,723 INFO kernel:io scheduler noop registered
+13:09:22,723 INFO kernel:io scheduler deadline registered (default)
+13:09:22,723 INFO kernel:io scheduler cfq registered
+13:09:22,723 INFO kernel:io scheduler mq-deadline registered
+13:09:22,723 INFO kernel:io scheduler kyber registered
+13:09:22,723 INFO kernel:pci_hotplug: PCI Hot Plug PCI Core version: 0.5
+13:09:22,723 INFO kernel:pciehp: PCI Express Hot Plug Controller Driver version: 0.4
+13:09:22,723 INFO kernel:shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+13:09:22,723 DEBUG kernel:intel_idle: does not run on family 6 model 45
+13:09:22,723 INFO kernel:input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+13:09:22,723 INFO kernel:ACPI: Power Button [PWRF]
+13:09:22,723 INFO kernel:GHES: HEST is not enabled!
+13:09:22,723 INFO kernel:Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+13:09:22,723 INFO kernel:00:04: ttyS0 at I/O 0x3f8 (irq = 4) is a 16550A
+13:09:22,723 INFO kernel:00:05: ttyS1 at I/O 0x2f8 (irq = 3) is a 16550A
+13:09:22,723 INFO kernel:Non-volatile memory driver v1.3
+13:09:22,723 INFO kernel:Linux agpgart interface v0.103
+13:09:22,723 INFO kernel:crash memory driver: version 1.1
+13:09:22,723 INFO kernel:rdac: device handler registered
+13:09:22,723 INFO kernel:hp_sw: device handler registered
+13:09:22,723 INFO kernel:emc: device handler registered
+13:09:22,723 INFO kernel:alua: device handler registered
+13:09:22,723 INFO kernel:libphy: Fixed MDIO Bus: probed
+13:09:22,723 INFO kernel:ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+13:09:22,723 INFO kernel:ehci-pci: EHCI PCI platform driver
+13:09:22,723 INFO kernel:ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+13:09:22,723 INFO kernel:ohci-pci: OHCI PCI platform driver
+13:09:22,724 INFO kernel:uhci_hcd: USB Universal Host Controller Interface driver
+13:09:22,724 INFO kernel:uhci_hcd 0000:00:01.2: UHCI Host Controller
+13:09:22,724 INFO kernel:uhci_hcd 0000:00:01.2: new USB bus registered, assigned bus number 1
+13:09:22,724 INFO kernel:uhci_hcd 0000:00:01.2: detected 2 ports
+13:09:22,724 INFO kernel:uhci_hcd 0000:00:01.2: irq 11, io base 0x0000c040
+13:09:22,724 INFO kernel:usb usb1: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 3.10
+13:09:22,724 INFO kernel:usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+13:09:22,724 INFO kernel:usb usb1: Product: UHCI Host Controller
+13:09:22,724 INFO kernel:usb usb1: Manufacturer: Linux 3.10.0-1160.71.1.el7.x86_64 uhci_hcd
+13:09:22,724 INFO kernel:usb usb1: SerialNumber: 0000:00:01.2
+13:09:22,724 INFO kernel:hub 1-0:1.0: USB hub found
+13:09:22,725 INFO kernel:hub 1-0:1.0: 2 ports detected
+13:09:22,725 INFO kernel:usbcore: registered new interface driver usbserial_generic
+13:09:22,725 INFO kernel:usbserial: USB Serial support registered for generic
+13:09:22,725 INFO kernel:i8042: PNP: PS/2 Controller [PNP0303:KBD,PNP0f13:MOU] at 0x60,0x64 irq 1,12
+13:09:22,725 INFO kernel:serio: i8042 KBD port at 0x60,0x64 irq 1
+13:09:22,725 INFO kernel:serio: i8042 AUX port at 0x60,0x64 irq 12
+13:09:22,725 INFO kernel:mousedev: PS/2 mouse device common for all mice
+13:09:22,725 INFO kernel:input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input1
+13:09:22,725 INFO kernel:input: VirtualPS/2 VMware VMMouse as /devices/platform/i8042/serio1/input/input2
+13:09:22,725 INFO kernel:rtc_cmos 00:00: RTC can wake from S4
+13:09:22,725 INFO kernel:input: VirtualPS/2 VMware VMMouse as /devices/platform/i8042/serio1/input/input3
+13:09:22,725 INFO kernel:rtc_cmos 00:00: rtc core: registered rtc_cmos as rtc0
+13:09:22,725 INFO kernel:rtc_cmos 00:00: alarms up to one day, 114 bytes nvram
+13:09:22,725 INFO kernel:hidraw: raw HID events driver (C) Jiri Kosina
+13:09:22,725 INFO kernel:usbcore: registered new interface driver usbhid
+13:09:22,725 INFO kernel:usbhid: USB HID core driver
+13:09:22,725 INFO kernel:drop_monitor: Initializing network drop monitor service
+13:09:22,725 INFO kernel:Netfilter messages via NETLINK v0.30.
+13:09:22,725 INFO kernel:TCP: cubic registered
+13:09:22,725 INFO kernel:Initializing XFRM netlink socket
+13:09:22,725 INFO kernel:NET: Registered protocol family 10
+13:09:22,725 INFO kernel:NET: Registered protocol family 17
+13:09:22,725 INFO kernel:mpls_gso: MPLS GSO support
+13:09:22,725 INFO kernel:mce: Using 10 MCE banks
+13:09:22,725 DEBUG kernel:PM: Hibernation image not present or could not be loaded.
+13:09:22,725 NOTICE kernel:Loading compiled-in X.509 certificates
+13:09:22,725 NOTICE kernel:Loaded X.509 cert 'Red Hat Enterprise Linux Driver Update Program (key 3): bf57f3e87362bc7229d9f465321773dfd1f77a80'
+13:09:22,725 NOTICE kernel:Loaded X.509 cert 'Red Hat Enterprise Linux kpatch signing key: 4d38fd864ebe18c5f0b72e3852e2014c3a676fc8'
+13:09:22,725 NOTICE kernel:Loaded X.509 cert 'Red Hat Enterprise Linux kernel signing key: 6d9a962abafa2546d34c1c52a62a918bf06be70f'
+13:09:22,725 INFO kernel:registered taskstats version 1
+13:09:22,725 INFO kernel:page_owner is disabled
+13:09:22,725 NOTICE kernel:Key type trusted registered
+13:09:22,725 NOTICE kernel:Key type encrypted registered
+13:09:22,725 INFO kernel:IMA: No TPM chip found, activating TPM-bypass! (rc=-19)
+13:09:22,725 INFO kernel:BERT: Boot Error Record Table support is disabled. Enable it by using bert_enable as kernel parameter.
+13:09:22,725 INFO kernel:  Magic number: 10:572:180
+13:09:22,725 INFO kernel:rtc_cmos 00:00: setting system clock to 2022-06-21 13:09:22 UTC (1655816962)
+13:09:22,725 INFO kernel:Freeing unused kernel memory: 1980k freed
+13:09:22,725 INFO kernel:Write protecting the kernel read-only data: 12288k
+13:09:22,725 INFO kernel:Freeing unused kernel memory: 368k freed
+13:09:22,725 INFO kernel:Freeing unused kernel memory: 528k freed
+13:09:22,725 NOTICE kernel:random: systemd: uninitialized urandom read (16 bytes read)
+13:09:22,725 NOTICE kernel:random: systemd: uninitialized urandom read (16 bytes read)
+13:09:22,725 NOTICE kernel:random: systemd: uninitialized urandom read (16 bytes read)
+13:09:22,726 INFO systemd:systemd 219 running in system mode. (+PAM +AUDIT +SELINUX +IMA -APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 -SECCOMP +BLKID +ELFUTILS +KMOD +IDN)
+13:09:22,726 INFO systemd:Detected virtualization kvm.
+13:09:22,726 INFO systemd:Detected architecture x86-64.
+13:09:22,726 INFO systemd:Running in initial RAM disk.
+13:09:22,726 INFO systemd:No hostname configured.
+13:09:22,726 INFO systemd:Set hostname to <localhost>.
+13:09:22,726 INFO systemd:Initializing machine ID from KVM UUID.
+13:09:22,726 NOTICE kernel:random: systemd-cryptse: uninitialized urandom read (16 bytes read)
+13:09:22,726 NOTICE kernel:random: systemd: uninitialized urandom read (16 bytes read)
+13:09:22,726 NOTICE kernel:random: systemd: uninitialized urandom read (16 bytes read)
+13:09:22,726 NOTICE kernel:random: systemd: uninitialized urandom read (16 bytes read)
+13:09:22,726 NOTICE kernel:random: systemd: uninitialized urandom read (16 bytes read)
+13:09:22,726 NOTICE kernel:random: systemd: uninitialized urandom read (16 bytes read)
+13:09:22,726 NOTICE kernel:random: systemd: uninitialized urandom read (16 bytes read)
+13:09:22,726 WARNING systemd:Cannot add dependency job for unit blk-availability.service, ignoring: Unit not found.
+13:09:22,726 INFO systemd:Reached target Swap.
+13:09:22,726 INFO systemd:Created slice Root Slice.
+13:09:22,726 INFO systemd:Created slice System Slice.
+13:09:22,726 INFO systemd:Reached target Timers.
+13:09:22,726 INFO systemd:Reached target Slices.
+13:09:22,726 INFO systemd:Listening on udev Kernel Socket.
+13:09:22,726 INFO systemd:Reached target Local File Systems.
+13:09:22,726 INFO systemd:Listening on Journal Socket.
+13:09:22,726 INFO systemd:Starting Create list of required static device nodes for the current kernel...
+13:09:22,726 INFO systemd:Starting dracut cmdline hook...
+13:09:22,726 INFO systemd:Starting Journal Service...
+13:09:22,726 INFO systemd:Starting Apply Kernel Variables...
+13:09:22,726 INFO systemd:Starting Setup Virtual Console...
+13:09:22,726 INFO systemd:Listening on udev Control Socket.
+13:09:22,726 INFO systemd:Reached target Local Encrypted Volumes.
+13:09:22,726 INFO systemd:Started Create list of required static device nodes for the current kernel.
+13:09:22,726 INFO systemd:Started Apply Kernel Variables.
+13:09:22,726 INFO systemd:Started Setup Virtual Console.
+13:09:22,726 INFO systemd:Starting Create Static Device Nodes in /dev...
+13:09:22,726 INFO systemd:Started Create Static Device Nodes in /dev.
+13:09:22,726 INFO journal:Journal started
+13:09:22,730 INFO systemd:Started Journal Service.
+13:09:22,767 INFO kernel:BIOS EDD facility v0.16 2004-Jun-25, 1 devices found
+13:09:22,806 INFO dracut-cmdline:Loading Red Hat Enterprise Linux 7.9 x86_64 installer...
+13:09:22,838 INFO dracut-cmdline:Warning: 'method=' is deprecated. Using 'repo=http://download.eng.bos.redhat.com/rhel-7/devel/candidate-trees/RHEL-7/RHEL-7.9-updates-20220621.2/compose/Server/x86_64/os/' instead.
+13:09:23,179 INFO kernel:tsc: Refined TSC clocksource calibration: 2400.037 MHz
+13:09:23,677 INFO systemd:Started dracut cmdline hook.
+13:09:23,678 INFO systemd:Starting dracut pre-udev hook...
+13:09:23,727 INFO kernel:squashfs: version 4.0 (2009/01/31) Phillip Lougher
+13:09:23,753 INFO kernel:Loading iSCSI transport class v2.0-870.
+13:09:23,765 NOTICE kernel:iscsi: registered transport (tcp)
+13:09:23,798 INFO kernel:FDC 0 is a S82078B
+13:09:23,827 INFO kernel:No iBFT detected.
+13:09:23,873 INFO kernel:async_tx: api initialized (async)
+13:09:23,878 INFO kernel:xor: automatically using best checksumming function:
+13:09:23,886 INFO kernel:   avx       : 17140.000 MB/sec
+13:09:23,917 WARNING kernel:raid6: sse2x1   gen()  6292 MB/s
+13:09:23,935 WARNING kernel:raid6: sse2x2   gen()  7976 MB/s
+13:09:23,954 WARNING kernel:raid6: sse2x4   gen()  9136 MB/s
+13:09:23,954 WARNING kernel:raid6: using algorithm sse2x4 gen() (9136 MB/s)
+13:09:23,954 WARNING kernel:raid6: using ssse3x2 recovery algorithm
+13:09:24,057 INFO kernel:device-mapper: uevent: version 1.0.3
+13:09:24,057 INFO kernel:device-mapper: ioctl: 4.37.1-ioctl (2018-04-03) initialised: dm-devel@redhat.com
+13:09:24,140 INFO kernel:device-mapper: multipath round-robin: version 1.2.0 loaded
+13:09:24,272 INFO kernel:RPC: Registered named UNIX socket transport module.
+13:09:24,272 INFO kernel:RPC: Registered udp transport module.
+13:09:24,272 INFO kernel:RPC: Registered tcp transport module.
+13:09:24,272 INFO kernel:RPC: Registered tcp NFSv4.1 backchannel transport module.
+13:09:24,349 NOTICE rpc.statd:Version 1.3.0 starting
+13:09:24,353 NOTICE rpc.statd:Initializing NSM state
+13:09:24,354 WARNING rpc.statd:Running as root.  chown /var/lib/nfs/statd to choose different user
+13:09:24,412 INFO systemd:Started dracut pre-udev hook.
+13:09:24,416 INFO systemd:Starting udev Kernel Device Manager...
+13:09:24,420 INFO systemd-udevd:starting version 219
+13:09:24,425 INFO systemd:Started udev Kernel Device Manager.
+13:09:24,428 INFO systemd:Starting dracut pre-trigger hook...
+13:09:24,448 INFO lldpad:config file failed to load,
+13:09:24,448 INFO lldpad:create a new file.
+13:09:24,448 INFO lldpad:bound ctrl iface to /com/intel/lldpad
+13:09:24,451 INFO dracut-pre-trigger:589
+13:09:24,604 INFO systemd:Started dracut pre-trigger hook.
+13:09:24,607 INFO systemd:Starting udev Coldplug all Devices...
+13:09:24,640 INFO systemd:Mounting Configuration File System...
+13:09:24,650 INFO systemd:Started udev Coldplug all Devices.
+13:09:24,654 INFO systemd:Starting Device-Mapper Multipath Device Controller...
+13:09:24,658 INFO systemd:Starting Show Plymouth Boot Screen...
+13:09:24,662 INFO systemd:Mounted Configuration File System.
+13:09:24,667 INFO systemd:Reached target System Initialization.
+13:09:24,673 INFO systemd:Listening on Open-iSCSI iscsiuio Socket.
+13:09:24,676 INFO systemd:Reached target Sockets.
+13:09:24,716 INFO kernel:cryptd: max_cpu_qlen set to 1000
+13:09:24,735 INFO systemd:Received SIGRTMIN+20 from PID 677 (plymouthd).
+13:09:24,737 INFO systemd:Started Show Plymouth Boot Screen.
+13:09:24,742 INFO systemd:Started Forward Password Requests to Plymouth Directory Watch.
+13:09:24,743 INFO systemd:Reached target Paths.
+13:09:24,744 INFO systemd:Reached target Basic System.
+13:09:24,771 INFO kernel:AVX version of gcm_enc/dec engaged.
+13:09:24,771 INFO kernel:AES CTR mode by8 optimization enabled
+13:09:24,800 INFO systemd:Started Device-Mapper Multipath Device Controller.
+13:09:24,802 INFO systemd:Starting Open-iSCSI...
+13:09:24,807 WARNING kernel:ACPI: PCI Interrupt Link [LNKC] enabled at IRQ 10
+13:09:24,823 INFO kernel:virtio-pci 0000:00:03.0: virtio_pci: leaving for legacy driver
+13:09:24,834 DEBUG kernel:libata version 3.00 loaded.
+13:09:24,864 INFO kernel:virtio-pci 0000:00:04.0: virtio_pci: leaving for legacy driver
+13:09:24,864 DEBUG kernel:ata_piix 0000:00:01.1: version 2.13
+13:09:24,870 INFO kernel:alg: No test for __gcm-aes-aesni (__driver-gcm-aes-aesni)
+13:09:24,870 INFO kernel:alg: No test for __generic-gcm-aes-aesni (__driver-generic-gcm-aes-aesni)
+13:09:24,877 INFO kernel:scsi host0: ata_piix
+13:09:24,882 INFO kernel:scsi host1: ata_piix
+13:09:24,882 INFO kernel:ata1: PATA max MWDMA2 cmd 0x1f0 ctl 0x3f6 bmdma 0xc0e0 irq 14
+13:09:24,882 INFO kernel:ata2: PATA max MWDMA2 cmd 0x170 ctl 0x376 bmdma 0xc0e8 irq 15
+13:09:24,927 WARNING kernel:ACPI: PCI Interrupt Link [LNKA] enabled at IRQ 10
+13:09:24,927 INFO kernel:virtio-pci 0000:00:05.0: virtio_pci: leaving for legacy driver
+13:09:24,964 WARNING kernel:ACPI: PCI Interrupt Link [LNKB] enabled at IRQ 11
+13:09:24,964 INFO kernel:virtio-pci 0000:00:06.0: virtio_pci: leaving for legacy driver
+13:09:24,966 INFO iscsid:iscsid: can't open InitiatorName configuration file /etc/iscsi/initiatorname.iscsi
+13:09:24,967 INFO iscsid:iscsid: Warning: InitiatorName file /etc/iscsi/initiatorname.iscsi does not exist or does not contain a properly formatted InitiatorName. If using software iscsi (iscsi_tcp or ib_iser) or partial offload (bnx2i or cxgbi iscsi), you may not be able to log into or discover targets. Please create a file /etc/iscsi/initiatorname.iscsi that contains a sting with the format: InitiatorName=iqn.yyyy-mm.<reversed domain name>[:identifier].
+13:09:24,967 INFO iscsid:Example: InitiatorName=iqn.2001-04.com.redhat:fc6.
+13:09:24,967 INFO iscsid:If using hardware iscsi like qla4xxx this message can be ignored.
+13:09:24,967 INFO iscsid:iscsid: can't open InitiatorAlias configuration file /etc/iscsi/initiatorname.iscsi
+13:09:24,968 INFO iscsid:iscsid: can't open iscsid.safe_logout configuration file /etc/iscsi/iscsid.conf
+13:09:24,969 INFO systemd:Started Open-iSCSI.
+13:09:24,970 INFO systemd:Starting dracut initqueue hook...
+13:09:25,011 INFO kernel:virtio-pci 0000:00:07.0: virtio_pci: leaving for legacy driver
+13:09:25,018 DEBUG kernel:virtio-pci 0000:00:05.0: irq 24 for MSI/MSI-X
+13:09:25,018 DEBUG kernel:virtio-pci 0000:00:05.0: irq 25 for MSI/MSI-X
+13:09:25,022 NOTICE kernel:virtio_blk virtio2: [vda] 20971520 512-byte logical blocks (10.7 GB/10.0 GiB)
+13:09:25,030 INFO kernel:[TTM] Zone  kernel: Available graphics memory: 2022502 kiB
+13:09:25,030 INFO kernel:[TTM] Initializing pool allocator
+13:09:25,030 INFO kernel:[TTM] Initializing DMA pool allocator
+13:09:25,036 INFO kernel:[drm] fb mappable at 0xFC000000
+13:09:25,036 DEBUG kernel:virtio-pci 0000:00:04.0: irq 26 for MSI/MSI-X
+13:09:25,036 DEBUG kernel:virtio-pci 0000:00:04.0: irq 27 for MSI/MSI-X
+13:09:25,036 INFO kernel:[drm] vram aper at 0xFC000000
+13:09:25,036 INFO kernel:[drm] size 33554432
+13:09:25,037 DEBUG kernel:virtio-pci 0000:00:03.0: irq 28 for MSI/MSI-X
+13:09:25,037 DEBUG kernel:virtio-pci 0000:00:03.0: irq 29 for MSI/MSI-X
+13:09:25,038 DEBUG kernel:virtio-pci 0000:00:03.0: irq 30 for MSI/MSI-X
+13:09:25,038 INFO kernel:[drm] fb depth is 16
+13:09:25,039 INFO kernel:[drm]    pitch is 2048
+13:09:25,087 INFO kernel:fbcon: cirrusdrmfb (fb0) is primary device
+13:09:25,087 INFO kernel:Console: switching to colour frame buffer device 128x48
+13:09:25,087 INFO kernel:cirrus 0000:00:02.0: fb0: cirrusdrmfb frame buffer device
+13:09:25,091 INFO kernel:[drm] Initialized cirrus 1.0.0 20110418 for 0000:00:02.0 on minor 0
+13:09:25,101 INFO kernel:8021q: 802.1Q VLAN Support v1.8
+13:09:25,108 INFO systemd:Reloading.
+13:09:25,174 INFO dracut-initqueue:RTNETLINK answers: File exists
+13:09:25,771 INFO kernel:IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+13:09:25,771 INFO kernel:8021q: adding VLAN 0 to HW filter on device eth0
+13:09:25,862 INFO dracut-initqueue:dhcp: PREINIT eth0 up
+13:09:25,882 INFO dhclient:DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 6 (xid=0xa400a5c)
+13:09:26,044 INFO kernel:IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+13:09:30,240 INFO dhclient:DHCPREQUEST on eth0 to 255.255.255.255 port 67 (xid=0xa400a5c)
+13:09:30,240 INFO dhclient:DHCPOFFER from 192.168.122.1
+13:09:30,241 INFO dhclient:DHCPACK from 192.168.122.1 (xid=0xa400a5c)
+13:09:30,266 INFO dracut-initqueue:dhcp: BOND setting eth0
+13:09:32,283 INFO dhclient:bound to 192.168.122.20 -- renewal in 1605 seconds.
+13:09:33,069 INFO dracut-initqueue:% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+13:09:33,071 INFO dracut-initqueue:Dload  Upload   Total   Spent    Left  Speed
+13:09:33,095 NOTICE kernel:random: fast init done
+13:09:35,990 NOTICE kernel:random: crng init done
+13:09:38,327 INFO dracut-initqueue:0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0#015 10  479M   10 51.2M    0     0  93.1M      0  0:00:05 --:--:--  0:00:05 93.0M#015 29  479M   29  142M    0     0  92.1M      0  0:00:05  0:00:01  0:00:04 92.1M#015 48  479M   48  233M    0     0  91.6M      0  0:00:05  0:00:02  0:00:03 91.6M#015 67  479M   67  324M    0     0  91.4M      0  0:00:05  0:00:03  0:00:02 91.4M#015 86  479M   86  415M    0     0  91.2M      0  0:00:05  0:00:04  0:00:01 91.2M#015100  479M  100  479M    0     0  91.2M      0  0:00:05  0:00:05 --:--:-- 91.0M
+13:09:38,594 INFO kernel:loop: module loaded
+13:09:38,711 INFO systemd:Started dracut initqueue hook.
+13:09:38,711 INFO systemd:Reached target Remote File Systems (Pre).
+13:09:38,712 INFO systemd:Reached target Remote File Systems.
+13:09:38,712 INFO systemd:Starting dracut pre-mount hook...
+13:09:38,735 INFO systemd:Started dracut pre-mount hook.
+13:09:38,735 INFO systemd:Reached target Initrd Root File System.
+13:09:38,736 INFO systemd:Starting Reload Configuration from the Real Root...
+13:09:38,779 INFO systemd:Reloading.
+13:09:38,913 INFO systemd:Started Reload Configuration from the Real Root.
+13:09:38,914 INFO systemd:Reached target Initrd File Systems.
+13:09:38,914 INFO systemd:Starting dracut mount hook...
+13:09:38,998 INFO kernel:EXT4-fs (dm-0): mounted filesystem with ordered data mode. Opts: (null)
+13:09:39,028 INFO systemd:Started dracut mount hook.
+13:09:39,029 INFO systemd:Reached target Initrd Default Target.
+13:09:39,029 INFO systemd:Starting dracut pre-pivot and cleanup hook...
+13:09:41,348 ERR rpcbind:cannot open file = /run/rpcbind/rpcbind.xdr for writing
+13:09:41,351 ERR rpcbind:cannot save any registration
+13:09:41,351 ERR rpcbind:cannot open file = /run/rpcbind/portmap.xdr for writing
+13:09:41,351 ERR rpcbind:cannot save any registration
+13:09:41,375 INFO systemd:Started dracut pre-pivot and cleanup hook.
+13:09:41,376 INFO systemd:Starting Cleaning Up and Shutting Down Daemons...
+13:09:41,418 INFO systemd:Stopped dracut pre-pivot and cleanup hook.
+13:09:41,418 INFO systemd:Stopped target Initrd Default Target.
+13:09:41,420 INFO systemd:Stopped target Remote File Systems.
+13:09:41,420 INFO systemd:Stopped target Remote File Systems (Pre).
+13:09:41,420 INFO systemd:Stopped dracut mount hook.
+13:09:41,421 INFO systemd:Stopped target Basic System.
+13:09:41,421 INFO systemd:Stopped target Slices.
+13:09:41,421 INFO systemd:Stopped dracut pre-mount hook.
+13:09:41,422 INFO systemd:Stopped dracut initqueue hook.
+13:09:41,425 INFO systemd:Stopping Open-iSCSI...
+13:09:41,425 INFO iscsid:iscsid: iscsid shutting down.
+13:09:41,426 INFO systemd:Stopped target Sockets.
+13:09:41,426 INFO systemd:Closed Open-iSCSI iscsiuio Socket.
+13:09:41,427 INFO systemd:Stopped target System Initialization.
+13:09:41,427 INFO systemd:Stopped target Swap.
+13:09:41,428 INFO systemd:Stopped target Local Encrypted Volumes.
+13:09:41,429 INFO systemd:Stopped Apply Kernel Variables.
+13:09:41,429 INFO systemd:Stopped target Local File Systems.
+13:09:41,431 INFO systemd:Starting Plymouth switch root service...
+13:09:41,431 INFO systemd:Stopped target Paths.
+13:09:41,432 INFO systemd:Stopped target Timers.
+13:09:41,435 INFO systemd:Stopped Open-iSCSI.
+13:09:41,438 NOTICE multipathd:path checkers start up
+13:09:41,439 INFO systemd:Stopping Device-Mapper Multipath Device Controller...
+13:09:41,439 NOTICE multipathd:--------shut down-------
+13:09:41,440 INFO systemd:Stopped Device-Mapper Multipath Device Controller.
+13:09:41,441 INFO systemd:Started Cleaning Up and Shutting Down Daemons.
+13:09:41,442 INFO systemd:Stopped udev Coldplug all Devices.
+13:09:41,443 INFO systemd:Stopped dracut pre-trigger hook.
+13:09:41,445 INFO systemd:Stopping udev Kernel Device Manager...
+13:09:41,446 INFO systemd:Stopped udev Kernel Device Manager.
+13:09:41,447 INFO systemd:Stopped dracut pre-udev hook.
+13:09:41,448 INFO systemd:Stopped dracut cmdline hook.
+13:09:41,448 INFO systemd:Stopped Create Static Device Nodes in /dev.
+13:09:41,449 INFO systemd:Stopped Create list of required static device nodes for the current kernel.
+13:09:41,449 INFO systemd:Closed udev Control Socket.
+13:09:41,449 INFO systemd:Closed udev Kernel Socket.
+13:09:41,450 INFO systemd:Starting Cleanup udevd DB...
+13:09:41,455 INFO systemd:Started Cleanup udevd DB.
+13:09:41,456 INFO systemd:Reached target Switch Root.
+13:09:41,468 INFO systemd:Started Plymouth switch root service.
+13:09:41,469 INFO systemd:Starting Switch Root...
+13:09:41,514 NOTICE systemd:Switching root.
+13:09:41,522 INFO journal:Journal stopped
+13:09:42,848 INFO journal:Runtime journal is using 8.0M (max allowed 197.5M, trying to leave 296.2M free of 1.8G available → current limit 197.5M).
+13:09:42,849 INFO systemd-journald:Received SIGTERM from PID 1 (systemd).
+13:09:42,849 DEBUG kernel:SELinux: 2048 avtab hash slots, 112856 rules.
+13:09:42,849 DEBUG kernel:SELinux: 2048 avtab hash slots, 112856 rules.
+13:09:42,849 DEBUG kernel:SELinux:  8 users, 14 roles, 5052 types, 316 bools, 1 sens, 1024 cats
+13:09:42,849 DEBUG kernel:SELinux:  130 classes, 112856 rules
+13:09:42,849 DEBUG kernel:SELinux:  Completing initialization.
+13:09:42,849 DEBUG kernel:SELinux:  Setting up existing superblocks.
+13:09:42,849 NOTICE kernel:type=1403 audit(1655816982.160:2): policy loaded auid=4294967295 ses=4294967295
+13:09:42,849 INFO systemd:Successfully loaded SELinux policy in 254.730ms.
+13:09:42,849 INFO systemd:Relabelled /dev, /run and /sys/fs/cgroup in 26.476ms.
+13:09:42,849 INFO journal:Journal started
+13:09:42,914 INFO systemd:systemd 219 running in system mode. (+PAM +AUDIT +SELINUX +IMA -APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 -SECCOMP +BLKID +ELFUTILS +KMOD +IDN)
+13:09:42,915 INFO systemd:Detected virtualization kvm.
+13:09:42,915 INFO systemd:Detected architecture x86-64.
+13:09:42,915 WARNING systemd:Cannot add dependency job for unit rhel-autorelabel-mark.service, ignoring: Unit is masked.
+13:09:42,919 WARNING systemd:Cannot add dependency job for unit rhel-autorelabel.service, ignoring: Unit is masked.
+13:09:42,919 WARNING systemd:Cannot add dependency job for unit rhel-loadmodules.service, ignoring: Unit is masked.
+13:09:42,920 WARNING systemd:Cannot add dependency job for unit systemd-tmpfiles-clean.timer, ignoring: Unit is masked.
+13:09:42,921 INFO systemd:Starting Flush Journal to Persistent Storage...
+13:09:42,921 INFO rhel-domainname:/usr/lib/systemd/rhel-domainname: line 2: /etc/sysconfig/network: No such file or directory
+13:09:42,958 INFO systemd:Started Create Static Device Nodes in /dev.
+13:09:42,960 INFO systemd:Reached target Local File Systems (Pre).
+13:09:42,961 INFO systemd:Starting udev Kernel Device Manager...
+13:09:42,978 INFO systemd:Started Configure read-only root support.
+13:09:42,978 INFO systemd:Starting Load/Save Random Seed...
+13:09:43,029 INFO systemd:Started Load/Save Random Seed.
+13:09:43,030 INFO systemd:Started Flush Journal to Persistent Storage.
+13:09:43,045 INFO systemd-udevd:starting version 219
+13:09:43,145 INFO systemd:Started udev Kernel Device Manager.
+13:09:43,633 INFO systemd:Started Rebuild Hardware Database.
+13:09:43,635 INFO systemd:Starting udev Coldplug all Devices...
+13:09:43,729 INFO systemd:Started udev Coldplug all Devices.
+13:09:43,730 INFO systemd:Starting udev Wait for Complete Device Initialization...
+13:09:43,732 INFO systemd:Starting Device-Mapper Multipath Device Controller...
+13:09:43,778 INFO kernel:piix4_smbus 0000:00:01.3: SMBus Host Controller at 0x700, revision 0
+13:09:43,848 INFO kernel:input: PC Speaker as /devices/platform/pcspkr/input/input4
+13:09:44,274 INFO systemd:Started Device-Mapper Multipath Device Controller.
+13:09:44,328 INFO systemd:Started udev Wait for Complete Device Initialization.
+13:09:44,329 INFO systemd:Starting Activation of DM RAID sets...
+13:09:44,395 INFO systemd:Started Activation of DM RAID sets.
+13:09:44,395 INFO systemd:Reached target Local File Systems.
+13:09:44,396 INFO systemd:Starting Import network configuration from initramfs...
+13:09:44,397 INFO systemd:Starting Tell Plymouth To Write Out Runtime Data...
+13:09:44,400 INFO systemd:Starting Migrate local SELinux policy changes from the old store structure to the new structure...
+13:09:44,400 INFO systemd:Starting Rebuild Journal Catalog...
+13:09:44,418 INFO systemd:Reached target Local Encrypted Volumes.
+13:09:44,436 INFO systemd:Started Tell Plymouth To Write Out Runtime Data.
+13:09:44,473 INFO systemd:Started Migrate local SELinux policy changes from the old store structure to the new structure.
+13:09:44,474 INFO systemd:Started Rebuild Journal Catalog.
+13:09:44,476 INFO systemd:Starting Update is Completed...
+13:09:44,489 INFO systemd:Started Update is Completed.
+13:09:44,567 INFO systemd:Started Import network configuration from initramfs.
+13:09:44,572 INFO systemd:Starting Create Volatile Files and Directories...
+13:09:44,612 INFO systemd:Started Create Volatile Files and Directories.
+13:09:44,612 INFO systemd:Starting Update UTMP about System Boot/Shutdown...
+13:09:44,646 INFO systemd:Started Update UTMP about System Boot/Shutdown.
+13:09:44,646 INFO systemd:Reached target System Initialization.
+13:09:44,648 INFO systemd:Listening on D-Bus System Message Bus Socket.
+13:09:44,649 INFO systemd:Listening on Open-iSCSI iscsid Socket.
+13:09:44,650 INFO systemd:Listening on Open-iSCSI iscsiuio Socket.
+13:09:44,651 INFO systemd:Reached target Sockets.
+13:09:44,652 INFO systemd:Reached target Basic System.
+13:09:44,653 INFO systemd:Starting pre-anaconda logging service...
+13:09:44,655 INFO systemd:Started Hardware RNG Entropy Gatherer Daemon.
+13:09:44,657 INFO systemd:Starting Service enabling compressing RAM with zRam...
+13:09:44,659 INFO systemd:Starting Dump dmesg to /var/log/dmesg...
+13:09:44,661 INFO systemd:Started Anaconda NetworkManager configuration.
+13:09:44,663 INFO systemd:Starting Network Manager...
+13:09:44,668 INFO systemd:Starting Wait for Plymouth Boot Screen to Quit...
+13:09:44,671 INFO systemd:Starting Login Service...
+13:09:44,674 INFO systemd:Starting Terminate Plymouth Boot Screen...
+13:09:44,695 INFO zramswapon:+ MAX_RAM_ON=2097152
+13:09:44,700 INFO zramswapon:++ grep -E --only-matching '[[:digit:]]+'
+13:09:44,705 INFO systemd:Received SIGRTMIN+21 from PID 677 (plymouthd).
+13:09:44,706 INFO zramswapon:++ grep MemTotal /proc/meminfo
+13:09:44,709 INFO zramswapon:+ mem_total_kb=4045004
+13:09:44,710 INFO zramswapon:+ mem_total=4142084096
+13:09:44,710 INFO zramswapon:+ grep -E 'inst\.zram=(on|1)' /proc/cmdline
+13:09:44,719 INFO systemd:Started Terminate Plymouth Boot Screen.
+13:09:44,727 INFO systemd:Started Wait for Plymouth Boot Screen to Quit.
+13:09:44,729 INFO zramswapon:+ force=1
+13:09:44,730 INFO zramswapon:+ '[' '(' 4045004 -gt 2097152 ')' -a '(' 1 '!=' 0 ')' ']'
+13:09:44,730 INFO zramswapon:+ exit 0
+13:09:44,734 INFO systemd:Started Service enabling compressing RAM with zRam.
+13:09:44,737 INFO systemd:Started pre-anaconda logging service.
+13:09:44,823 INFO systemd:Started Dump dmesg to /var/log/dmesg.
+13:09:44,834 WARNING systemd:Cannot add dependency job for unit rhel-autorelabel-mark.service, ignoring: Unit is masked.
+13:09:44,835 WARNING systemd:Cannot add dependency job for unit rhel-autorelabel.service, ignoring: Unit is masked.
+13:09:44,835 WARNING systemd:Cannot add dependency job for unit rhel-loadmodules.service, ignoring: Unit is masked.
+13:09:44,835 WARNING systemd:Cannot add dependency job for unit systemd-tmpfiles-clean.timer, ignoring: Unit is masked.
+13:09:44,836 INFO systemd:Started D-Bus System Message Bus.
+13:09:45,324 INFO systemd-logind:New seat seat0.
+13:09:45,332 INFO systemd:Started Login Service.
+13:09:45,333 INFO systemd-logind:Watching system buttons on /dev/input/event0 (Power Button)
+13:09:45,411 INFO rngd:Initalizing available sources
+13:09:45,412 INFO rngd:Initalizing entropy source Hardware RNG Device
+13:09:45,413 INFO rngd:Failed to init entropy source 2: Intel RDRAND Instruction RNG
+13:09:45,738 INFO NetworkManager:<info>  [1655816985.7359] NetworkManager (version 1.18.8-2.el7_9) is starting... (for the first time)
+13:09:45,739 INFO NetworkManager:<info>  [1655816985.7380] Read config: /etc/NetworkManager/NetworkManager.conf (lib: 10-slaves-order.conf) (etc: 80-anaconda-no-ibft.conf, 90-anaconda-no-auto-default.conf, 91-anaconda-autoconnect-slaves.conf, 92-anaconda-loglevel-debug.conf)
+13:09:45,739 DEBUG NetworkManager:<debug> [1655816985.7381] CONFIG: config-data[0x55664c464840]: 3 groups
+13:09:45,739 DEBUG NetworkManager:<debug> [1655816985.7381] CONFIG:
+13:09:45,740 DEBUG NetworkManager:<debug> [1655816985.7381] CONFIG: [main]
+13:09:45,740 DEBUG NetworkManager:<debug> [1655816985.7381] CONFIG:   slaves-order=index
+13:09:45,740 DEBUG NetworkManager:<debug> [1655816985.7381] CONFIG:   plugins=ifcfg-rh,ibft,no-ibft
+13:09:45,741 DEBUG NetworkManager:<debug> [1655816985.7381] CONFIG:   no-auto-default=*
+13:09:45,741 DEBUG NetworkManager:<debug> [1655816985.7381] CONFIG:
+13:09:45,741 DEBUG NetworkManager:<debug> [1655816985.7381] CONFIG: [logging]
+13:09:45,741 DEBUG NetworkManager:<debug> [1655816985.7381] CONFIG:   level=DEBUG
+13:09:45,742 DEBUG NetworkManager:<debug> [1655816985.7381] CONFIG:
+13:09:45,742 DEBUG NetworkManager:<debug> [1655816985.7381] CONFIG: [connection]
+13:09:45,742 DEBUG NetworkManager:<debug> [1655816985.7382] CONFIG:   connection.autoconnect-slaves=1
+13:09:45,743 DEBUG NetworkManager:<debug> [1655816985.7382] config: state: missing state file "/var/lib/NetworkManager/NetworkManager.state": No such file or directory
+13:09:45,743 DEBUG NetworkManager:<debug> [1655816985.7382] WEXT support is disabled
+13:09:45,747 DEBUG NetworkManager:<debug> [1655816985.7445] netns[0x55664c4572e0]: new netns (net:7, mnt:8)
+13:09:45,747 DEBUG NetworkManager:<debug> [1655816985.7457] platform-linux: create (ignore netns, initial netns, use udev)
+13:09:45,748 DEBUG NetworkManager:<debug> [1655816985.7462] platform-linux: could not enable extended acks on netlink socket
+13:09:45,748 DEBUG NetworkManager:<debug> [1655816985.7462] platform-linux: Netlink socket for events established: port=1451, fd=11
+13:09:45,748 DEBUG NetworkManager:<debug> [1655816985.7463] platform-linux: populate platform cache
+13:09:45,749 DEBUG NetworkManager:<debug> [1655816985.7465] monotonic timestamp started counting 1.128531045 seconds ago with an offset of 33.0 seconds to CLOCK_BOOTTIME (local time is 2022-06-21 13:09:45)
+13:09:45,749 DEBUG NetworkManager:<debug> [1655816985.7466] platform: kernel-support for USER_IPV6LL (IFLA_INET6_ADDR_GEN_MODE support) detected: supported
+13:09:45,749 DEBUG NetworkManager:<debug> [1655816985.7471] platform: (lo) signal: link   added: 1: lo <UP,LOWER_UP;loopback,up,running,lowerup> mtu 65536 arp 772 loopback? not-init addrgenmode eui64 addr 00:00:00:00:00:00 driver unknown rx:6,416 tx:6,416
+13:09:45,749 DEBUG NetworkManager:<debug> [1655816985.7480] platform: (eth0) signal: link   added: 2: eth0 <UP,LOWER_UP;broadcast,multicast,up,running,lowerup> mtu 1500 arp 1 ethernet? not-init addrgenmode eui64 addr 52:54:00:5E:EF:F9 driver virtio_net rx:27617,504849343 tx:25848,1713360
+13:09:45,750 DEBUG NetworkManager:<debug> [1655816985.7480] platform: kernel-support for EXTENDED_IFA_FLAGS (IPv6 temporary addresses support) detected: supported
+13:09:45,750 DEBUG NetworkManager:<debug> [1655816985.7481] platform: (lo) signal: address 4   added: 127.0.0.1/8 lft forever pref forever lifetime 1-0[4294967295,4294967295] dev 1 flags permanent src kernel
+13:09:45,750 DEBUG NetworkManager:<debug> [1655816985.7481] platform: (eth0) signal: address 4   added: 192.168.122.20/24 lft 3587sec pref 3587sec lifetime 1-1[3587,3587] dev 2 src kernel
+13:09:45,751 DEBUG NetworkManager:<debug> [1655816985.7482] platform: (lo) signal: address 6   added: ::1/128 lft forever pref forever lifetime 1-0[4294967295,4294967295] dev 1 flags permanent src kernel
+13:09:45,751 DEBUG NetworkManager:<debug> [1655816985.7482] platform: (eth0) signal: address 6   added: fe80::5054:ff:fe5e:eff9/64 lft forever pref forever lifetime 1-0[4294967295,4294967295] dev 2 flags permanent src kernel
+13:09:45,751 DEBUG NetworkManager:<debug> [1655816985.7483] platform: (eth0) signal: route   4   added: 0.0.0.0/0 via 192.168.122.1 dev 2 metric 0 mss 0 rt-src rt-boot scope global
+13:09:45,752 DEBUG NetworkManager:<debug> [1655816985.7483] platform: (eth0) signal: route   4   added: 192.168.122.0/24 via 0.0.0.0 dev 2 metric 0 mss 0 rt-src rt-kernel scope link pref-src 192.168.122.20
+13:09:45,754 DEBUG NetworkManager:<debug> [1655816985.7484] platform: kernel-support for RTA_PREF (ability to set router preference for IPv6 routes) detected: supported
+13:09:45,781 DEBUG NetworkManager:<debug> [1655816985.7484] platform: (eth0) signal: route   6   added: fe80::/64 via :: dev 2 metric 256 mss 0 rt-src rt-kernel
+13:09:45,781 DEBUG NetworkManager:<debug> [1655816985.7484] platform: (eth0) signal: route   6   added: table 255 ff00::/8 via :: dev 2 metric 256 mss 0 rt-src rt-boot
+13:09:45,782 INFO systemd:Started Network Manager.
+13:09:45,784 DEBUG NetworkManager:<debug> [1655816985.7485] platform: kernel-support for FRA_PROTOCOL (FRA_PROTOCOL attribute for policy routing rules) detected: not supported
+13:09:45,784 INFO systemd:Starting Network Manager Wait Online...
+13:09:45,785 DEBUG NetworkManager:<debug> [1655816985.7485] platform: kernel-support for FRA_UID_RANGE (FRA_UID_RANGE attribute for policy routing rules) not detected: assume not supported
+13:09:45,785 INFO systemd:Reached target Network.
+13:09:45,785 DEBUG NetworkManager:<debug> [1655816985.7485] platform: kernel-support for FRA_L3MDEV (FRA_L3MDEV attribute for policy routing rules) not detected: assume not supported
+13:09:45,785 DEBUG NetworkManager:<debug> [1655816985.7485] platform: kernel-support for FRA_IP_PROTO (FRA_IP_PROTO, FRA_SPORT_RANGE, FRA_DPORT_RANGE attributes for policy routing rules) not detected: assume not supported
+13:09:45,786 DEBUG NetworkManager:<debug> [1655816985.7485] platform: signal: rt-rule   added: [4] 0: from all lookup 255
+13:09:45,786 DEBUG NetworkManager:<debug> [1655816985.7486] platform: signal: rt-rule   added: [4] 32766: from all lookup 254
+13:09:45,786 DEBUG NetworkManager:<debug> [1655816985.7486] platform: signal: rt-rule   added: [4] 32767: from all lookup 253
+13:09:45,789 DEBUG NetworkManager:<debug> [1655816985.7486] platform: signal: rt-rule   added: [6] 0: from all lookup 255
+13:09:45,789 DEBUG NetworkManager:<debug> [1655816985.7487] platform: signal: rt-rule   added: [6] 32766: from all lookup 254
+13:09:45,789 DEBUG NetworkManager:<debug> [1655816985.7487] platform: (lo) signal: qdisc   added: noqueue dev 1 family 0 handle 0 parent ffffffff info 2
+13:09:45,790 DEBUG NetworkManager:<debug> [1655816985.7488] platform: (eth0) signal: qdisc   added: pfifo_fast dev 2 family 0 handle 0 parent ffffffff info 2
+13:09:45,790 DEBUG NetworkManager:<debug> [1655816985.7496] platform: (eth0) signal: link changed: 2: eth0 <UP,LOWER_UP;broadcast,multicast,up,running,lowerup> mtu 1500 arp 1 ethernet? init addrgenmode eui64 addr 52:54:00:5E:EF:F9 driver virtio_net rx:27617,504849343 tx:25848,1713360
+13:09:45,790 DEBUG NetworkManager:<debug> [1655816985.7499] platform: (lo) signal: link changed: 1: lo <UP,LOWER_UP;loopback,up,running,lowerup> mtu 65536 arp 772 loopback? init addrgenmode eui64 addr 00:00:00:00:00:00 driver unknown rx:6,416 tx:6,416
+13:09:45,791 DEBUG NetworkManager:<debug> [1655816985.7499] setup NMPlatform singleton (0x55664c4670f0, NMLinuxPlatform)
+13:09:45,791 DEBUG NetworkManager:<debug> [1655816985.7499] rules-manager: routing-rule: track [08cb51de2333b288,0] "[4] 0: from all lookup 255 protocol 2")
+13:09:45,791 DEBUG NetworkManager:<debug> [1655816985.7500] rules-manager: routing-rule: track [08cb51de2333b288,0] "[4] 32766: from all lookup 254 protocol 2")
+13:09:45,792 DEBUG NetworkManager:<debug> [1655816985.7500] rules-manager: routing-rule: track [08cb51de2333b288,0] "[4] 32767: from all lookup 253 protocol 2")
+13:09:45,798 DEBUG NetworkManager:<debug> [1655816985.7500] rules-manager: routing-rule: track [08cb51de2333b288,0] "[6] 0: from all lookup 255 protocol 2")
+13:09:45,798 DEBUG NetworkManager:<debug> [1655816985.7500] rules-manager: routing-rule: track [08cb51de2333b288,0] "[6] 32766: from all lookup 254 protocol 2")
+13:09:45,799 DEBUG NetworkManager:<debug> [1655816985.7500] rules-manager: routing-rule: track [1b3ee412b2162b08,0] "[4] 0: from all lookup 255")
+13:09:45,799 DEBUG NetworkManager:<debug> [1655816985.7500] rules-manager: routing-rule: track [1b3ee412b2162b08,0] "[4] 32766: from all lookup 254")
+13:09:45,799 DEBUG NetworkManager:<debug> [1655816985.7501] rules-manager: routing-rule: track [1b3ee412b2162b08,0] "[4] 32767: from all lookup 253")
+13:09:45,800 DEBUG NetworkManager:<debug> [1655816985.7501] rules-manager: routing-rule: track [1b3ee412b2162b08,0] "[6] 0: from all lookup 255")
+13:09:45,800 DEBUG NetworkManager:<debug> [1655816985.7501] rules-manager: routing-rule: track [1b3ee412b2162b08,0] "[6] 32766: from all lookup 254")
+13:09:45,800 DEBUG NetworkManager:<debug> [1655816985.7501] create NMNetns singleton (0x55664c4738c0)
+13:09:45,801 DEBUG NetworkManager:<debug> [1655816985.7501] auth[0x55664c45dcf0]: create auth-manager: polkit enabled
+13:09:45,801 DEBUG NetworkManager:<debug> [1655816985.7510] auth[0x55664c45dcf0]: set instance
+13:09:45,806 DEBUG NetworkManager:<debug> [1655816985.7510] setup NMAuthManager singleton (0x55664c45dcf0)
+13:09:45,806 DEBUG NetworkManager:<debug> [1655816985.7511] create NMDBusManager singleton (0x55664c46b800)
+13:09:45,806 INFO NetworkManager:<info>  [1655816985.7584] bus-manager: acquired D-Bus service "org.freedesktop.NetworkManager"
+13:09:45,810 INFO NetworkManager:<info>  [1655816985.7798] manager[0x55664c483060]: monitoring kernel firmware directory '/lib/firmware'.
+13:09:45,810 DEBUG NetworkManager:<debug> [1655816985.8044] session-monitor: using systemd-logind session tracking
+13:09:45,810 WARNING systemd:Cannot add dependency job for unit rhel-autorelabel-mark.service, ignoring: Unit is masked.
+13:09:45,811 DEBUG NetworkManager:<debug> [1655816985.8045] create NMSessionMonitor singleton (0x55664c480040)
+13:09:45,811 WARNING systemd:Cannot add dependency job for unit rhel-autorelabel.service, ignoring: Unit is masked.
+13:09:45,811 DEBUG NetworkManager:<debug> [1655816985.8045] create NMAgentManager singleton (0x55664c46cd70)
+13:09:45,811 WARNING systemd:Cannot add dependency job for unit rhel-loadmodules.service, ignoring: Unit is masked.
+13:09:45,836 NOTICE dbus:[system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service'
+13:09:45,837 WARNING systemd:Cannot add dependency job for unit systemd-tmpfiles-clean.timer, ignoring: Unit is masked.
+13:09:45,837 INFO systemd:Starting Hostname Service...
+13:09:45,906 NOTICE dbus:[system] Successfully activated service 'org.freedesktop.hostname1'
+13:09:45,908 INFO systemd:Started Hostname Service.
+13:09:45,912 INFO NetworkManager:<info>  [1655816985.9097] hostname: hostname: using hostnamed
+13:09:45,912 DEBUG NetworkManager:<debug> [1655816985.9097] create NMHostnameManager singleton (0x55664c45df70)
+13:09:45,919 DEBUG NetworkManager:<debug> [1655816985.9099] create NMFirewallManager singleton (0x55664c480a80)
+13:09:45,920 INFO NetworkManager:<info>  [1655816985.9104] dns-mgr[0x55664c468220]: init: dns=default,systemd-resolved rc-manager=file
+13:09:45,920 DEBUG NetworkManager:<debug> [1655816985.9104] create NMDnsManager singleton (0x55664c468220)
+13:09:45,920 DEBUG NetworkManager:<debug> [1655816985.9105] policy: hostname-mode: full
+13:09:45,921 DEBUG NetworkManager:<debug> [1655816985.9113] manager: setup NMManager singleton (0x55664c483060)
+13:09:45,921 DEBUG NetworkManager:<debug> [1655816985.9187] create NMConnectivity singleton (0x55664c45de80)
+13:09:45,921 DEBUG NetworkManager:<debug> [1655816985.9195] dispatcher: default script directory '/etc/NetworkManager/dispatcher.d' has scripts
+13:09:45,922 DEBUG NetworkManager:<debug> [1655816985.9216] dispatcher: pre-up script directory '/etc/NetworkManager/dispatcher.d/pre-up.d' has no scripts
+13:09:45,922 DEBUG NetworkManager:<debug> [1655816985.9217] dispatcher: pre-down script directory '/etc/NetworkManager/dispatcher.d/pre-down.d' has no scripts
+13:09:45,922 NOTICE dbus:[system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service'
+13:09:45,927 WARNING systemd:Cannot add dependency job for unit rhel-autorelabel-mark.service, ignoring: Unit is masked.
+13:09:45,927 WARNING systemd:Cannot add dependency job for unit rhel-autorelabel.service, ignoring: Unit is masked.
+13:09:45,928 WARNING systemd:Cannot add dependency job for unit rhel-loadmodules.service, ignoring: Unit is masked.
+13:09:45,928 WARNING systemd:Cannot add dependency job for unit systemd-tmpfiles-clean.timer, ignoring: Unit is masked.
+13:09:45,928 INFO systemd:Starting Network Manager Script Dispatcher Service...
+13:09:45,953 NOTICE dbus:[system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+13:09:45,953 INFO systemd:Started Network Manager Script Dispatcher Service.
+13:09:45,972 DEBUG NetworkManager:<debug> [1655816985.9710] create SettingsPluginIfcfg singleton (0x55664c492920)
+13:09:45,972 INFO NetworkManager:<info>  [1655816985.9710] settings: Loaded settings plugin: SettingsPluginIfcfg ("/usr/lib64/NetworkManager/1.18.8-2.el7_9/libnm-settings-plugin-ifcfg-rh.so")
+13:09:45,972 INFO NetworkManager:<info>  [1655816985.9711] settings: Loaded settings plugin: NMSKeyfilePlugin (internal)
+13:09:45,973 DEBUG NetworkManager:<debug> [1655816985.9714] ifcfg-rh: loading from file "/etc/sysconfig/network-scripts/ifcfg-eth0"...
+13:09:45,977 DEBUG NetworkManager:<debug> [1655816985.9758] settings-connection[0x55664c4a70f0]: constructed (NMIfcfgConnection)
+13:09:45,978 INFO NetworkManager:<info>  [1655816985.9764] ifcfg-rh: new connection /etc/sysconfig/network-scripts/ifcfg-eth0 (be9af178-8ea0-4b02-9609-5a436e23f3b7,"eth0")
+13:09:45,978 DEBUG NetworkManager:<debug> [1655816985.9764] ifcfg-rh: loading from file "/etc/sysconfig/network-scripts/ifcfg-lo"...
+13:09:45,978 DEBUG NetworkManager:<debug> [1655816985.9765] ifcfg-rh: loading "/etc/sysconfig/network-scripts/ifcfg-lo" fails: Ignoring loopback device config.
+13:09:45,979 DEBUG NetworkManager:<debug> [1655816985.9765] settings-connection[0x55664c4a70f0,be9af178-8ea0-4b02-9609-5a436e23f3b7]: failed to read connection timestamp: No such file or directory
+13:09:45,979 DEBUG NetworkManager:<debug> [1655816985.9768] ++ connection 'new connection' (0x55664c4980a0/NMSimpleConnection/"802-3-ethernet"): [/org/freedesktop/NetworkManager/Settings/1]
+13:09:45,979 DEBUG NetworkManager:<debug> [1655816985.9768] ++ connection                [ 0x55664c464e20 ]
+13:09:45,979 DEBUG NetworkManager:<debug> [1655816985.9768] ++ connection.id             = 'eth0'
+13:09:45,980 DEBUG NetworkManager:<debug> [1655816985.9769] ++ connection.permissions    = []
+13:09:45,980 DEBUG NetworkManager:<debug> [1655816985.9769] ++ connection.type           = '802-3-ethernet'
+13:09:45,980 DEBUG NetworkManager:<debug> [1655816985.9769] ++ connection.uuid           = 'be9af178-8ea0-4b02-9609-5a436e23f3b7'
+13:09:45,981 DEBUG NetworkManager:<debug> [1655816985.9769] ++ 802-3-ethernet            [ 0x55664c478be0 ]
+13:09:45,981 DEBUG NetworkManager:<debug> [1655816985.9769] ++ 802-3-ethernet.mac-address = '52:54:00:5E:EF:F9'
+13:09:45,981 DEBUG NetworkManager:<debug> [1655816985.9769] ++ 802-3-ethernet.mac-address-blacklist = []
+13:09:45,982 DEBUG NetworkManager:<debug> [1655816985.9769] ++ 802-3-ethernet.s390-options = ((GHashTable*) 0x55664c4a9240)
+13:09:45,982 DEBUG NetworkManager:<debug> [1655816985.9770] ++ ipv4                      [ 0x55664c464d60 ]
+13:09:45,982 DEBUG NetworkManager:<debug> [1655816985.9770] ++ ipv4.addresses            = ((GPtrArray*) 0x7f421c0019a0)
+13:09:45,982 DEBUG NetworkManager:<debug> [1655816985.9770] ++ ipv4.dns                  = []
+13:09:45,983 DEBUG NetworkManager:<debug> [1655816985.9770] ++ ipv4.dns-search           = []
+13:09:45,983 DEBUG NetworkManager:<debug> [1655816985.9770] ++ ipv4.method               = 'auto'
+13:09:45,983 DEBUG NetworkManager:<debug> [1655816985.9770] ++ ipv4.routes               = ((GPtrArray*) 0x55664c489c60)
+13:09:46,010 DEBUG NetworkManager:<debug> [1655816985.9770] ++ ipv4.routing-rules        = <unknown>
+13:09:46,010 DEBUG NetworkManager:<debug> [1655816985.9771] ++ ipv6                      [ 0x55664c4842a0 ]
+13:09:46,011 DEBUG NetworkManager:<debug> [1655816985.9771] ++ ipv6.addr-gen-mode        = 0
+13:09:46,024 DEBUG NetworkManager:<debug> [1655816985.9771] ++ ipv6.addresses            = ((GPtrArray*) 0x55664c489c60)
+13:09:46,038 DEBUG NetworkManager:<debug> [1655816985.9771] ++ ipv6.dns                  = []
+13:09:46,038 DEBUG NetworkManager:<debug> [1655816985.9771] ++ ipv6.dns-search           = []
+13:09:46,039 DEBUG NetworkManager:<debug> [1655816985.9771] ++ ipv6.method               = 'auto'
+13:09:46,039 DEBUG NetworkManager:<debug> [1655816985.9771] ++ ipv6.routes               = ((GPtrArray*) 0x7f421c0019a0)
+13:09:46,040 DEBUG NetworkManager:<debug> [1655816985.9771] ++ ipv6.routing-rules        = <unknown>
+13:09:46,040 DEBUG NetworkManager:<debug> [1655816985.9772] keyfile: cannot read directory '/var/run/NetworkManager/system-connections': Error opening directory “/var/run/NetworkManager/system-connections”: No such file or directory
+13:09:46,071 INFO NetworkManager:<info>  [1655816985.9842] manager: rfkill: Wi-Fi enabled by radio killswitch; enabled by state file
+13:09:46,072 INFO NetworkManager:<info>  [1655816985.9843] manager: rfkill: WWAN enabled by radio killswitch; enabled by state file
+13:09:46,072 WARNING systemd:Cannot add dependency job for unit rhel-autorelabel-mark.service, ignoring: Unit is masked.
+13:09:46,073 INFO NetworkManager:<info>  [1655816985.9844] manager: Networking is enabled by state file
+13:09:46,073 WARNING systemd:Cannot add dependency job for unit rhel-autorelabel.service, ignoring: Unit is masked.
+13:09:46,077 DEBUG NetworkManager:<debug> [1655816985.9844] dispatcher: (1) dispatching action 'hostname'
+13:09:46,077 WARNING systemd:Cannot add dependency job for unit rhel-loadmodules.service, ignoring: Unit is masked.
+13:09:46,077 DEBUG NetworkManager:<debug> [1655816986.0023] dhcp-init: enabled DHCP client 'dhclient' (NMDhcpDhclient)
+13:09:46,078 WARNING systemd:Cannot add dependency job for unit systemd-tmpfiles-clean.timer, ignoring: Unit is masked.
+13:09:46,078 DEBUG NetworkManager:<debug> [1655816986.0024] dhcp-init: enabled DHCP client 'internal' (NMDhcpSystemd)
+13:09:46,078 INFO systemd:Starting Authorization Manager...
+13:09:46,079 INFO NetworkManager:<info>  [1655816986.0024] dhcp-init: Using DHCP client 'dhclient'
+13:09:46,079 DEBUG NetworkManager:<debug> [1655816986.0024] create NMDhcpManager singleton (0x55664c4a89c0)
+13:09:46,079 INFO nm-dispatcher:req:1 'hostname': new request (4 scripts)
+13:09:46,081 DEBUG nm-dispatcher:req:1 'hostname': environment: PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+13:09:46,081 DEBUG nm-dispatcher:req:1 'hostname': environment: NM_DISPATCHER_ACTION=hostname
+13:09:46,081 INFO nm-dispatcher:req:1 'hostname': start running ordered scripts...
+13:09:46,086 DEBUG nm-dispatcher:req:1 'hostname', "/etc/NetworkManager/dispatcher.d/00-netreport": run script
+13:09:46,087 DEBUG NetworkManager:<debug> [1655816986.0050] Loaded device plugin: NM6LowpanDeviceFactory (internal)
+13:09:46,087 DEBUG NetworkManager:<debug> [1655816986.0051] Loaded device plugin: NMBondDeviceFactory (internal)
+13:09:46,087 DEBUG NetworkManager:<debug> [1655816986.0051] Loaded device plugin: NMBridgeDeviceFactory (internal)
+13:09:46,088 DEBUG NetworkManager:<debug> [1655816986.0051] Loaded device plugin: NMDummyDeviceFactory (internal)
+13:09:46,088 DEBUG NetworkManager:<debug> [1655816986.0051] Loaded device plugin: NMEthernetDeviceFactory (internal)
+13:09:46,088 DEBUG NetworkManager:<debug> [1655816986.0052] Loaded device plugin: NMInfinibandDeviceFactory (internal)
+13:09:46,089 DEBUG NetworkManager:<debug> [1655816986.0052] Loaded device plugin: NMIPTunnelDeviceFactory (internal)
+13:09:46,089 DEBUG NetworkManager:<debug> [1655816986.0052] Loaded device plugin: NMMacsecDeviceFactory (internal)
+13:09:46,089 DEBUG NetworkManager:<debug> [1655816986.0053] Loaded device plugin: NMMacvlanDeviceFactory (internal)
+13:09:46,090 DEBUG NetworkManager:<debug> [1655816986.0053] Loaded device plugin: NMPppDeviceFactory (internal)
+13:09:46,090 DEBUG NetworkManager:<debug> [1655816986.0053] Loaded device plugin: NMTunDeviceFactory (internal)
+13:09:46,090 DEBUG NetworkManager:<debug> [1655816986.0054] Loaded device plugin: NMVethDeviceFactory (internal)
+13:09:46,090 DEBUG NetworkManager:<debug> [1655816986.0054] Loaded device plugin: NMVlanDeviceFactory (internal)
+13:09:46,095 DEBUG NetworkManager:<debug> [1655816986.0054] Loaded device plugin: NMVxlanDeviceFactory (internal)
+13:09:46,095 DEBUG NetworkManager:<debug> [1655816986.0054] Loaded device plugin: NMWireGuardDeviceFactory (internal)
+13:09:46,096 DEBUG NetworkManager:<debug> [1655816986.0055] Loaded device plugin: NMWpanDeviceFactory (internal)
+13:09:46,096 INFO NetworkManager:<info>  [1655816986.0240] Loaded device plugin: NMTeamFactory (/usr/lib64/NetworkManager/1.18.8-2.el7_9/libnm-device-plugin-team.so)
+13:09:46,096 INFO NetworkManager:<info>  [1655816986.0255] Loaded device plugin: NMWifiFactory (/usr/lib64/NetworkManager/1.18.8-2.el7_9/libnm-device-plugin-wifi.so)
+13:09:46,100 DEBUG NetworkManager:<debug> [1655816986.0260] device[0x55664c48c910] (lo): unmanaged: flags set to [platform-init,by-default=0x110/0x110/unmanaged/unrealized], set-unmanaged [by-default=0x100])
+13:09:46,100 DEBUG NetworkManager:<debug> [1655816986.0262] device[0x55664c48c910] (lo): constructed (NMDeviceGeneric)
+13:09:46,100 DEBUG NetworkManager:<debug> [1655816986.0262] device[0x55664c48c910] (lo): start setup of NMDeviceGeneric, kernel ifindex 1
+13:09:46,101 DEBUG NetworkManager:<debug> [1655816986.0262] device[0x55664c48c910] (lo): assume-state: set guess-assume=1, connection=(null)
+13:09:46,101 DEBUG NetworkManager:<debug> [1655816986.0264] platform-linux: error reading net:/sys/class/net/lo/phys_port_id: error reading 4096 bytes from file descriptor: Operation not supported
+13:09:46,101 DEBUG NetworkManager:<debug> [1655816986.0264] platform-linux: sysctl: reading 'net:/sys/class/net/lo/dev_id': '0x0'
+13:09:46,102 DEBUG NetworkManager:<debug> [1655816986.0265] platform-linux: error reading net:/sys/class/net/lo/device/sriov_totalvfs: Failed to open file "device/sriov_totalvfs" with openat: No such file or directory
+13:09:46,102 DEBUG NetworkManager:<debug> [1655816986.0266] device[0x55664c48c910] (lo): hw-addr: hardware address now 00:00:00:00:00:00
+13:09:46,102 DEBUG NetworkManager:<debug> [1655816986.0266] device[0x55664c48c910] (lo): hw-addr: update initial MAC address 00:00:00:00:00:00
+13:09:46,107 DEBUG NetworkManager:<debug> [1655816986.0267] device[0x55664c48c910] (lo): hw-addr: unable to read permanent MAC address (use current: 00:00:00:00:00:00)
+13:09:46,107 INFO NetworkManager:<info>  [1655816986.0267] device (lo): carrier: link connected
+13:09:46,107 DEBUG NetworkManager:<debug> [1655816986.0267] device[0x55664c48c910] (lo): unmanaged: flags set to [platform-init,by-default,!external-down=0x110/0x910/unmanaged/unrealized], set-managed [external-down=0x800])
+13:09:46,108 DEBUG NetworkManager:<debug> [1655816986.0267] device[0x55664c48c910] (lo): unmanaged: flags set to [by-type,platform-init,by-default,!external-down=0x118/0x918/unmanaged/unrealized], set-unmanaged [by-type=0x8])
+13:09:46,122 DEBUG NetworkManager:<debug> [1655816986.0267] device[0x55664c48c910] (lo): unmanaged: flags set to [by-type,platform-init,by-default,!user-settings,!external-down=0x118/0x958/unmanaged/unrealized], set-managed [user-settings=0x40])
+13:09:46,126 DEBUG NetworkManager:<debug> [1655816986.0268] device[0x55664c48c910] (lo): unmanaged: flags set to [by-type,by-default,!platform-init,!user-settings,!external-down=0x108/0x958/unmanaged/unrealized], set-managed [platform-init=0x10])
+13:09:46,126 DEBUG NetworkManager:<debug> [1655816986.0268] device[0x55664c48c910] (lo): unmanaged: flags set to [by-type,by-default,!sleeping,!platform-init,!user-settings,!external-down=0x108/0x959/unmanaged/unrealized], set-managed [sleeping=0x1])
+13:09:46,126 INFO NetworkManager:<info>  [1655816986.0271] manager: (lo): new Generic device (/org/freedesktop/NetworkManager/Devices/1)
+13:09:46,127 DEBUG NetworkManager:<debug> [1655816986.0277] device[0x55664c48c910] (lo): assume-state: set guess-assume=0, connection=(null)
+13:09:46,127 DEBUG NetworkManager:<debug> [1655816986.0279] device[0x55664c4c0f80] (eth0): constructed (NMDeviceEthernet)
+13:09:46,128 DEBUG NetworkManager:<debug> [1655816986.0279] device[0x55664c4c0f80] (eth0): start setup of NMDeviceEthernet, kernel ifindex 2
+13:09:46,128 DEBUG NetworkManager:<debug> [1655816986.0279] device[0x55664c4c0f80] (eth0): assume-state: set guess-assume=1, connection=(null)
+13:09:46,128 DEBUG NetworkManager:<debug> [1655816986.0280] platform-linux: error reading net:/sys/class/net/eth0/phys_port_id: error reading 4096 bytes from file descriptor: Operation not supported
+13:09:46,128 DEBUG NetworkManager:<debug> [1655816986.0281] platform-linux: sysctl: reading 'net:/sys/class/net/eth0/dev_id': '0x0'
+13:09:46,132 DEBUG NetworkManager:<debug> [1655816986.0282] platform-linux: error reading net:/sys/class/net/eth0/device/sriov_totalvfs: Failed to open file "device/sriov_totalvfs" with openat: No such file or directory
+13:09:46,132 DEBUG NetworkManager:<debug> [1655816986.0282] device[0x55664c4c0f80] (eth0): hw-addr: hardware address now 52:54:00:5E:EF:F9
+13:09:46,133 DEBUG NetworkManager:<debug> [1655816986.0282] device[0x55664c4c0f80] (eth0): hw-addr: update initial MAC address 52:54:00:5E:EF:F9
+13:09:46,133 DEBUG NetworkManager:<debug> [1655816986.0283] device[0x55664c4c0f80] (eth0): hw-addr: read permanent MAC address '52:54:00:5E:EF:F9'
+13:09:46,134 INFO NetworkManager:<info>  [1655816986.0283] device (eth0): carrier: link connected
+13:09:46,134 DEBUG NetworkManager:<debug> [1655816986.0285] device[0x55664c4c0f80] (eth0): unmanaged: flags set to [platform-init,!by-type=0x10/0x18/unmanaged/unrealized], set-managed [by-type=0x8])
+13:09:46,134 DEBUG NetworkManager:<debug> [1655816986.0285] device[0x55664c4c0f80] (eth0): unmanaged: flags set to [platform-init,!by-type,!user-settings=0x10/0x58/unmanaged/unrealized], set-managed [user-settings=0x40])
+13:09:46,135 DEBUG NetworkManager:<debug> [1655816986.0285] device[0x55664c4c0f80] (eth0): unmanaged: flags set to [!by-type,!platform-init,!user-settings=0x0/0x58/managed/unrealized], set-managed [platform-init=0x10])
+13:09:46,135 DEBUG NetworkManager:<debug> [1655816986.0285] device[0x55664c4c0f80] (eth0): unmanaged: flags set to [!sleeping,!by-type,!platform-init,!user-settings=0x0/0x59/managed/unrealized], set-managed [sleeping=0x1])
+13:09:46,135 INFO NetworkManager:<info>  [1655816986.0288] manager: (eth0): new Ethernet device (/org/freedesktop/NetworkManager/Devices/2)
+13:09:46,136 DEBUG NetworkManager:<debug> [1655816986.0296] device[0x55664c4c0f80] (eth0): ip4-config: update (commit=0, new-config=0x55664c48d290)
+13:09:46,136 DEBUG NetworkManager:<debug> [1655816986.0300] device[0x55664c4c0f80] (eth0): ip4-config: set IP Config instance (/org/freedesktop/NetworkManager/IP4Config/1)
+13:09:46,136 DEBUG NetworkManager:<debug> [1655816986.0302] dns-mgr: (device_ip_config_changed): queueing DNS updates (1)
+13:09:46,144 DEBUG NetworkManager:<debug> [1655816986.0302] dns-mgr: (device_ip_config_changed): DNS configuration did not change
+13:09:46,145 DEBUG NetworkManager:<debug> [1655816986.0302] dns-mgr: (device_ip_config_changed): no DNS changes to commit (0)
+13:09:46,145 DEBUG NetworkManager:<debug> [1655816986.0303] device[0x55664c4c0f80] (eth0): ip6-config: update (commit=0, new-config=0x55664c4673f0)
+13:09:46,145 DEBUG NetworkManager:<debug> [1655816986.0305] device[0x55664c4c0f80] (eth0): ip6-config: set IP Config instance (/org/freedesktop/NetworkManager/IP6Config/1)
+13:09:46,146 DEBUG NetworkManager:<debug> [1655816986.0306] dns-mgr: (device_ip_config_changed): queueing DNS updates (1)
+13:09:46,146 DEBUG NetworkManager:<debug> [1655816986.0307] dns-mgr: (device_ip_config_changed): DNS configuration did not change
+13:09:46,146 DEBUG NetworkManager:<debug> [1655816986.0307] dns-mgr: (device_ip_config_changed): no DNS changes to commit (0)
+13:09:46,147 INFO NetworkManager:<info>  [1655816986.0310] manager: (eth0): assume: will attempt to assume matching connection 'eth0' (be9af178-8ea0-4b02-9609-5a436e23f3b7) (guessed)
+13:09:46,147 DEBUG NetworkManager:<debug> [1655816986.0311] device[0x55664c4c0f80] (eth0): assume-state: set guess-assume=0, connection=(null)
+13:09:46,147 INFO NetworkManager:<info>  [1655816986.0311] device (eth0): state change: unmanaged -> unavailable (reason 'connection-assumed', sys-iface-state: 'assume')
+13:09:46,150 DEBUG NetworkManager:<debug> [1655816986.0314] platform-linux: sysctl: reading '/proc/sys/net/ipv6/conf/eth0/accept_ra': '1'
+13:09:46,151 DEBUG NetworkManager:<debug> [1655816986.0315] platform-linux: sysctl: reading '/proc/sys/net/ipv6/conf/eth0/accept_ra_defrtr': '1'
+13:09:46,151 DEBUG NetworkManager:<debug> [1655816986.0315] platform-linux: sysctl: reading '/proc/sys/net/ipv6/conf/eth0/accept_ra_pinfo': '1'
+13:09:46,151 DEBUG NetworkManager:<debug> [1655816986.0316] platform-linux: sysctl: reading '/proc/sys/net/ipv6/conf/eth0/accept_ra_rtr_pref': '1'
+13:09:46,152 DEBUG NetworkManager:<debug> [1655816986.0316] platform-linux: sysctl: reading '/proc/sys/net/ipv6/conf/eth0/forwarding': '0'
+13:09:46,152 DEBUG NetworkManager:<debug> [1655816986.0317] platform-linux: sysctl: reading '/proc/sys/net/ipv6/conf/eth0/disable_ipv6': '0'
+13:09:46,152 DEBUG NetworkManager:<debug> [1655816986.0317] platform-linux: sysctl: reading '/proc/sys/net/ipv6/conf/eth0/hop_limit': '64'
+13:09:46,153 DEBUG NetworkManager:<debug> [1655816986.0318] platform-linux: sysctl: reading '/proc/sys/net/ipv6/conf/eth0/use_tempaddr': '0'
+13:09:46,153 DEBUG NetworkManager:<debug> [1655816986.0321] device[0x55664c4c0f80] (eth0): add_pending_action (1): 'recheck-available'
+13:09:46,154 DEBUG NetworkManager:<debug> [1655816986.0325] device[0x55664c4c0f80] (eth0): connectivity state changed from UNKNOWN to NONE
+13:09:46,154 DEBUG NetworkManager:<debug> [1655816986.0326] manager: connectivity checking indicates NONE
+13:09:46,154 DEBUG NetworkManager:<debug> [1655816986.0327] dispatcher: (2) dispatching action 'connectivity-change'
+13:09:46,156 DEBUG NetworkManager:<debug> [1655816986.0328] device[0x55664c4c0f80] (eth0): connectivity state changed from UNKNOWN to NONE
+13:09:46,156 INFO NetworkManager:<info>  [1655816986.0330] device (eth0): state change: unavailable -> disconnected (reason 'connection-assumed', sys-iface-state: 'assume')
+13:09:46,156 INFO nm-dispatcher:req:2 'connectivity-change': new request (4 scripts)
+13:09:46,157 DEBUG nm-dispatcher:req:2 'connectivity-change': environment: CONNECTIVITY_STATE=NONE
+13:09:46,157 DEBUG nm-dispatcher:req:2 'connectivity-change': environment: PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+13:09:46,157 DEBUG nm-dispatcher:req:2 'connectivity-change': environment: NM_DISPATCHER_ACTION=connectivity-change
+13:09:46,158 DEBUG NetworkManager:<debug> [1655816986.0365] device[0x55664c4c0f80] (eth0): add_pending_action (2): 'autoactivate'
+13:09:46,158 DEBUG NetworkManager:<debug> [1655816986.0368] active-connection[0x55664c48d590]: set device "eth0" [0x55664c4c0f80]
+13:09:46,159 DEBUG NetworkManager:<debug> [1655816986.0368] device[0x55664c4c0f80] (eth0): add_pending_action (3): 'activation-0x55664c48d590'
+13:09:46,159 DEBUG NetworkManager:<debug> [1655816986.0370] active-connection[0x55664c48d590]: constructed (NMActRequest, version-id 1, type assume)
+13:09:46,160 INFO NetworkManager:<info>  [1655816986.0398] device (eth0): Activation: starting connection 'eth0' (be9af178-8ea0-4b02-9609-5a436e23f3b7)
+13:09:46,160 DEBUG NetworkManager:<debug> [1655816986.0399] device[0x55664c4c0f80] (eth0): activation-stage: schedule activate_stage1_device_prepare,v4 (id 33)
+13:09:46,160 DEBUG NetworkManager:<debug> [1655816986.0401] create NMVpnManager singleton (0x55664c4bdb20)
+13:09:46,161 DEBUG NetworkManager:<debug> [1655816986.0401] manager: creating virtual devices...
+13:09:46,161 DEBUG NetworkManager:<debug> [1655816986.0401] setting up local loopback
+13:09:46,161 DEBUG NetworkManager:<debug> [1655816986.0401] platform: (lo) link: setting up
+13:09:46,162 DEBUG NetworkManager:<debug> [1655816986.0402] platform-linux: link: change 1: flags: set 0x1/0x1 ([up] / [up])
+13:09:46,162 DEBUG NetworkManager:<debug> [1655816986.0402] platform-linux: do-request-link: 1
+13:09:46,162 DEBUG NetworkManager:<debug> [1655816986.0403] platform-linux: do-change-link[1]: success changing link: success
+13:09:46,165 NOTICE dbus:[system] Activating via systemd: service name='org.freedesktop.PolicyKit1' unit='polkit.service'
+13:09:46,165 DEBUG NetworkManager:<debug> [1655816986.0421] device[0x55664c48c910] (lo): ip4-config: update (commit=0, new-config=0x55664c48d030)
+13:09:46,166 DEBUG NetworkManager:<debug> [1655816986.0423] device[0x55664c48c910] (lo): ip4-config: set IP Config instance (/org/freedesktop/NetworkManager/IP4Config/2)
+13:09:46,166 DEBUG NetworkManager:<debug> [1655816986.0425] dns-mgr: (device_ip_config_changed): queueing DNS updates (1)
+13:09:46,166 DEBUG NetworkManager:<debug> [1655816986.0425] dns-mgr: (device_ip_config_changed): DNS configuration did not change
+13:09:46,167 DEBUG NetworkManager:<debug> [1655816986.0425] dns-mgr: (device_ip_config_changed): no DNS changes to commit (0)
+13:09:46,167 DEBUG NetworkManager:<debug> [1655816986.0426] device[0x55664c48c910] (lo): ip6-config: update (commit=0, new-config=0x55664c467720)
+13:09:46,167 DEBUG NetworkManager:<debug> [1655816986.0427] device[0x55664c48c910] (lo): ip6-config: set IP Config instance (/org/freedesktop/NetworkManager/IP6Config/2)
+13:09:46,168 DEBUG NetworkManager:<debug> [1655816986.0429] dns-mgr: (device_ip_config_changed): queueing DNS updates (1)
+13:09:46,168 DEBUG NetworkManager:<debug> [1655816986.0429] dns-mgr: (device_ip_config_changed): DNS configuration did not change
+13:09:46,168 DEBUG NetworkManager:<debug> [1655816986.0429] dns-mgr: (device_ip_config_changed): no DNS changes to commit (0)
+13:09:46,169 DEBUG NetworkManager:<debug> [1655816986.0430] device[0x55664c4c0f80] (eth0): ip4-config: update (commit=0, new-config=0x55664c48d9b0)
+13:09:46,169 DEBUG NetworkManager:<debug> [1655816986.0431] device[0x55664c4c0f80] (eth0): ip6-config: update (commit=0, new-config=0x55664c467a50)
+13:09:46,169 DEBUG NetworkManager:<debug> [1655816986.0431] device[0x55664c4c0f80] (eth0): remove_pending_action (2): 'recheck-available'
+13:09:46,180 DEBUG NetworkManager:<debug> [1655816986.0431] device[0x55664c4c0f80] (eth0): remove_pending_action (1): 'autoactivate'
+13:09:46,180 DEBUG NetworkManager:<debug> [1655816986.0431] device[0x55664c4c0f80] (eth0): activation-stage: invoke activate_stage1_device_prepare,v4 (id 33)
+13:09:46,180 INFO NetworkManager:<info>  [1655816986.0432] device (eth0): state change: disconnected -> prepare (reason 'none', sys-iface-state: 'assume')
+13:09:46,181 DEBUG NetworkManager:<debug> [1655816986.0436] active-connection[0x55664c48d590]: set state activating (was unknown)
+13:09:46,182 DEBUG NetworkManager:<debug> [1655816986.0437] active-connection[0x55664c48d590]: check-master-ready: not signalling (state activating, no master)
+13:09:46,182 DEBUG NetworkManager:<debug> [1655816986.0438] manager: ActivatingConnection now eth0
+13:09:46,182 DEBUG NetworkManager:<debug> [1655816986.0439] device[0x55664c4c0f80] (eth0): activation-stage: schedule activate_stage2_device_config,v4 (id 43)
+13:09:46,183 DEBUG NetworkManager:<debug> [1655816986.0439] device[0x55664c4c0f80] (eth0): activation-stage: complete activate_stage1_device_prepare,v4 (id 33)
+13:09:46,183 DEBUG NetworkManager:<debug> [1655816986.0439] manager: (lo): assume: don't assume because not managed
+13:09:46,183 DEBUG NetworkManager:<debug> [1655816986.0439] device[0x55664c4c0f80] (eth0): activation-stage: invoke activate_stage2_device_config,v4 (id 43)
+13:09:46,184 INFO NetworkManager:<info>  [1655816986.0440] device (eth0): state change: prepare -> config (reason 'none', sys-iface-state: 'assume')
+13:09:46,184 DEBUG NetworkManager:<debug> [1655816986.0442] rules-manager: sync
+13:09:46,184 DEBUG NetworkManager:<debug> [1655816986.0443] firewall: [0x55664c4bdd90,change:"eth0"]: firewall zone change eth0:default (waiting to initialize)
+13:09:46,185 DEBUG NetworkManager:<debug> [1655816986.0443] device[0x55664c4c0f80] (eth0): activation-stage: complete activate_stage2_device_config,v4 (id 43)
+13:09:46,185 DEBUG NetworkManager:<debug> [1655816986.0443] manager: startup complete is waiting for device 'eth0' (activation-0x55664c48d590)
+13:09:46,185 DEBUG NetworkManager:<debug> [1655816986.0459] sleep-monitor-sd: inhibit: taking sleep inhibitor...
+13:09:46,186 DEBUG NetworkManager:<debug> [1655816986.0471] ifcfg-rh: dbus: acquired D-Bus service com.redhat.ifcfgrh1 and exported /com/redhat/ifcfgrh1 object
+13:09:46,186 DEBUG NetworkManager:<debug> [1655816986.0545] firewall: firewall initialized (not running)
+13:09:46,186 DEBUG NetworkManager:<debug> [1655816986.0546] firewall: [0x55664c4bdd90,change:"eth0"]: complete: fake success
+13:09:46,193 DEBUG NetworkManager:<debug> [1655816986.0546] device[0x55664c4c0f80] (eth0): activation-stage: schedule activate_stage3_ip_config_start,v4 (id 49)
+13:09:46,195 DEBUG NetworkManager:<debug> [1655816986.0547] device[0x55664c4c0f80] (eth0): activation-stage: invoke activate_stage3_ip_config_start,v4 (id 49)
+13:09:46,195 DEBUG NetworkManager:<debug> [1655816986.0547] active-connection[0x55664c48d590]: set state-flags layer2-ready,lifetime-bound-to-profile-visibility (was lifetime-bound-to-profile-visibility)
+13:09:46,195 INFO NetworkManager:<info>  [1655816986.0548] device (eth0): state change: config -> ip-config (reason 'none', sys-iface-state: 'assume')
+13:09:46,196 DEBUG NetworkManager:<debug> [1655816986.0551] device[0x55664c4c0f80] (eth0): IPv4 config method is auto
+13:09:46,196 DEBUG NetworkManager:<debug> [1655816986.0552] device[0x55664c4c0f80] (eth0): ipv4.dhcp-client-id: no explicit client-id configured
+13:09:46,196 DEBUG NetworkManager:<debug> [1655816986.0556] bus-manager: (dhcp) creating private socket unix:path=/var/run/NetworkManager/private-dhcp
+13:09:46,199 DEBUG NetworkManager:<debug> [1655816986.0561] create NMDhcpListener singleton (0x55664c4d0440)
+13:09:46,200 INFO NetworkManager:<info>  [1655816986.0562] dhcp4 (eth0): activation: beginning transaction (timeout in 45 seconds)
+13:09:46,200 DEBUG NetworkManager:<debug> [1655816986.0562] dhcp4 (eth0): creating composite dhclient config /var/lib/NetworkManager/dhclient-eth0.conf
+13:09:46,200 DEBUG NetworkManager:<debug> [1655816986.0562] dhcp4 (eth0): looking for existing config /etc/NetworkManager/dhclient-be9af178-8ea0-4b02-9609-5a436e23f3b7.conf
+13:09:46,201 DEBUG NetworkManager:<debug> [1655816986.0562] dhcp4 (eth0): looking for existing config /etc/NetworkManager/dhclient-eth0.conf
+13:09:46,201 DEBUG NetworkManager:<debug> [1655816986.0562] dhcp4 (eth0): looking for existing config /etc/NetworkManager/dhclient.conf
+13:09:46,201 DEBUG NetworkManager:<debug> [1655816986.0563] dhcp4 (eth0): looking for existing config /etc/dhcp/dhclient-eth0.conf
+13:09:46,202 DEBUG NetworkManager:<debug> [1655816986.0617] dhcp4 (eth0): looking for existing config /etc/dhclient-eth0.conf
+13:09:46,202 DEBUG NetworkManager:<debug> [1655816986.0618] dhcp4 (eth0): looking for existing config /etc/dhcp/dhclient.conf
+13:09:46,202 DEBUG NetworkManager:<debug> [1655816986.0618] dhcp4 (eth0): looking for existing config /etc/dhclient.conf
+13:09:46,202 DEBUG NetworkManager:<debug> [1655816986.0618] dhcp4 (eth0): merging existing dhclient config /etc/dhclient.conf
+13:09:46,208 DEBUG NetworkManager:<debug> [1655816986.0629] dhcp4 (eth0): running: /sbin/dhclient -d -q -sf /usr/libexec/nm-dhcp-helper -pf /var/run/dhclient-eth0.pid -lf /var/lib/NetworkManager/dhclient-be9af178-8ea0-4b02-9609-5a436e23f3b7-eth0.lease -cf /var/lib/NetworkManager/dhclient-eth0.conf eth0
+13:09:46,209 INFO NetworkManager:<info>  [1655816986.1102] dhcp4 (eth0): dhclient started with pid 1483
+13:09:46,209 DEBUG NetworkManager:<debug> [1655816986.1109] device[0x55664c4c0f80] (eth0): add_pending_action (2): 'dhcp4'
+13:09:46,209 DEBUG NetworkManager:<debug> [1655816986.1110] device[0x55664c4c0f80] (eth0): IPv6 config method is auto
+13:09:46,210 DEBUG NetworkManager:<debug> [1655816986.1111] platform-linux: sysctl: setting '/proc/sys/net/ipv6/conf/eth0/disable_ipv6' to '0' (current value is identical)
+13:09:46,210 DEBUG NetworkManager:<debug> [1655816986.1113] platform-linux: sysctl: reading '/proc/sys/net/ipv6/conf/default/use_tempaddr': '0'
+13:09:46,210 DEBUG NetworkManager:<debug> [1655816986.1116] platform-linux: sysctl: reading '/proc/sys/net/ipv6/conf/eth0/router_solicitation_interval': '4'
+13:09:46,213 DEBUG NetworkManager:<debug> [1655816986.1117] platform-linux: sysctl: reading '/proc/sys/net/ipv6/conf/eth0/router_solicitations': '3'
+13:09:46,213 DEBUG NetworkManager:<debug> [1655816986.1117] platform-linux: sysctl: reading '/proc/sys/net/ipv6/conf/eth0/max_addresses': '16'
+13:09:46,213 DEBUG NetworkManager:<debug> [1655816986.1123] device[0x55664c4c0f80] (eth0): addrconf6: using the device EUI-64 identifier
+13:09:46,214 DEBUG NetworkManager:<debug> [1655816986.1123] device[0x55664c4c0f80] (eth0): ip6-config: update (commit=1, new-config=0x55664c467c70)
+13:09:46,214 DEBUG NetworkManager:<debug> [1655816986.1124] platform: (eth0) address: adding or updating IPv6 address: fe80::5054:ff:fe5e:eff9/64 lft forever pref forever lifetime 1-0[4294967295,4294967295] dev 2 flags permanent,noprefixroute src unknown
+13:09:46,214 DEBUG NetworkManager:<debug> [1655816986.1125] platform: (eth0) signal: address 6 changed: fe80::5054:ff:fe5e:eff9/64 lft forever pref forever lifetime 1-0[4294967295,4294967295] dev 2 flags permanent,noprefixroute src kernel
+13:09:46,217 DEBUG NetworkManager:<debug> [1655816986.1126] device[0x55664c4c0f80] (eth0): queued IP6 config change
+13:09:46,217 DEBUG NetworkManager:<debug> [1655816986.1126] platform: (eth0) signal: route   6 removed: fe80::/64 via :: dev 2 metric 256 mss 0 rt-src rt-kernel
+13:09:46,217 DEBUG NetworkManager:<debug> [1655816986.1126] platform-linux: do-add-ip6-address[2: fe80::5054:ff:fe5e:eff9]: success
+13:09:46,218 DEBUG NetworkManager:<debug> [1655816986.1127] platform: (eth0) route: append     IPv6 route: fe80::/64 via :: dev 2 metric 256 mss 0 rt-src rt-kernel
+13:09:46,218 DEBUG NetworkManager:<debug> [1655816986.1128] platform: (eth0) signal: route   6   added: fe80::/64 via :: dev 2 metric 256 mss 0 rt-src rt-kernel
+13:09:46,218 DEBUG NetworkManager:<debug> [1655816986.1128] platform-linux: do-add-ip6-route[fe80::/64 via :: dev 2 metric 256 mss 0 rt-src rt-kernel]: success
+13:09:46,218 DEBUG NetworkManager:<debug> [1655816986.1128] platform: (eth0) route: append     IPv6 route: fe80::/64 via :: dev 2 metric 100 mss 0 rt-src rt-kernel
+13:09:46,223 DEBUG NetworkManager:<debug> [1655816986.1129] platform: (eth0) signal: route   6   added: fe80::/64 via :: dev 2 metric 100 mss 0 rt-src rt-kernel
+13:09:46,223 DEBUG NetworkManager:<debug> [1655816986.1129] platform-linux: do-add-ip6-route[fe80::/64 via :: dev 2 metric 100 mss 0 rt-src rt-kernel]: success
+13:09:46,223 DEBUG NetworkManager:<debug> [1655816986.1152] device[0x55664c4c0f80] (eth0): ip6-config: update IP Config instance (/org/freedesktop/NetworkManager/IP6Config/1)
+13:09:46,224 DEBUG NetworkManager:<debug> [1655816986.1153] dns-mgr: (device_ip_config_changed): queueing DNS updates (1)
+13:09:46,224 DEBUG NetworkManager:<debug> [1655816986.1153] dns-mgr: (device_ip_config_changed): DNS configuration did not change
+13:09:46,224 DEBUG NetworkManager:<debug> [1655816986.1153] dns-mgr: (device_ip_config_changed): no DNS changes to commit (0)
+13:09:46,225 DEBUG NetworkManager:<debug> [1655816986.1154] platform-linux: sysctl: setting '/proc/sys/net/ipv6/conf/eth0/accept_ra' to '1' (current value is identical)
+13:09:46,225 DEBUG NetworkManager:<debug> [1655816986.1154] platform-linux: sysctl: setting '/proc/sys/net/ipv6/conf/eth0/accept_ra_defrtr' to '0' (current value is '1')
+13:09:46,225 DEBUG NetworkManager:<debug> [1655816986.1155] platform-linux: sysctl: setting '/proc/sys/net/ipv6/conf/eth0/accept_ra_pinfo' to '0' (current value is '1')
+13:09:46,226 DEBUG NetworkManager:<debug> [1655816986.1155] platform-linux: sysctl: setting '/proc/sys/net/ipv6/conf/eth0/accept_ra_rtr_pref' to '0' (current value is '1')
+13:09:46,226 DEBUG NetworkManager:<debug> [1655816986.1155] ndisc[0x55664c4f70e0,"eth0"]: starting neighbor discovery: 2
+13:09:46,226 DEBUG NetworkManager:<debug> [1655816986.1156] ndisc-lndp[0x55664c4f70e0,"eth0"]: processing libndp events
+13:09:46,227 DEBUG NetworkManager:<debug> [1655816986.1156] ndisc[0x55664c4f70e0,"eth0"]: scheduling RA timeout in 30 seconds
+13:09:46,234 DEBUG NetworkManager:<debug> [1655816986.1156] ndisc[0x55664c4f70e0,"eth0"]: scheduling explicit router solicitation request in 0 seconds.
+13:09:46,234 DEBUG NetworkManager:<debug> [1655816986.1157] device[0x55664c4c0f80] (eth0): activation-stage: complete activate_stage3_ip_config_start,v4 (id 49)
+13:09:46,235 DEBUG NetworkManager:<debug> [1655816986.1157] sleep-monitor-sd: inhibit: inhibitor fd is 22
+13:09:46,235 DEBUG NetworkManager:<debug> [1655816986.1191] device[0x55664c4c0f80] (eth0): ip6-config: update (commit=0, new-config=0x55664c4672e0)
+13:09:46,235 DEBUG NetworkManager:<debug> [1655816986.1204] device[0x55664c4c0f80] (eth0): ip6-config: update IP Config instance (/org/freedesktop/NetworkManager/IP6Config/1)
+13:09:46,236 DEBUG NetworkManager:<debug> [1655816986.1204] dns-mgr: (device_ip_config_changed): queueing DNS updates (1)
+13:09:46,236 DEBUG NetworkManager:<debug> [1655816986.1204] dns-mgr: (device_ip_config_changed): DNS configuration did not change
+13:09:46,236 DEBUG NetworkManager:<debug> [1655816986.1204] dns-mgr: (device_ip_config_changed): no DNS changes to commit (0)
+13:09:46,236 DEBUG nm-dispatcher:req:1 'hostname', "/etc/NetworkManager/dispatcher.d/00-netreport": complete
+13:09:46,238 DEBUG nm-dispatcher:req:1 'hostname', "/etc/NetworkManager/dispatcher.d/04-iscsi": run script
+13:09:46,238 DEBUG nm-dispatcher:req:1 'hostname', "/etc/NetworkManager/dispatcher.d/04-iscsi": complete
+13:09:46,238 DEBUG nm-dispatcher:req:1 'hostname', "/etc/NetworkManager/dispatcher.d/11-dhclient": run script
+13:09:46,239 DEBUG nm-dispatcher:req:1 'hostname', "/etc/NetworkManager/dispatcher.d/11-dhclient": complete
+13:09:46,239 DEBUG nm-dispatcher:req:1 'hostname', "/etc/NetworkManager/dispatcher.d/20-chrony": run script
+13:09:46,249 DEBUG nm-dispatcher:req:1 'hostname', "/etc/NetworkManager/dispatcher.d/20-chrony": complete
+13:09:46,250 DEBUG nm-dispatcher:req:1 'hostname': completed (4 scripts)
+13:09:46,250 INFO nm-dispatcher:req:2 'connectivity-change': start running ordered scripts...
+13:09:46,250 DEBUG nm-dispatcher:req:2 'connectivity-change', "/etc/NetworkManager/dispatcher.d/00-netreport": run script
+13:09:46,251 DEBUG NetworkManager:<debug> [1655816986.2495] dispatcher: (1) 00-netreport succeeded
+13:09:46,251 DEBUG NetworkManager:<debug> [1655816986.2495] dispatcher: (1) 04-iscsi succeeded
+13:09:46,251 DEBUG NetworkManager:<debug> [1655816986.2495] dispatcher: (1) 11-dhclient succeeded
+13:09:46,252 DEBUG NetworkManager:<debug> [1655816986.2495] dispatcher: (1) 20-chrony succeeded
+13:09:46,284 DEBUG nm-dispatcher:req:2 'connectivity-change', "/etc/NetworkManager/dispatcher.d/00-netreport": complete
+13:09:46,284 DEBUG nm-dispatcher:req:2 'connectivity-change', "/etc/NetworkManager/dispatcher.d/04-iscsi": run script
+13:09:46,292 DEBUG nm-dispatcher:req:2 'connectivity-change', "/etc/NetworkManager/dispatcher.d/04-iscsi": complete
+13:09:46,292 DEBUG nm-dispatcher:req:2 'connectivity-change', "/etc/NetworkManager/dispatcher.d/11-dhclient": run script
+13:09:46,319 DEBUG nm-dispatcher:req:2 'connectivity-change', "/etc/NetworkManager/dispatcher.d/11-dhclient": complete
+13:09:46,320 DEBUG nm-dispatcher:req:2 'connectivity-change', "/etc/NetworkManager/dispatcher.d/20-chrony": run script
+13:09:46,323 DEBUG nm-dispatcher:req:2 'connectivity-change', "/etc/NetworkManager/dispatcher.d/20-chrony": complete
+13:09:46,323 DEBUG nm-dispatcher:req:2 'connectivity-change': completed (4 scripts)
+13:09:46,327 DEBUG NetworkManager:<debug> [1655816986.3247] dispatcher: (2) 00-netreport succeeded
+13:09:46,327 DEBUG NetworkManager:<debug> [1655816986.3247] dispatcher: (2) 04-iscsi succeeded
+13:09:46,328 DEBUG NetworkManager:<debug> [1655816986.3247] dispatcher: (2) 11-dhclient succeeded
+13:09:46,328 DEBUG NetworkManager:<debug> [1655816986.3247] dispatcher: (2) 20-chrony succeeded
+13:09:46,334 INFO polkitd:Started polkitd version 0.112
+13:09:46,364 DEBUG NetworkManager:<debug> [1655816986.3637] bus-manager: (dhcp) accepted connection 0x55664c468620 on private socket
+13:09:46,365 DEBUG NetworkManager:<debug> [1655816986.3647] dhcp4 (eth0): unmapped DHCP state 'PREINIT'
+13:09:46,365 DEBUG NetworkManager:<debug> [1655816986.3647] dhcp4 (eth0): DHCP state 'unknown' -> 'unknown' (reason: 'PREINIT')
+13:09:46,366 DEBUG NetworkManager:<debug> [1655816986.3663] bus-manager: (dhcp) closed connection 0x55664c468620 on private socket
+13:09:46,423 INFO dhclient:DHCPREQUEST on eth0 to 255.255.255.255 port 67 (xid=0x8d34eea)
+13:09:46,425 INFO dhclient:DHCPACK from 192.168.122.1 (xid=0x8d34eea)
+13:09:46,432 DEBUG NetworkManager:<debug> [1655816986.4316] bus-manager: (dhcp) accepted connection 0x55664c468720 on private socket
+13:09:46,436 DEBUG NetworkManager:<debug> [1655816986.4332] dhcp4 (eth0): DHCP state 'unknown' -> 'bound' (reason: 'REBOOT')
+13:09:46,436 DEBUG NetworkManager:<debug> [1655816986.4333] dhcp4 (eth0): option 'network_number'=>'192.168.122.0'
+13:09:46,437 DEBUG NetworkManager:<debug> [1655816986.4333] dhcp4 (eth0): option 'next_server'=>'192.168.122.1'
+13:09:46,437 DEBUG NetworkManager:<debug> [1655816986.4333] dhcp4 (eth0): option 'requested_root_path'=>'1'
+13:09:46,437 DEBUG NetworkManager:<debug> [1655816986.4334] dhcp4 (eth0): option 'dhcp_rebinding_time'=>'3150'
+13:09:46,438 DEBUG NetworkManager:<debug> [1655816986.4334] dhcp4 (eth0): option 'domain_name_servers'=>'192.168.122.1'
+13:09:46,438 DEBUG NetworkManager:<debug> [1655816986.4334] dhcp4 (eth0): option 'requested_interface_mtu'=>'1'
+13:09:46,439 DEBUG NetworkManager:<debug> [1655816986.4334] dhcp4 (eth0): option 'requested_rfc3442_classless_static_routes'=>'1'
+13:09:46,439 DEBUG NetworkManager:<debug> [1655816986.4334] dhcp4 (eth0): option 'requested_ntp_servers'=>'1'
+13:09:46,439 DEBUG NetworkManager:<debug> [1655816986.4334] dhcp4 (eth0): option 'requested_routers'=>'1'
+13:09:46,439 DEBUG NetworkManager:<debug> [1655816986.4334] dhcp4 (eth0): option 'requested_classless_static_routes'=>'1'
+13:09:46,440 DEBUG NetworkManager:<debug> [1655816986.4334] dhcp4 (eth0): option 'requested_ms_classless_static_routes'=>'1'
+13:09:46,440 DEBUG NetworkManager:<debug> [1655816986.4334] dhcp4 (eth0): option 'requested_broadcast_address'=>'1'
+13:09:46,440 DEBUG NetworkManager:<debug> [1655816986.4334] dhcp4 (eth0): option 'requested_subnet_mask'=>'1'
+13:09:46,457 DEBUG NetworkManager:<debug> [1655816986.4334] dhcp4 (eth0): option 'requested_domain_name_servers'=>'1'
+13:09:46,457 DEBUG NetworkManager:<debug> [1655816986.4334] dhcp4 (eth0): option 'dhcp_lease_time'=>'3600'
+13:09:46,458 DEBUG NetworkManager:<debug> [1655816986.4334] dhcp4 (eth0): option 'requested_domain_name'=>'1'
+13:09:46,458 DEBUG NetworkManager:<debug> [1655816986.4334] dhcp4 (eth0): option 'requested_static_routes'=>'1'
+13:09:46,458 DEBUG NetworkManager:<debug> [1655816986.4334] dhcp4 (eth0): option 'requested_host_name'=>'1'
+13:09:46,458 DEBUG NetworkManager:<debug> [1655816986.4334] dhcp4 (eth0): option 'requested_wpad'=>'1'
+13:09:46,459 DEBUG NetworkManager:<debug> [1655816986.4335] dhcp4 (eth0): option 'requested_domain_search'=>'1'
+13:09:46,459 DEBUG NetworkManager:<debug> [1655816986.4335] dhcp4 (eth0): option 'requested_time_offset'=>'1'
+13:09:46,459 DEBUG NetworkManager:<debug> [1655816986.4335] dhcp4 (eth0): option 'broadcast_address'=>'192.168.122.255'
+13:09:46,475 DEBUG NetworkManager:<debug> [1655816986.4335] dhcp4 (eth0): option 'dhcp_renewal_time'=>'1800'
+13:09:46,476 DEBUG NetworkManager:<debug> [1655816986.4335] dhcp4 (eth0): option 'dhcp_server_identifier'=>'192.168.122.1'
+13:09:46,477 DEBUG NetworkManager:<debug> [1655816986.4335] dhcp4 (eth0): option 'dhcp_message_type'=>'5'
+13:09:46,477 DEBUG NetworkManager:<debug> [1655816986.4335] dhcp4 (eth0): option 'subnet_mask'=>'255.255.255.0'
+13:09:46,478 DEBUG NetworkManager:<debug> [1655816986.4335] dhcp4 (eth0): option 'expiry'=>'1655820586'
+13:09:46,478 DEBUG NetworkManager:<debug> [1655816986.4335] dhcp4 (eth0): option 'ip_address'=>'192.168.122.20'
+13:09:46,478 DEBUG NetworkManager:<debug> [1655816986.4335] dhcp4 (eth0): option 'routers'=>'192.168.122.1'
+13:09:46,479 INFO NetworkManager:<info>  [1655816986.4335] dhcp4 (eth0):   address 192.168.122.20
+13:09:46,479 INFO NetworkManager:<info>  [1655816986.4336] dhcp4 (eth0):   plen 24 (255.255.255.0)
+13:09:46,487 INFO NetworkManager:<info>  [1655816986.4336] dhcp4 (eth0):   gateway 192.168.122.1
+13:09:46,495 INFO NetworkManager:<info>  [1655816986.4336] dhcp4 (eth0):   lease time 3600
+13:09:46,495 INFO NetworkManager:<info>  [1655816986.4336] dhcp4 (eth0):   nameserver '192.168.122.1'
+13:09:46,496 INFO NetworkManager:<info>  [1655816986.4337] dhcp4 (eth0): state changed unknown -> bound
+13:09:46,496 DEBUG NetworkManager:<debug> [1655816986.4337] device[0x55664c4c0f80] (eth0): new DHCPv4 client state 1
+13:09:46,497 DEBUG NetworkManager:<debug> [1655816986.4341] device[0x55664c4c0f80] (eth0): activation-stage: schedule activate_stage5_ip_config_result_4,v4 (id 91)
+13:09:46,497 DEBUG NetworkManager:<debug> [1655816986.4342] device[0x55664c4c0f80] (eth0): activation-stage: invoke activate_stage5_ip_config_result_4,v4 (id 91)
+13:09:46,497 DEBUG NetworkManager:<debug> [1655816986.4342] device[0x55664c4c0f80] (eth0): ip4-config: update (commit=1, new-config=0x55664c48d750)
+13:09:46,498 DEBUG NetworkManager:<debug> [1655816986.4343] platform: (eth0) address: adding or updating IPv4 address: 192.168.122.20/24 lft 3600sec pref 3600sec lifetime 1-0[3600,3600] dev 2 flags noprefixroute src unknown
+13:09:46,498 DEBUG NetworkManager:<debug> [1655816986.4344] platform: (eth0) signal: address 4 changed: 192.168.122.20/24 lft 3600sec pref 3600sec lifetime 1-1[3600,3600] dev 2 src kernel
+13:09:46,498 DEBUG NetworkManager:<debug> [1655816986.4344] device[0x55664c4c0f80] (eth0): queued IP4 config change
+13:09:46,498 DEBUG NetworkManager:<debug> [1655816986.4344] platform-linux: do-add-ip4-address[2: 192.168.122.20/24]: success
+13:09:46,499 DEBUG NetworkManager:<debug> [1655816986.4344] platform: (eth0) route: append     IPv4 route: 192.168.122.0/24 via 0.0.0.0 dev 2 metric 100 mss 0 rt-src rt-kernel scope link pref-src 192.168.122.20
+13:09:46,499 DEBUG NetworkManager:<debug> [1655816986.4345] platform: (eth0) signal: route   4   added: 192.168.122.0/24 via 0.0.0.0 dev 2 metric 100 mss 0 rt-src rt-kernel scope link pref-src 192.168.122.20
+13:09:46,500 DEBUG NetworkManager:<debug> [1655816986.4345] platform-linux: do-add-ip4-route[192.168.122.0/24 via 0.0.0.0 dev 2 metric 100 mss 0 rt-src rt-kernel scope link pref-src 192.168.122.20]: success
+13:09:46,502 DEBUG NetworkManager:<debug> [1655816986.4345] platform: (eth0) route: append     IPv4 route: 0.0.0.0/0 via 192.168.122.1 dev 2 metric 100 mss 0 rt-src dhcp
+13:09:46,502 DEBUG NetworkManager:<debug> [1655816986.4346] platform: (eth0) signal: route   4   added: 0.0.0.0/0 via 192.168.122.1 dev 2 metric 100 mss 0 rt-src rt-dhcp scope global
+13:09:46,503 DEBUG NetworkManager:<debug> [1655816986.4346] platform-linux: do-add-ip4-route[0.0.0.0/0 via 192.168.122.1 dev 2 metric 100 mss 0 rt-src rt-dhcp scope global]: success
+13:09:46,503 DEBUG NetworkManager:<debug> [1655816986.4349] device[0x55664c4c0f80] (eth0): ip4-config: update IP Config instance (/org/freedesktop/NetworkManager/IP4Config/1)
+13:09:46,503 DEBUG NetworkManager:<debug> [1655816986.4349] dns-mgr: (device_ip_config_changed): queueing DNS updates (1)
+13:09:46,504 DEBUG NetworkManager:<debug> [1655816986.4349] dns-mgr: (device_ip_config_changed): DNS configuration did not change
+13:09:46,504 DEBUG NetworkManager:<debug> [1655816986.4349] dns-mgr: (device_ip_config_changed): no DNS changes to commit (0)
+13:09:46,504 DEBUG NetworkManager:<debug> [1655816986.4350] device[0x55664c4c0f80] (eth0): remove_pending_action (1): 'dhcp4'
+13:09:46,504 DEBUG NetworkManager:<debug> [1655816986.4350] active-connection[0x55664c48d590]: set state-flags layer2-ready,ip4-ready,lifetime-bound-to-profile-visibility (was layer2-ready,lifetime-bound-to-profile-visibility)
+13:09:46,505 INFO NetworkManager:<info>  [1655816986.4351] device (eth0): state change: ip-config -> ip-check (reason 'none', sys-iface-state: 'assume')
+13:09:46,512 DEBUG NetworkManager:<debug> [1655816986.4354] dispatcher: (3) (eth0) dispatching action 'pre-up' (with callback)
+13:09:46,512 DEBUG NetworkManager:<debug> [1655816986.4354] dispatcher: (3) simulate request; no scripts in /etc/NetworkManager/dispatcher.d/pre-up.d
+13:09:46,513 DEBUG NetworkManager:<debug> [1655816986.4358] device[0x55664c4c0f80] (eth0): activation-stage: complete activate_stage5_ip_config_result_4,v4 (id 91)
+13:09:46,513 DEBUG NetworkManager:<debug> [1655816986.4359] device[0x55664c4c0f80] (eth0): ip4-config: update (commit=0, new-config=0x55664c48d880)
+13:09:46,513 DEBUG NetworkManager:<debug> [1655816986.4359] device[0x55664c4c0f80] (eth0): add_pending_action (2): 'queued-state-change-secondaries'
+13:09:46,514 DEBUG NetworkManager:<debug> [1655816986.4359] device[0x55664c4c0f80] (eth0): queue-state[secondaries, reason:none, id:95]: queue state change
+13:09:46,514 DEBUG NetworkManager:<debug> [1655816986.4359] device[0x55664c4c0f80] (eth0): queue-state[secondaries, reason:none, id:95]: change state
+13:09:46,523 INFO NetworkManager:<info>  [1655816986.4359] device (eth0): state change: ip-check -> secondaries (reason 'none', sys-iface-state: 'assume')
+13:09:46,525 DEBUG NetworkManager:<debug> [1655816986.4535] device[0x55664c4c0f80] (eth0): add_pending_action (3): 'queued-state-change-activated'
+13:09:46,526 INFO systemd:Started Network Manager Wait Online.
+13:09:46,527 DEBUG NetworkManager:<debug> [1655816986.4535] device[0x55664c4c0f80] (eth0): queue-state[activated, reason:none, id:96]: queue state change
+13:09:46,531 DEBUG NetworkManager:<debug> [1655816986.4536] device[0x55664c4c0f80] (eth0): device entered SECONDARIES state
+13:09:46,540 DEBUG NetworkManager:<debug> [1655816986.4536] device[0x55664c4c0f80] (eth0): remove_pending_action (2): 'queued-state-change-secondaries'
+13:09:46,541 INFO systemd:Reached target Network is Online.
+13:09:46,541 DEBUG NetworkManager:<debug> [1655816986.4536] device[0x55664c4c0f80] (eth0): queue-state[activated, reason:none, id:96]: change state
+13:09:46,542 INFO systemd:Starting System Logging Service...
+13:09:46,542 INFO NetworkManager:<info>  [1655816986.4536] device (eth0): state change: secondaries -> activated (reason 'none', sys-iface-state: 'assume')
+13:09:46,542 DEBUG NetworkManager:<debug> [1655816986.4561] active-connection[0x55664c48d590]: set state activated (was activating)
+13:09:46,542 DEBUG NetworkManager:<debug> [1655816986.4561] active-connection[0x55664c48d590]: update activation type from assume to managed
+13:09:46,543 INFO NetworkManager:<info>  [1655816986.4603] manager: NetworkManager state is now CONNECTED_LOCAL
+13:09:46,543 DEBUG NetworkManager:<debug> [1655816986.4615] active-connection[0x55664c48d590]: check-master-ready: not signalling (state activated, no master)
+13:09:46,543 DEBUG NetworkManager:<debug> [1655816986.4618] device[0x55664c4c0f80] (eth0): remove_pending_action (1): 'activation-0x55664c48d590'
+13:09:46,544 DEBUG NetworkManager:<debug> [1655816986.4674] dns-mgr: (device_state_changed): queueing DNS updates (1)
+13:09:46,544 DEBUG NetworkManager:<debug> [1655816986.4674] dns-mgr: (update_routing_and_dns): queueing DNS updates (2)
+13:09:46,544 INFO NetworkManager:<info>  [1655816986.4687] manager: NetworkManager state is now CONNECTED_SITE
+13:09:46,547 INFO NetworkManager:<info>  [1655816986.4697] policy: set 'eth0' (eth0) as default for IPv4 routing and DNS
+13:09:46,547 DEBUG NetworkManager:<debug> [1655816986.4698] manager: PrimaryConnection now eth0
+13:09:46,547 INFO systemd:Started Authorization Manager.
+13:09:46,548 DEBUG NetworkManager:<debug> [1655816986.4724] dns-mgr: (update_routing_and_dns): DNS configuration changed
+13:09:46,548 DEBUG NetworkManager:<debug> [1655816986.4724] dns-mgr: (update_routing_and_dns): no DNS changes to commit (1)
+13:09:46,548 DEBUG NetworkManager:<debug> [1655816986.4724] dns-mgr: (device_state_changed): DNS configuration changed
+13:09:46,549 DEBUG NetworkManager:<debug> [1655816986.4724] dns-mgr: (device_state_changed): committing DNS changes (0)
+13:09:46,549 DEBUG NetworkManager:<debug> [1655816986.4724] dns-mgr: update-dns: updating resolv.conf
+13:09:46,549 INFO dhclient:bound to 192.168.122.20 -- renewal in 1555 seconds.
+13:09:46,556 DEBUG NetworkManager:<debug> [1655816986.4819] policy: restarting reverse-lookup thread for address 192.168.122.20
+13:09:46,556 INFO NetworkManager:<info>  [1655816986.4828] device (eth0): Activation: successful, device activated.
+13:09:46,556 DEBUG NetworkManager:<debug> [1655816986.4828] device[0x55664c4c0f80] (eth0): set metered value 4
+13:09:46,557 DEBUG NetworkManager:<debug> [1655816986.4837] manager: new metered value: 4
+13:09:46,557 DEBUG NetworkManager:<debug> [1655816986.4845] dispatcher: (4) (eth0) dispatching action 'up'
+13:09:46,557 INFO nm-dispatcher:req:3 'up' [eth0]: new request (4 scripts)
+13:09:46,558 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: CONNECTION_DBUS_PATH=/org/freedesktop/NetworkManager/Settings/1
+13:09:46,558 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: CONNECTION_FILENAME=/etc/sysconfig/network-scripts/ifcfg-eth0
+13:09:46,558 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: CONNECTION_UUID=be9af178-8ea0-4b02-9609-5a436e23f3b7
+13:09:46,558 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: CONNECTION_ID=eth0
+13:09:46,559 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: DEVICE_IFACE=eth0
+13:09:46,559 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: DEVICE_IP_IFACE=eth0
+13:09:46,561 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: IP4_ADDRESS_0=192.168.122.20/24 192.168.122.1
+13:09:46,561 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: IP4_NUM_ADDRESSES=1
+13:09:46,561 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: IP4_GATEWAY=192.168.122.1
+13:09:46,562 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: IP4_NAMESERVERS=192.168.122.1
+13:09:46,562 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: IP4_ROUTE_0=192.168.122.0/24 0.0.0.0 0
+13:09:46,562 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: IP4_ROUTE_1=192.168.122.0/24 0.0.0.0 100
+13:09:46,563 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: IP4_NUM_ROUTES=2
+13:09:46,563 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: IP6_ADDRESS_0=fe80::5054:ff:fe5e:eff9/64 0.0.0.0
+13:09:46,563 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: IP6_NUM_ADDRESSES=1
+13:09:46,564 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: IP6_GATEWAY=0.0.0.0
+13:09:46,564 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: IP6_ROUTE_0=ff00::/8 :: 256
+13:09:46,564 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: IP6_ROUTE_1=fe80::/64 :: 256
+13:09:46,565 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: IP6_ROUTE_2=fe80::/64 :: 100
+13:09:46,565 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: IP6_NUM_ROUTES=3
+13:09:46,565 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: DHCP4_BROADCAST_ADDRESS=192.168.122.255
+13:09:46,566 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: DHCP4_DHCP_LEASE_TIME=3600
+13:09:46,566 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: DHCP4_DHCP_MESSAGE_TYPE=5
+13:09:46,566 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: DHCP4_DHCP_REBINDING_TIME=3150
+13:09:46,567 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: DHCP4_DHCP_RENEWAL_TIME=1800
+13:09:46,567 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: DHCP4_DHCP_SERVER_IDENTIFIER=192.168.122.1
+13:09:46,567 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: DHCP4_DOMAIN_NAME_SERVERS=192.168.122.1
+13:09:46,567 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: DHCP4_EXPIRY=1655820586
+13:09:46,568 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: DHCP4_IP_ADDRESS=192.168.122.20
+13:09:46,568 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: DHCP4_NETWORK_NUMBER=192.168.122.0
+13:09:46,568 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: DHCP4_NEXT_SERVER=192.168.122.1
+13:09:46,569 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: DHCP4_REQUESTED_BROADCAST_ADDRESS=1
+13:09:46,569 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: DHCP4_REQUESTED_CLASSLESS_STATIC_ROUTES=1
+13:09:46,571 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: DHCP4_REQUESTED_DOMAIN_NAME=1
+13:09:46,571 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: DHCP4_REQUESTED_DOMAIN_NAME_SERVERS=1
+13:09:46,571 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: DHCP4_REQUESTED_DOMAIN_SEARCH=1
+13:09:46,572 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: DHCP4_REQUESTED_HOST_NAME=1
+13:09:46,572 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: DHCP4_REQUESTED_INTERFACE_MTU=1
+13:09:46,572 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: DHCP4_REQUESTED_MS_CLASSLESS_STATIC_ROUTES=1
+13:09:46,572 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: DHCP4_REQUESTED_NTP_SERVERS=1
+13:09:46,573 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: DHCP4_REQUESTED_RFC3442_CLASSLESS_STATIC_ROUTES=1
+13:09:46,573 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: DHCP4_REQUESTED_ROOT_PATH=1
+13:09:46,573 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: DHCP4_REQUESTED_ROUTERS=1
+13:09:46,574 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: DHCP4_REQUESTED_STATIC_ROUTES=1
+13:09:46,574 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: DHCP4_REQUESTED_SUBNET_MASK=1
+13:09:46,574 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: DHCP4_REQUESTED_TIME_OFFSET=1
+13:09:46,575 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: DHCP4_REQUESTED_WPAD=1
+13:09:46,575 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: DHCP4_ROUTERS=192.168.122.1
+13:09:46,575 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: DHCP4_SUBNET_MASK=255.255.255.0
+13:09:46,576 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+13:09:46,576 DEBUG nm-dispatcher:req:3 'up' [eth0]: environment: NM_DISPATCHER_ACTION=up
+13:09:46,576 INFO nm-dispatcher:req:3 'up' [eth0]: start running ordered scripts...
+13:09:46,577 DEBUG nm-dispatcher:req:3 'up' [eth0], "/etc/NetworkManager/dispatcher.d/00-netreport": run script
+13:09:46,577 DEBUG NetworkManager:<debug> [1655816986.4930] create NMPacrunnerManager singleton (0x55664c4f9540)
+13:09:46,577 DEBUG NetworkManager:<debug> [1655816986.4931] pacrunner: call[0x55664c4d8630]: send: new config ({'Interface': <'eth0'>, 'Method': <'direct'>, 'BrowserOnly': <false>},)
+13:09:46,578 DEBUG NetworkManager:<debug> [1655816986.4931] device[0x55664c4c0f80] (eth0): connectivity state changed from NONE to FULL
+13:09:46,578 DEBUG NetworkManager:<debug> [1655816986.4932] manager: connectivity checking indicates FULL
+13:09:46,578 INFO NetworkManager:<info>  [1655816986.4932] manager: NetworkManager state is now CONNECTED_GLOBAL
+13:09:46,579 DEBUG NetworkManager:<debug> [1655816986.4934] dispatcher: (5) dispatching action 'connectivity-change'
+13:09:46,579 DEBUG NetworkManager:<debug> [1655816986.4936] device[0x55664c4c0f80] (eth0): ip4-config: update (commit=1, new-config=0x55664c48d750)
+13:09:46,579 DEBUG NetworkManager:<debug> [1655816986.4936] platform: (eth0) address: adding or updating IPv4 address: 192.168.122.20/24 lft 3600sec pref 3600sec lifetime 1-0[3600,3600] dev 2 flags noprefixroute src unknown
+13:09:46,579 DEBUG NetworkManager:<debug> [1655816986.4937] platform-linux: do-add-ip4-address[2: 192.168.122.20/24]: success
+13:09:46,580 DEBUG NetworkManager:<debug> [1655816986.5057] device[0x55664c4c0f80] (eth0): connectivity state changed from NONE to FULL
+13:09:46,580 DEBUG NetworkManager:<debug> [1655816986.5059] device[0x55664c4c0f80] (eth0): ip4-config: update (commit=1, new-config=0x55664c48d880)
+13:09:46,581 DEBUG NetworkManager:<debug> [1655816986.5059] platform: (eth0) address: adding or updating IPv4 address: 192.168.122.20/24 lft 3600sec pref 3600sec lifetime 1-0[3600,3600] dev 2 flags noprefixroute src unknown
+13:09:46,581 DEBUG NetworkManager:<debug> [1655816986.5060] platform-linux: do-add-ip4-address[2: 192.168.122.20/24]: success
+13:09:46,581 DEBUG NetworkManager:<debug> [1655816986.5060] device[0x55664c4c0f80] (eth0): remove_pending_action (0): 'queued-state-change-activated'
+13:09:46,582 INFO NetworkManager:<info>  [1655816986.5061] manager: startup complete
+13:09:46,582 DEBUG NetworkManager:<debug> [1655816986.5062] bus-manager: (dhcp) closed connection 0x55664c468720 on private socket
+13:09:46,582 INFO nm-dispatcher:req:4 'connectivity-change': new request (4 scripts)
+13:09:46,582 DEBUG nm-dispatcher:req:4 'connectivity-change': environment: CONNECTIVITY_STATE=FULL
+13:09:46,583 DEBUG nm-dispatcher:req:4 'connectivity-change': environment: PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+13:09:46,583 DEBUG nm-dispatcher:req:4 'connectivity-change': environment: NM_DISPATCHER_ACTION=connectivity-change
+13:09:46,584 DEBUG NetworkManager:<debug> [1655816986.5114] pacrunner: name owner disappeared
+13:09:46,585 NOTICE dbus:[system] Successfully activated service 'org.freedesktop.PolicyKit1'
+13:09:46,586 DEBUG NetworkManager:<debug> [1655816986.5382] auth: dbus name owner: ':1.7'
+13:09:46,586 DEBUG NetworkManager:<debug> [1655816986.5384] auth: emit changed signal
+13:09:46,586 DEBUG nm-dispatcher:req:3 'up' [eth0], "/etc/NetworkManager/dispatcher.d/00-netreport": complete
+13:09:46,587 DEBUG nm-dispatcher:req:3 'up' [eth0], "/etc/NetworkManager/dispatcher.d/04-iscsi": run script
+13:09:46,619 DEBUG NetworkManager:<debug> [1655816986.6187] ndisc[0x55664c4f70e0,"eth0"]: router solicitation sent
+13:09:46,619 DEBUG NetworkManager:<debug> [1655816986.6187] ndisc[0x55664c4f70e0,"eth0"]: scheduling router solicitation retry in 4 seconds.
+13:09:46,666 WARNING systemd:Unit iscsi.service cannot be reloaded because it is inactive.
+13:09:46,668 DEBUG nm-dispatcher:req:3 'up' [eth0], "/etc/NetworkManager/dispatcher.d/04-iscsi": complete
+13:09:46,668 DEBUG nm-dispatcher:req:3 'up' [eth0], "/etc/NetworkManager/dispatcher.d/11-dhclient": run script
+13:09:46,697 INFO rsyslogd: [origin software="rsyslogd" swVersion="8.24.0-57.el7_9.3" x-pid="1530" x-info="http://www.rsyslog.com"] start
+13:09:46,699 INFO systemd:Started System Logging Service.
+13:09:46,700 INFO systemd:Reached target Anaconda System Services.
+13:09:46,701 INFO systemd:Starting Anaconda...
+13:09:46,704 WARNING rsyslogd:warning: ~ action is deprecated, consider using the 'stop' statement instead [v8.24.0-57.el7_9.3 try http://www.rsyslog.com/e/2307 ]
+13:09:46,704 ERR rsyslogd:imfile: on startup file '/tmp/X.log' does not exist but is configured in static file monitor - this may indicate a misconfiguration. If the file appears at a later time, it will automatically be processed. Reason: No such file or directory [v8.24.0-57.el7_9.3]
+13:09:46,704 ERR rsyslogd:imfile: on startup file '/tmp/anaconda-tb-all.log' does not exist but is configured in static file monitor - this may indicate a misconfiguration. If the file appears at a later time, it will automatically be processed. Reason: No such file or directory [v8.24.0-57.el7_9.3]
+13:09:46,716 NOTICE kernel:type=1400 audit(1655816986.715:3): avc:  denied  { write } for  pid=1530 comm="in:imjournal" name="/" dev="dm-0" ino=2 scontext=system_u:system_r:syslogd_t:s0 tcontext=system_u:object_r:root_t:s0 tclass=dir permissive=1
+13:09:46,716 NOTICE kernel:type=1400 audit(1655816986.715:4): avc:  denied  { add_name } for  pid=1530 comm="in:imjournal" name="imjournal.state.tmp" scontext=system_u:system_r:syslogd_t:s0 tcontext=system_u:object_r:root_t:s0 tclass=dir permissive=1
+13:09:46,716 NOTICE kernel:type=1400 audit(1655816986.715:5): avc:  denied  { create } for  pid=1530 comm="in:imjournal" name="imjournal.state.tmp" scontext=system_u:system_r:syslogd_t:s0 tcontext=system_u:object_r:root_t:s0 tclass=file permissive=1
+13:09:46,716 NOTICE kernel:type=1400 audit(1655816986.715:6): avc:  denied  { write open } for  pid=1530 comm="in:imjournal" path="/imjournal.state.tmp" dev="dm-0" ino=3777 scontext=system_u:system_r:syslogd_t:s0 tcontext=system_u:object_r:root_t:s0 tclass=file permissive=1
+13:09:46,716 NOTICE kernel:type=1400 audit(1655816986.715:7): avc:  denied  { getattr } for  pid=1530 comm="in:imjournal" path="/imjournal.state.tmp" dev="dm-0" ino=3777 scontext=system_u:system_r:syslogd_t:s0 tcontext=system_u:object_r:root_t:s0 tclass=file permissive=1
+13:09:46,716 NOTICE kernel:type=1400 audit(1655816986.715:8): avc:  denied  { remove_name } for  pid=1530 comm="in:imjournal" name="imjournal.state.tmp" dev="dm-0" ino=3777 scontext=system_u:system_r:syslogd_t:s0 tcontext=system_u:object_r:root_t:s0 tclass=dir permissive=1
+13:09:46,716 NOTICE kernel:type=1400 audit(1655816986.715:9): avc:  denied  { rename } for  pid=1530 comm="in:imjournal" name="imjournal.state.tmp" dev="dm-0" ino=3777 scontext=system_u:system_r:syslogd_t:s0 tcontext=system_u:object_r:root_t:s0 tclass=file permissive=1
+13:09:46,717 NOTICE kernel:type=1400 audit(1655816986.716:10): avc:  denied  { unlink } for  pid=1530 comm="in:imjournal" name="imjournal.state" dev="dm-0" ino=3777 scontext=system_u:system_r:syslogd_t:s0 tcontext=system_u:object_r:root_t:s0 tclass=file permissive=1
+13:09:46,747 NOTICE kernel:type=1400 audit(1655816986.746:11): avc:  denied  { write } for  pid=1530 comm="in:imjournal" name="/" dev="dm-0" ino=2 scontext=system_u:system_r:syslogd_t:s0 tcontext=system_u:object_r:root_t:s0 tclass=dir permissive=1
+13:09:46,756 DEBUG nm-dispatcher:req:3 'up' [eth0], "/etc/NetworkManager/dispatcher.d/11-dhclient": complete
+13:09:46,757 DEBUG nm-dispatcher:req:3 'up' [eth0], "/etc/NetworkManager/dispatcher.d/20-chrony": run script
+13:09:46,776 INFO systemd:Started Anaconda.
+13:09:46,779 INFO systemd:Started Anaconda Text Console.
+13:09:46,780 INFO systemd:Startup finished in 10.898s (kernel) + 19.384s (initrd) + 4.879s (userspace) = 35.162s.
+13:09:46,905 DEBUG NetworkManager:<debug> [1655816986.9050] ndisc-lndp[0x55664c4f70e0,"eth0"]: processing libndp events
+13:09:46,906 DEBUG NetworkManager:<debug> [1655816986.9059] ndisc-lndp[0x55664c4f70e0,"eth0"]: processing libndp events
+13:09:46,906 DEBUG NetworkManager:<debug> [1655816986.9064] ndisc-lndp[0x55664c4f70e0,"eth0"]: processing libndp events
+13:09:46,922 DEBUG nm-dispatcher:req:3 'up' [eth0], "/etc/NetworkManager/dispatcher.d/20-chrony": complete
+13:09:46,923 DEBUG nm-dispatcher:req:3 'up' [eth0]: completed (4 scripts)
+13:09:46,923 INFO nm-dispatcher:req:4 'connectivity-change': start running ordered scripts...
+13:09:46,923 DEBUG nm-dispatcher:req:4 'connectivity-change', "/etc/NetworkManager/dispatcher.d/00-netreport": run script
+13:09:46,924 DEBUG NetworkManager:<debug> [1655816986.9212] dispatcher: (4) 00-netreport succeeded
+13:09:46,924 DEBUG NetworkManager:<debug> [1655816986.9212] dispatcher: (4) 04-iscsi succeeded
+13:09:46,924 DEBUG NetworkManager:<debug> [1655816986.9212] dispatcher: (4) 11-dhclient succeeded
+13:09:46,926 DEBUG NetworkManager:<debug> [1655816986.9212] dispatcher: (4) 20-chrony succeeded
+13:09:47,027 DEBUG nm-dispatcher:req:4 'connectivity-change', "/etc/NetworkManager/dispatcher.d/00-netreport": complete
+13:09:47,028 DEBUG nm-dispatcher:req:4 'connectivity-change', "/etc/NetworkManager/dispatcher.d/04-iscsi": run script
+13:09:47,046 DEBUG nm-dispatcher:req:4 'connectivity-change', "/etc/NetworkManager/dispatcher.d/04-iscsi": complete
+13:09:47,047 DEBUG nm-dispatcher:req:4 'connectivity-change', "/etc/NetworkManager/dispatcher.d/11-dhclient": run script
+13:09:47,080 DEBUG nm-dispatcher:req:4 'connectivity-change', "/etc/NetworkManager/dispatcher.d/11-dhclient": complete
+13:09:47,080 DEBUG nm-dispatcher:req:4 'connectivity-change', "/etc/NetworkManager/dispatcher.d/20-chrony": run script
+13:09:47,081 DEBUG nm-dispatcher:req:4 'connectivity-change', "/etc/NetworkManager/dispatcher.d/20-chrony": complete
+13:09:47,081 DEBUG nm-dispatcher:req:4 'connectivity-change': completed (4 scripts)
+13:09:47,081 DEBUG NetworkManager:<debug> [1655816987.0805] dispatcher: (5) 00-netreport succeeded
+13:09:47,082 DEBUG NetworkManager:<debug> [1655816987.0805] dispatcher: (5) 04-iscsi succeeded
+13:09:47,082 DEBUG NetworkManager:<debug> [1655816987.0805] dispatcher: (5) 11-dhclient succeeded
+13:09:47,082 DEBUG NetworkManager:<debug> [1655816987.0805] dispatcher: (5) 20-chrony succeeded
+13:09:48,071 INFO rngd:Enabling JITTER rng support
+13:09:48,071 INFO rngd:Initalizing entropy source JITTER Entropy generator
+13:09:48,137 WARNING kernel:audit_printk_skb: 21 callbacks suppressed
+13:09:48,138 NOTICE kernel:type=1400 audit(1655816988.136:19): avc:  denied  { read write } for  pid=1579 comm="ldconfig" path="/dev/pts/0" dev="devpts" ino=3 scontext=system_u:system_r:ldconfig_t:s0 tcontext=system_u:object_r:devpts_t:s0 tclass=chr_file permissive=1
+13:09:50,602 WARNING systemd:Cannot add dependency job for unit rhel-autorelabel-mark.service, ignoring: Unit is masked.
+13:09:50,603 WARNING systemd:Cannot add dependency job for unit rhel-autorelabel.service, ignoring: Unit is masked.
+13:09:50,603 WARNING systemd:Cannot add dependency job for unit rhel-loadmodules.service, ignoring: Unit is masked.
+13:09:50,603 WARNING systemd:Cannot add dependency job for unit systemd-tmpfiles-clean.timer, ignoring: Unit is masked.
+13:09:50,604 INFO systemd:Stopping System Logging Service...
+13:09:50,605 INFO rsyslogd: [origin software="rsyslogd" swVersion="8.24.0-57.el7_9.3" x-pid="1530" x-info="http://www.rsyslog.com"] exiting on signal 15.
+13:09:50,608 INFO systemd:Stopped System Logging Service.
+13:09:50,610 INFO systemd:Starting System Logging Service...
+13:09:50,622 DEBUG NetworkManager:<debug> [1655816990.6221] ndisc[0x55664c4f70e0,"eth0"]: router solicitation sent
+13:09:50,622 DEBUG NetworkManager:<debug> [1655816990.6221] ndisc[0x55664c4f70e0,"eth0"]: scheduling router solicitation retry in 4 seconds.
+13:09:50,656 INFO rsyslogd: [origin software="rsyslogd" swVersion="8.24.0-57.el7_9.3" x-pid="1589" x-info="http://www.rsyslog.com"] start
+13:09:50,656 NOTICE kernel:type=1400 audit(1655816990.655:20): avc:  denied  { read } for  pid=1589 comm="in:imjournal" name="imjournal.state" dev="dm-0" ino=3779 scontext=system_u:system_r:syslogd_t:s0 tcontext=system_u:object_r:root_t:s0 tclass=file permissive=1
+13:09:50,656 WARNING rsyslogd:warning: ~ action is deprecated, consider using the 'stop' statement instead [v8.24.0-57.el7_9.3 try http://www.rsyslog.com/e/2307 ]
+13:09:50,656 ERR rsyslogd:imfile: on startup file '/tmp/X.log' does not exist but is configured in static file monitor - this may indicate a misconfiguration. If the file appears at a later time, it will automatically be processed. Reason: No such file or directory [v8.24.0-57.el7_9.3]
+13:09:50,657 ERR rsyslogd:imfile: on startup file '/tmp/anaconda-tb-all.log' does not exist but is configured in static file monitor - this may indicate a misconfiguration. If the file appears at a later time, it will automatically be processed. Reason: No such file or directory [v8.24.0-57.el7_9.3]
+13:09:50,657 INFO systemd:Started System Logging Service.
+13:09:50,660 NOTICE kernel:type=1400 audit(1655816990.659:21): avc:  denied  { append } for  pid=1589 comm=72733A6D61696E20513A526567 name="vport1p1" dev="devtmpfs" ino=13371 scontext=system_u:system_r:syslogd_t:s0 tcontext=system_u:object_r:virtio_device_t:s0 tclass=chr_file permissive=1
+13:09:50,660 NOTICE kernel:type=1400 audit(1655816990.659:22): avc:  denied  { open } for  pid=1589 comm=72733A6D61696E20513A526567 path="/dev/vport1p1" dev="devtmpfs" ino=13371 scontext=system_u:system_r:syslogd_t:s0 tcontext=system_u:object_r:virtio_device_t:s0 tclass=chr_file permissive=1
+13:09:50,660 NOTICE kernel:type=1400 audit(1655816990.660:23): avc:  denied  { ioctl } for  pid=1589 comm=72733A6D61696E20513A526567 path="/dev/vport1p1" dev="devtmpfs" ino=13371 ioctlcmd=5401 scontext=system_u:system_r:syslogd_t:s0 tcontext=system_u:object_r:virtio_device_t:s0 tclass=chr_file permissive=1
+13:09:50,660 NOTICE kernel:type=1400 audit(1655816990.660:24): avc:  denied  { getattr } for  pid=1589 comm=72733A6D61696E20513A526567 path="/dev/vport1p1" dev="devtmpfs" ino=13371 scontext=system_u:system_r:syslogd_t:s0 tcontext=system_u:object_r:virtio_device_t:s0 tclass=chr_file permissive=1
+13:09:51,798 NOTICE kernel:type=1400 audit(1655816991.797:25): avc:  denied  { read write } for  pid=1620 comm="loadkeys" path="/dev/pts/0" dev="devpts" ino=3 scontext=system_u:system_r:loadkeys_t:s0 tcontext=system_u:object_r:devpts_t:s0 tclass=chr_file permissive=1
+13:09:51,801 NOTICE kernel:type=1400 audit(1655816991.800:26): avc:  denied  { open } for  pid=1620 comm="loadkeys" path="/dev/pts/0" dev="devpts" ino=3 scontext=system_u:system_r:loadkeys_t:s0 tcontext=system_u:object_r:devpts_t:s0 tclass=chr_file permissive=1
+13:09:51,801 NOTICE kernel:type=1400 audit(1655816991.800:27): avc:  denied  { ioctl } for  pid=1620 comm="loadkeys" path="/dev/pts/0" dev="devpts" ino=3 ioctlcmd=5401 scontext=system_u:system_r:loadkeys_t:s0 tcontext=system_u:object_r:devpts_t:s0 tclass=chr_file permissive=1
+13:09:51,926 NOTICE dbus:[system] Activating via systemd: service name='org.freedesktop.locale1' unit='dbus-org.freedesktop.locale1.service'
+13:09:51,928 WARNING systemd:Cannot add dependency job for unit rhel-autorelabel-mark.service, ignoring: Unit is masked.
+13:09:51,929 WARNING systemd:Cannot add dependency job for unit rhel-autorelabel.service, ignoring: Unit is masked.
+13:09:51,929 WARNING systemd:Cannot add dependency job for unit rhel-loadmodules.service, ignoring: Unit is masked.
+13:09:51,930 WARNING systemd:Cannot add dependency job for unit systemd-tmpfiles-clean.timer, ignoring: Unit is masked.
+13:09:51,933 INFO systemd:Starting Locale Service...
+13:09:51,972 NOTICE dbus:[system] Successfully activated service 'org.freedesktop.locale1'
+13:09:51,973 INFO systemd:Started Locale Service.
+13:09:51,976 NOTICE kernel:type=1107 audit(1655816991.975:28): pid=1466 uid=81 auid=4294967295 ses=4294967295 subj=system_u:system_r:system_dbusd_t:s0-s0:c0.c1023 msg='avc:  denied  { send_msg } for msgtype=method_return dest=:1.8 spid=1624 tpid=1550 scontext=system_u:system_r:systemd_localed_t:s0 tcontext=system_u:system_r:initrc_t:s0 tclass=dbus#012 exe="/usr/bin/dbus-daemon" sauid=81 hostname=? addr=? terminal=?'
+13:09:52,452 INFO kernel:SGI XFS with ACLs, security attributes, no debug enabled
+13:09:53,392 INFO systemd:Reloading Device-Mapper Multipath Device Controller.
+13:09:53,411 NOTICE multipathd:path checkers start up
+13:09:53,411 NOTICE multipathd:reconfigure (operator)
+13:09:53,412 INFO multipathd:ok
+13:09:53,418 NOTICE kernel:type=1400 audit(1655816993.417:29): avc:  denied  { write } for  pid=1589 comm="in:imjournal" name="/" dev="dm-0" ino=2 scontext=system_u:system_r:syslogd_t:s0 tcontext=system_u:object_r:root_t:s0 tclass=dir permissive=1
+13:09:53,418 NOTICE kernel:type=1400 audit(1655816993.417:30): avc:  denied  { add_name } for  pid=1589 comm="in:imjournal" name="imjournal.state.tmp" scontext=system_u:system_r:syslogd_t:s0 tcontext=system_u:object_r:root_t:s0 tclass=dir permissive=1
+13:09:53,418 NOTICE kernel:type=1400 audit(1655816993.417:31): avc:  denied  { remove_name } for  pid=1589 comm="in:imjournal" name="imjournal.state.tmp" dev="dm-0" ino=3779 scontext=system_u:system_r:syslogd_t:s0 tcontext=system_u:object_r:root_t:s0 tclass=dir permissive=1
+13:09:53,419 INFO systemd:Reloaded Device-Mapper Multipath Device Controller.
+13:09:53,466 NOTICE kernel:type=1400 audit(1655816993.464:32): avc:  denied  { read write } for  pid=1663 comm="hwclock" path="/dev/pts/0" dev="devpts" ino=3 scontext=system_u:system_r:hwclock_t:s0 tcontext=system_u:object_r:devpts_t:s0 tclass=chr_file permissive=1
+13:09:53,468 NOTICE kernel:type=1400 audit(1655816993.466:33): avc:  denied  { create } for  pid=1589 comm="in:imjournal" name="imjournal.state.tmp" scontext=system_u:system_r:syslogd_t:s0 tcontext=system_u:object_r:root_t:s0 tclass=file permissive=1
+13:09:53,468 NOTICE kernel:type=1400 audit(1655816993.466:34): avc:  denied  { write open } for  pid=1589 comm="in:imjournal" path="/imjournal.state.tmp" dev="dm-0" ino=3778 scontext=system_u:system_r:syslogd_t:s0 tcontext=system_u:object_r:root_t:s0 tclass=file permissive=1
+13:09:53,468 NOTICE kernel:type=1400 audit(1655816993.466:35): avc:  denied  { getattr } for  pid=1589 comm="in:imjournal" path="/imjournal.state.tmp" dev="dm-0" ino=3778 scontext=system_u:system_r:syslogd_t:s0 tcontext=system_u:object_r:root_t:s0 tclass=file permissive=1
+13:09:53,468 NOTICE kernel:type=1400 audit(1655816993.466:36): avc:  denied  { rename } for  pid=1589 comm="in:imjournal" name="imjournal.state.tmp" dev="dm-0" ino=3778 scontext=system_u:system_r:syslogd_t:s0 tcontext=system_u:object_r:root_t:s0 tclass=file permissive=1
+13:09:53,468 NOTICE kernel:type=1400 audit(1655816993.466:37): avc:  denied  { unlink } for  pid=1589 comm="in:imjournal" name="imjournal.state" dev="dm-0" ino=3779 scontext=system_u:system_r:syslogd_t:s0 tcontext=system_u:object_r:root_t:s0 tclass=file permissive=1
+13:09:54,002 INFO systemd:Time has been changed
+13:09:54,002 NOTICE kernel:type=1400 audit(1655816994.000:38): avc:  denied  { ioctl } for  pid=1663 comm="hwclock" path="/dev/pts/0" dev="devpts" ino=3 ioctlcmd=5401 scontext=system_u:system_r:hwclock_t:s0 tcontext=system_u:object_r:devpts_t:s0 tclass=chr_file permissive=1
+13:09:54,732 DEBUG NetworkManager:<debug> [1655816994.7298] ndisc[0x55664c4f70e0,"eth0"]: router solicitation sent
+13:09:54,732 DEBUG NetworkManager:<debug> [1655816994.7303] ndisc[0x55664c4f70e0,"eth0"]: did not receive a router advertisement after 3 solicitations.
+13:10:06,715 INFO kernel: vda:
+13:10:06,856 INFO kernel: vda:
+13:10:07,144 INFO kernel: vda: vda1
+13:10:07,213 INFO kernel: vda: vda1 vda2
+13:10:07,408 INFO kernel: vda: vda1 vda2
+13:10:07,581 INFO kernel: vda: vda1 vda2
+13:10:07,820 INFO kernel: vda: vda1 vda2 vda3
+13:10:08,125 INFO kernel: vda: vda1 vda2 vda3
+13:10:08,429 INFO kernel: vda: vda1 vda2 vda3
+13:10:08,524 INFO kernel:Adding 1048572k swap on /dev/vda2.  Priority:-2 extents:1 across:1048572k FS
+13:10:08,619 NOTICE kernel:XFS (vda3): Mounting V5 Filesystem
+13:10:08,624 INFO kernel:XFS (vda3): Ending clean mount
+13:10:08,651 NOTICE kernel:XFS (vda1): Mounting V5 Filesystem
+13:10:08,659 INFO kernel:XFS (vda1): Ending clean mount
+13:10:11,937 WARNING kernel:audit_printk_skb: 3 callbacks suppressed
+13:10:11,937 NOTICE kernel:type=1400 audit(1655817011.935:40): avc:  denied  { read write } for  pid=1785 comm="ldconfig" path="/dev/pts/0" dev="devpts" ino=3 scontext=system_u:system_r:ldconfig_t:s0 tcontext=system_u:object_r:devpts_t:s0 tclass=chr_file permissive=1
+13:10:16,731 DEBUG NetworkManager:<debug> [1655817016.7290] device[0x55664c4c0f80] (eth0): timed out waiting for IPv6 router advertisement
+13:10:16,732 DEBUG NetworkManager:<debug> [1655817016.7295] device[0x55664c4c0f80] (eth0): activation-stage: schedule activate_stage4_ip_config_timeout_6,v6 (id 362)
+13:10:16,732 DEBUG NetworkManager:<debug> [1655817016.7295] device[0x55664c4c0f80] (eth0): activation-stage: invoke activate_stage4_ip_config_timeout_6,v6 (id 362)
+13:10:16,733 DEBUG NetworkManager:<debug> [1655817016.7296] device[0x55664c4c0f80] (eth0): activation-stage: complete activate_stage4_ip_config_timeout_6,v6 (id 362)
+13:10:26,592 INFO journal:Suppressed 242 messages from /system.slice/anaconda.service
+13:10:48,772 NOTICE kernel:type=1400 audit(1655817048.771:41): avc:  denied  { write } for  pid=1589 comm="in:imjournal" name="/" dev="dm-0" ino=2 scontext=system_u:system_r:syslogd_t:s0 tcontext=system_u:object_r:root_t:s0 tclass=dir permissive=1
+13:10:48,773 NOTICE kernel:type=1400 audit(1655817048.771:42): avc:  denied  { add_name } for  pid=1589 comm="in:imjournal" name="imjournal.state.tmp" scontext=system_u:system_r:syslogd_t:s0 tcontext=system_u:object_r:root_t:s0 tclass=dir permissive=1
+13:10:48,773 NOTICE kernel:type=1400 audit(1655817048.771:43): avc:  denied  { remove_name } for  pid=1589 comm="in:imjournal" name="imjournal.state.tmp" dev="dm-0" ino=3779 scontext=system_u:system_r:syslogd_t:s0 tcontext=system_u:object_r:root_t:s0 tclass=dir permissive=1
+13:11:10,298 NOTICE kernel:type=1400 audit(1655817070.297:44): avc:  denied  { create } for  pid=1589 comm="in:imjournal" name="imjournal.state.tmp" scontext=system_u:system_r:syslogd_t:s0 tcontext=system_u:object_r:root_t:s0 tclass=file permissive=1
+13:11:10,299 NOTICE kernel:type=1400 audit(1655817070.297:45): avc:  denied  { write open } for  pid=1589 comm="in:imjournal" path="/imjournal.state.tmp" dev="dm-0" ino=3779 scontext=system_u:system_r:syslogd_t:s0 tcontext=system_u:object_r:root_t:s0 tclass=file permissive=1
+13:11:10,299 NOTICE kernel:type=1400 audit(1655817070.297:46): avc:  denied  { getattr } for  pid=1589 comm="in:imjournal" path="/imjournal.state.tmp" dev="dm-0" ino=3779 scontext=system_u:system_r:syslogd_t:s0 tcontext=system_u:object_r:root_t:s0 tclass=file permissive=1
+13:11:10,299 NOTICE kernel:type=1400 audit(1655817070.297:47): avc:  denied  { rename } for  pid=1589 comm="in:imjournal" name="imjournal.state.tmp" dev="dm-0" ino=3779 scontext=system_u:system_r:syslogd_t:s0 tcontext=system_u:object_r:root_t:s0 tclass=file permissive=1
+13:11:10,299 NOTICE kernel:type=1400 audit(1655817070.297:48): avc:  denied  { unlink } for  pid=1589 comm="in:imjournal" name="imjournal.state" dev="dm-0" ino=3778 scontext=system_u:system_r:syslogd_t:s0 tcontext=system_u:object_r:root_t:s0 tclass=file permissive=1
+13:11:15,909 NOTICE kernel:type=1400 audit(1655817075.907:49): avc:  denied  { read write } for  pid=2044 comm="ldconfig" path="/dev/pts/0" dev="devpts" ino=3 scontext=system_u:system_r:ldconfig_t:s0 tcontext=system_u:object_r:devpts_t:s0 tclass=chr_file permissive=1
+13:11:19,135 NOTICE dbus:[system] Reloaded configuration
+13:11:57,499 NOTICE dbus:[system] Activating via systemd: service name='org.freedesktop.locale1' unit='dbus-org.freedesktop.locale1.service'
+13:11:57,505 WARNING systemd:Cannot add dependency job for unit rhel-autorelabel-mark.service, ignoring: Unit is masked.
+13:11:57,506 WARNING systemd:Cannot add dependency job for unit rhel-autorelabel.service, ignoring: Unit is masked.
+13:11:57,506 WARNING systemd:Cannot add dependency job for unit rhel-loadmodules.service, ignoring: Unit is masked.
+13:11:57,507 WARNING systemd:Cannot add dependency job for unit systemd-tmpfiles-clean.timer, ignoring: Unit is masked.
+13:11:57,510 INFO systemd:Starting Locale Service...
+13:11:57,544 NOTICE dbus:[system] Successfully activated service 'org.freedesktop.locale1'
+13:11:57,545 INFO systemd:Started Locale Service.
+13:11:58,951 INFO yum:Erased: 10:qemu-guest-agent-2.12.0-3.el7.x86_64
+13:12:02,299 NOTICE kernel:type=1400 audit(1655817122.297:50): avc:  denied  { write } for  pid=1589 comm="in:imjournal" name="/" dev="dm-0" ino=2 scontext=system_u:system_r:syslogd_t:s0 tcontext=system_u:object_r:root_t:s0 tclass=dir permissive=1
+13:12:02,299 NOTICE kernel:type=1400 audit(1655817122.297:51): avc:  denied  { add_name } for  pid=1589 comm="in:imjournal" name="imjournal.state.tmp" scontext=system_u:system_r:syslogd_t:s0 tcontext=system_u:object_r:root_t:s0 tclass=dir permissive=1
+13:12:02,299 NOTICE kernel:type=1400 audit(1655817122.297:52): avc:  denied  { create } for  pid=1589 comm="in:imjournal" name="imjournal.state.tmp" scontext=system_u:system_r:syslogd_t:s0 tcontext=system_u:object_r:root_t:s0 tclass=file permissive=1
+13:12:02,299 NOTICE kernel:type=1400 audit(1655817122.297:53): avc:  denied  { write open } for  pid=1589 comm="in:imjournal" path="/imjournal.state.tmp" dev="dm-0" ino=3779 scontext=system_u:system_r:syslogd_t:s0 tcontext=system_u:object_r:root_t:s0 tclass=file permissive=1
+13:12:02,299 NOTICE kernel:type=1400 audit(1655817122.297:54): avc:  denied  { getattr } for  pid=1589 comm="in:imjournal" path="/imjournal.state.tmp" dev="dm-0" ino=3779 scontext=system_u:system_r:syslogd_t:s0 tcontext=system_u:object_r:root_t:s0 tclass=file permissive=1
+13:12:02,299 NOTICE kernel:type=1400 audit(1655817122.297:55): avc:  denied  { remove_name } for  pid=1589 comm="in:imjournal" name="imjournal.state.tmp" dev="dm-0" ino=3779 scontext=system_u:system_r:syslogd_t:s0 tcontext=system_u:object_r:root_t:s0 tclass=dir permissive=1
+13:12:02,299 NOTICE kernel:type=1400 audit(1655817122.297:56): avc:  denied  { rename } for  pid=1589 comm="in:imjournal" name="imjournal.state.tmp" dev="dm-0" ino=3779 scontext=system_u:system_r:syslogd_t:s0 tcontext=system_u:object_r:root_t:s0 tclass=file permissive=1
+13:12:02,299 NOTICE kernel:type=1400 audit(1655817122.297:57): avc:  denied  { unlink } for  pid=1589 comm="in:imjournal" name="imjournal.state" dev="dm-0" ino=3778 scontext=system_u:system_r:syslogd_t:s0 tcontext=system_u:object_r:root_t:s0 tclass=file permissive=1
+13:12:02,300 NOTICE kernel:type=1400 audit(1655817122.299:58): avc:  denied  { getattr } for  pid=2103 comm="userdel" path="/home/none/.bash_logout" dev="vda3" ino=71 scontext=system_u:system_r:useradd_t:s0 tcontext=system_u:object_r:home_root_t:s0 tclass=file permissive=1
+13:12:02,301 NOTICE kernel:type=1400 audit(1655817122.299:59): avc:  denied  { unlink } for  pid=2103 comm="userdel" name=".bash_logout" dev="vda3" ino=71 scontext=system_u:system_r:useradd_t:s0 tcontext=system_u:object_r:home_root_t:s0 tclass=file permissive=1
+13:12:03,441 ERR systemd-tmpfiles:[/usr/lib/tmpfiles.d/systemd.conf:26] Failed to replace specifiers: /run/log/journal/%m
+13:12:03,441 ERR systemd-tmpfiles:[/usr/lib/tmpfiles.d/systemd.conf:28] Failed to replace specifiers: /run/log/journal/%m
+13:12:03,441 ERR systemd-tmpfiles:[/usr/lib/tmpfiles.d/systemd.conf:29] Failed to replace specifiers: /run/log/journal/%m
+13:12:03,441 ERR systemd-tmpfiles:[/usr/lib/tmpfiles.d/systemd.conf:32] Failed to replace specifiers: /var/log/journal/%m
+13:12:03,441 ERR systemd-tmpfiles:[/usr/lib/tmpfiles.d/systemd.conf:33] Failed to replace specifiers: /var/log/journal/%m/system.journal
+13:12:03,441 ERR systemd-tmpfiles:[/usr/lib/tmpfiles.d/systemd.conf:37] Failed to replace specifiers: /var/log/journal/%m
+13:12:03,441 ERR systemd-tmpfiles:[/usr/lib/tmpfiles.d/systemd.conf:38] Failed to replace specifiers: /var/log/journal/%m
+13:12:03,441 ERR systemd-tmpfiles:[/usr/lib/tmpfiles.d/systemd.conf:39] Failed to replace specifiers: /var/log/journal/%m/system.journal

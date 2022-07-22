@@ -1,0 +1,21 @@
+FROM sha256:7c3c7008cf072db8df3a3b2cf17fd068fac17cf1063e63674578f0c9d8a48728
+
+MAINTAINER Red Hat, Inc.
+
+LABEL com.redhat.component="rhel-server-container" \
+      name="rhel7" \
+      version="7.9"
+
+#labels for container catalog
+LABEL summary="Provides the latest release of Red Hat Enterprise Linux 7 in a fully featured and supported base image."
+LABEL description="The Red Hat Enterprise Linux Base image is designed to be a fully supported foundation for your containerized applications. This base image provides your operations and application teams with the packages, language runtimes and tools necessary to run, maintain, and troubleshoot all of your applications. This image is maintained by Red Hat and updated regularly. It is designed and engineered to be the base layer for all of your containerized applications, middleware and utilities. When used as the source for all of your containers, only one copy will ever be downloaded and cached in your production environment. Use this image just like you would a regular Red Hat Enterprise Linux distribution. Tools like yum, gzip, and bash are provided by default. For further information on how this image was built look at the /root/anacanda-ks.cfg file."
+LABEL io.k8s.display-name="Red Hat Enterprise Linux 7"
+LABEL io.openshift.tags="base rhel7"
+
+ENV container oci
+ENV PATH /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+CMD ["/bin/bash"]
+
+ADD rhel-server-container-7.9-747.json /root/buildinfo/content_manifests/rhel-server-container-7.9-747.json
+LABEL "release"="747" "com.redhat.license_terms"="https://www.redhat.com/agreements" "distribution-scope"="public" "vendor"="Red Hat, Inc." "build-date"="2022-06-21T13:19:22.931677" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="a4d1f0b8a9b923ca309da182943d17fe639d8c95" "com.redhat.build-host"="cpt-1005.osbs.prod.upshift.rdu2.redhat.com" "io.k8s.description"="The Red Hat Enterprise Linux Base image is designed to be a fully supported foundation for your containerized applications. This base image provides your operations and application teams with the packages, language runtimes and tools necessary to run, maintain, and troubleshoot all of your applications. This image is maintained by Red Hat and updated regularly. It is designed and engineered to be the base layer for all of your containerized applications, middleware and utilities. When used as the source for all of your containers, only one copy will ever be downloaded and cached in your production environment. Use this image just like you would a regular Red Hat Enterprise Linux distribution. Tools like yum, gzip, and bash are provided by default. For further information on how this image was built look at the /root/anacanda-ks.cfg file." "url"="https://access.redhat.com/containers/#/registry.access.redhat.com/rhel7/images/7.9-747"

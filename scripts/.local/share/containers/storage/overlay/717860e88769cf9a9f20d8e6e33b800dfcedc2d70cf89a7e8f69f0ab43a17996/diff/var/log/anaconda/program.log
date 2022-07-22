@@ -1,0 +1,576 @@
+13:09:50,550 INFO program: Running... systemctl restart rsyslog.service
+13:09:50,659 DEBUG program: Return code: 0
+13:09:51,230 INFO program: Running... losetup --list
+13:09:51,258 INFO program: Running... /sbin/auditd
+13:09:51,272 DEBUG program: Return code: 0
+13:09:51,274 INFO program: Running... udevadm control --env=ANACONDA=1
+13:09:51,295 DEBUG program: Return code: 0
+13:09:51,570 INFO program: Running... udevadm trigger --action=change --subsystem-match=block
+13:09:51,588 DEBUG program: Return code: 0
+13:09:51,588 INFO program: Running... udevadm settle --timeout=300
+13:09:51,628 DEBUG program: Return code: 0
+13:09:51,630 INFO program: Running... modprobe fcoe
+13:09:51,720 DEBUG program: Return code: 0
+13:09:51,723 INFO program: Running... /usr/libexec/fcoe/fcoe_edd.sh -i
+13:09:51,771 INFO program: No FCoE boot disk information is found in EDD!
+13:09:51,772 DEBUG program: Return code: 1
+13:09:51,791 INFO program: Running... loadkeys us
+13:09:51,859 INFO program: Loading /lib/kbd/keymaps/xkb/us.map.gz
+13:09:51,859 DEBUG program: Return code: 0
+13:09:51,859 INFO program: Running... loadkeys us
+13:09:51,921 INFO program: Loading /lib/kbd/keymaps/xkb/us.map.gz
+13:09:51,922 DEBUG program: Return code: 0
+13:09:51,992 INFO program: Running... setfont latarcyrheb-sun16
+13:09:52,016 DEBUG program: Return code: 0
+13:09:52,291 INFO program: Running... losetup --list
+13:09:52,371 INFO program: Running... modprobe xfs
+13:09:52,455 DEBUG program: Return code: 0
+13:09:53,143 INFO program: Running... udevadm settle --timeout=300
+13:09:53,159 DEBUG program: Return code: 0
+13:09:53,165 INFO program: Running... udevadm settle --timeout=300
+13:09:53,178 DEBUG program: Return code: 0
+13:09:53,201 INFO program: Running... udevadm settle --timeout=300
+13:09:53,237 DEBUG program: Return code: 0
+13:09:53,237 INFO program: Running... mpathconf --find_multipaths y --user_friendly_names y --with_multipathd y
+13:09:53,421 DEBUG program: Return code: 0
+13:09:53,421 INFO program: Running... udevadm settle --timeout=300
+13:09:53,442 DEBUG program: Return code: 0
+13:09:53,444 INFO program: Running... hwclock --hctosys --utc
+13:09:53,545 INFO program: Running... multipath -c /dev/vda
+13:09:53,561 INFO program: /dev/vda is not a valid multipath device path
+13:09:53,562 DEBUG program: Return code: 1
+13:09:53,603 INFO program: Running... multipath -c /dev/loop0
+13:09:53,626 INFO program: /dev/loop0 is not a valid multipath device path
+13:09:53,627 DEBUG program: Return code: 1
+13:09:53,658 INFO program: Running... multipath -c /dev/loop1
+13:09:53,679 INFO program: /dev/loop1 is not a valid multipath device path
+13:09:53,680 DEBUG program: Return code: 1
+13:09:53,689 INFO program: Running... dumpe2fs -h /dev/loop1
+13:09:53,730 INFO program: dumpe2fs 1.42.9 (28-Dec-2013)
+13:09:53,731 INFO program: Filesystem volume name:   Anaconda
+13:09:53,731 INFO program: Last mounted on:          /
+13:09:53,731 INFO program: Filesystem UUID:          6b82e2ac-f750-4525-97b7-b8c363a8b265
+13:09:53,732 INFO program: Filesystem magic number:  0xEF53
+13:09:53,732 INFO program: Filesystem revision #:    1 (dynamic)
+13:09:53,732 INFO program: Filesystem features:      has_journal ext_attr resize_inode dir_index filetype extent 64bit flex_bg sparse_super huge_file uninit_bg dir_nlink extra_isize
+13:09:53,732 INFO program: Filesystem flags:         signed_directory_hash 
+13:09:53,732 INFO program: Default mount options:    user_xattr acl
+13:09:53,732 INFO program: Filesystem state:         clean
+13:09:53,733 INFO program: Errors behavior:          Continue
+13:09:53,733 INFO program: Filesystem OS type:       Linux
+13:09:53,733 INFO program: Inode count:              131072
+13:09:53,733 INFO program: Block count:              2097152
+13:09:53,733 INFO program: Reserved block count:     0
+13:09:53,733 INFO program: Free blocks:              460914
+13:09:53,739 INFO program: Free inodes:              93520
+13:09:53,739 INFO program: First block:              1
+13:09:53,740 INFO program: Block size:               1024
+13:09:53,740 INFO program: Fragment size:            1024
+13:09:53,741 INFO program: Group descriptor size:    64
+13:09:53,741 INFO program: Reserved GDT blocks:      256
+13:09:53,742 INFO program: Blocks per group:         8192
+13:09:53,742 INFO program: Fragments per group:      8192
+13:09:53,743 INFO program: Inodes per group:         512
+13:09:53,743 INFO program: Inode blocks per group:   128
+13:09:53,744 INFO program: Flex block group size:    16
+13:09:53,746 INFO program: Filesystem created:       Tue Jun 21 12:38:11 2022
+13:09:53,747 INFO program: Last mount time:          Tue Jun 21 12:39:07 2022
+13:09:53,747 INFO program: Last write time:          Tue Jun 21 12:39:27 2022
+13:09:53,748 INFO program: Mount count:              2
+13:09:53,749 INFO program: Maximum mount count:      -1
+13:09:53,750 INFO program: Last checked:             Tue Jun 21 12:38:11 2022
+13:09:53,751 INFO program: Check interval:           0 (<none>)
+13:09:53,752 INFO program: Lifetime writes:          32 MB
+13:09:53,752 INFO program: Reserved blocks uid:      0 (user root)
+13:09:53,753 INFO program: Reserved blocks gid:      0 (group root)
+13:09:53,753 INFO program: First inode:              11
+13:09:53,754 INFO program: Inode size:	          256
+13:09:53,754 INFO program: Required extra isize:     28
+13:09:53,755 INFO program: Desired extra isize:      28
+13:09:53,755 INFO program: Journal inode:            8
+13:09:53,756 INFO program: Default directory hash:   half_md4
+13:09:53,756 INFO program: Directory Hash Seed:      32dcbfb3-051d-496e-acde-4929ee07db79
+13:09:53,757 INFO program: Journal backup:           inode blocks
+13:09:53,757 INFO program: Journal features:         journal_64bit
+13:09:53,758 INFO program: Journal size:             32M
+13:09:53,758 INFO program: Journal length:           32768
+13:09:53,759 INFO program: Journal sequence:         0x0000000e
+13:09:53,759 INFO program: Journal start:            0
+13:09:53,760 INFO program: 
+13:09:53,760 DEBUG program: Return code: 0
+13:09:53,762 INFO program: Running... resize2fs -P /dev/loop1
+13:09:53,791 INFO program: resize2fs 1.42.9 (28-Dec-2013)
+13:09:53,792 INFO program: /sbin/resize2fs: Device or resource busy while trying to open /dev/loop1
+13:09:53,792 INFO program: Couldn't find valid filesystem superblock.
+13:09:53,792 DEBUG program: Return code: 1
+13:09:53,793 INFO program: Running... e2fsck -f -p -C 0 /dev/loop1
+13:09:53,831 INFO program: /dev/loop1 is in use.
+13:09:53,831 INFO program: e2fsck: Cannot continue, aborting.
+13:09:53,831 INFO program: 
+13:09:53,831 INFO program: 
+13:09:53,832 DEBUG program: Return code: 8
+13:09:53,887 INFO program: Running... multipath -c /dev/loop2
+13:09:54,026 INFO program: /dev/loop2 is not a valid multipath device path
+13:09:54,027 DEBUG program: Return code: 1
+13:09:54,029 DEBUG program: Return code: 0
+13:09:54,179 INFO program: Running... multipath -c /dev/mapper/live-rw
+13:09:54,202 INFO program: Jun 21 13:09:54 | the -c option requires a path to check
+13:09:54,202 DEBUG program: Return code: 1
+13:09:54,207 INFO program: Running... dumpe2fs -h /dev/mapper/live-rw
+13:09:54,253 INFO program: dumpe2fs 1.42.9 (28-Dec-2013)
+13:09:54,255 INFO program: Filesystem volume name:   Anaconda
+13:09:54,257 INFO program: Last mounted on:          /sysroot
+13:09:54,257 INFO program: Filesystem UUID:          6b82e2ac-f750-4525-97b7-b8c363a8b265
+13:09:54,258 INFO program: Filesystem magic number:  0xEF53
+13:09:54,259 INFO program: Filesystem revision #:    1 (dynamic)
+13:09:54,260 INFO program: Filesystem features:      has_journal ext_attr resize_inode dir_index filetype needs_recovery extent 64bit flex_bg sparse_super huge_file uninit_bg dir_nlink extra_isize
+13:09:54,261 INFO program: Filesystem flags:         signed_directory_hash 
+13:09:54,261 INFO program: Default mount options:    user_xattr acl
+13:09:54,261 INFO program: Filesystem state:         clean
+13:09:54,261 INFO program: Errors behavior:          Continue
+13:09:54,261 INFO program: Filesystem OS type:       Linux
+13:09:54,262 INFO program: Inode count:              131072
+13:09:54,262 INFO program: Block count:              2097152
+13:09:54,262 INFO program: Reserved block count:     0
+13:09:54,262 INFO program: Free blocks:              460914
+13:09:54,262 INFO program: Free inodes:              93520
+13:09:54,263 INFO program: First block:              1
+13:09:54,263 INFO program: Block size:               1024
+13:09:54,263 INFO program: Fragment size:            1024
+13:09:54,263 INFO program: Group descriptor size:    64
+13:09:54,263 INFO program: Reserved GDT blocks:      256
+13:09:54,263 INFO program: Blocks per group:         8192
+13:09:54,264 INFO program: Fragments per group:      8192
+13:09:54,264 INFO program: Inodes per group:         512
+13:09:54,264 INFO program: Inode blocks per group:   128
+13:09:54,264 INFO program: Flex block group size:    16
+13:09:54,264 INFO program: Filesystem created:       Tue Jun 21 12:38:11 2022
+13:09:54,265 INFO program: Last mount time:          Tue Jun 21 13:09:38 2022
+13:09:54,265 INFO program: Last write time:          Tue Jun 21 13:09:38 2022
+13:09:54,265 INFO program: Mount count:              3
+13:09:54,265 INFO program: Maximum mount count:      -1
+13:09:54,265 INFO program: Last checked:             Tue Jun 21 12:38:11 2022
+13:09:54,265 INFO program: Check interval:           0 (<none>)
+13:09:54,266 INFO program: Lifetime writes:          32 MB
+13:09:54,266 INFO program: Reserved blocks uid:      0 (user root)
+13:09:54,266 INFO program: Reserved blocks gid:      0 (group root)
+13:09:54,266 INFO program: First inode:              11
+13:09:54,266 INFO program: Inode size:	          256
+13:09:54,266 INFO program: Required extra isize:     28
+13:09:54,267 INFO program: Desired extra isize:      28
+13:09:54,267 INFO program: Journal inode:            8
+13:09:54,267 INFO program: Default directory hash:   half_md4
+13:09:54,267 INFO program: Directory Hash Seed:      32dcbfb3-051d-496e-acde-4929ee07db79
+13:09:54,267 INFO program: Journal backup:           inode blocks
+13:09:54,268 INFO program: Journal features:         journal_incompat_revoke journal_64bit
+13:09:54,268 INFO program: Journal size:             32M
+13:09:54,268 INFO program: Journal length:           32768
+13:09:54,268 INFO program: Journal sequence:         0x0000000f
+13:09:54,268 INFO program: Journal start:            1
+13:09:54,268 INFO program: 
+13:09:54,269 DEBUG program: Return code: 0
+13:09:54,269 INFO program: Running... resize2fs -P /dev/mapper/live-rw
+13:09:54,282 INFO program: resize2fs 1.42.9 (28-Dec-2013)
+13:09:54,283 INFO program: Estimated minimum size of the filesystem: 1631794
+13:09:54,283 DEBUG program: Return code: 0
+13:09:54,400 INFO program: Running... multipath -c /dev/mapper/live-base
+13:09:54,413 INFO program: Jun 21 13:09:54 | the -c option requires a path to check
+13:09:54,414 DEBUG program: Return code: 1
+13:09:54,420 INFO program: Running... dumpe2fs -h /dev/mapper/live-base
+13:09:54,431 INFO program: dumpe2fs 1.42.9 (28-Dec-2013)
+13:09:54,431 INFO program: Filesystem volume name:   Anaconda
+13:09:54,431 INFO program: Last mounted on:          /
+13:09:54,431 INFO program: Filesystem UUID:          6b82e2ac-f750-4525-97b7-b8c363a8b265
+13:09:54,432 INFO program: Filesystem magic number:  0xEF53
+13:09:54,432 INFO program: Filesystem revision #:    1 (dynamic)
+13:09:54,432 INFO program: Filesystem features:      has_journal ext_attr resize_inode dir_index filetype extent 64bit flex_bg sparse_super huge_file uninit_bg dir_nlink extra_isize
+13:09:54,432 INFO program: Filesystem flags:         signed_directory_hash 
+13:09:54,432 INFO program: Default mount options:    user_xattr acl
+13:09:54,432 INFO program: Filesystem state:         clean
+13:09:54,433 INFO program: Errors behavior:          Continue
+13:09:54,433 INFO program: Filesystem OS type:       Linux
+13:09:54,433 INFO program: Inode count:              131072
+13:09:54,433 INFO program: Block count:              2097152
+13:09:54,433 INFO program: Reserved block count:     0
+13:09:54,433 INFO program: Free blocks:              460914
+13:09:54,433 INFO program: Free inodes:              93520
+13:09:54,434 INFO program: First block:              1
+13:09:54,434 INFO program: Block size:               1024
+13:09:54,434 INFO program: Fragment size:            1024
+13:09:54,434 INFO program: Group descriptor size:    64
+13:09:54,434 INFO program: Reserved GDT blocks:      256
+13:09:54,434 INFO program: Blocks per group:         8192
+13:09:54,435 INFO program: Fragments per group:      8192
+13:09:54,435 INFO program: Inodes per group:         512
+13:09:54,435 INFO program: Inode blocks per group:   128
+13:09:54,435 INFO program: Flex block group size:    16
+13:09:54,435 INFO program: Filesystem created:       Tue Jun 21 12:38:11 2022
+13:09:54,435 INFO program: Last mount time:          Tue Jun 21 12:39:07 2022
+13:09:54,436 INFO program: Last write time:          Tue Jun 21 12:39:27 2022
+13:09:54,436 INFO program: Mount count:              2
+13:09:54,436 INFO program: Maximum mount count:      -1
+13:09:54,436 INFO program: Last checked:             Tue Jun 21 12:38:11 2022
+13:09:54,436 INFO program: Check interval:           0 (<none>)
+13:09:54,436 INFO program: Lifetime writes:          32 MB
+13:09:54,436 INFO program: Reserved blocks uid:      0 (user root)
+13:09:54,437 INFO program: Reserved blocks gid:      0 (group root)
+13:09:54,437 INFO program: First inode:              11
+13:09:54,437 INFO program: Inode size:	          256
+13:09:54,437 INFO program: Required extra isize:     28
+13:09:54,437 INFO program: Desired extra isize:      28
+13:09:54,437 INFO program: Journal inode:            8
+13:09:54,438 INFO program: Default directory hash:   half_md4
+13:09:54,438 INFO program: Directory Hash Seed:      32dcbfb3-051d-496e-acde-4929ee07db79
+13:09:54,438 INFO program: Journal backup:           inode blocks
+13:09:54,438 INFO program: Journal features:         journal_64bit
+13:09:54,438 INFO program: Journal size:             32M
+13:09:54,438 INFO program: Journal length:           32768
+13:09:54,439 INFO program: Journal sequence:         0x0000000e
+13:09:54,439 INFO program: Journal start:            0
+13:09:54,439 INFO program: 
+13:09:54,439 DEBUG program: Return code: 0
+13:09:54,440 INFO program: Running... resize2fs -P /dev/mapper/live-base
+13:09:54,451 INFO program: resize2fs 1.42.9 (28-Dec-2013)
+13:09:54,451 INFO program: /sbin/resize2fs: Operation not permitted while trying to open /dev/mapper/live-base
+13:09:54,451 INFO program: Couldn't find valid filesystem superblock.
+13:09:54,452 DEBUG program: Return code: 1
+13:09:54,453 INFO program: Running... e2fsck -f -p -C 0 /dev/mapper/live-base
+13:09:54,467 INFO program: /sbin/e2fsck: Operation not permitted while trying to open /dev/mapper/live-base
+13:09:54,467 INFO program: You must have r/w access to the filesystem or be root
+13:09:54,468 DEBUG program: Return code: 8
+13:09:54,474 INFO program: Running... udevadm settle --timeout=300
+13:09:54,491 DEBUG program: Return code: 0
+13:09:54,499 INFO program: Running... udevadm settle --timeout=300
+13:09:54,513 DEBUG program: Return code: 0
+13:09:54,528 INFO program: Running... udevadm settle --timeout=300
+13:09:54,542 DEBUG program: Return code: 0
+13:10:04,812 INFO program: Running... udevadm settle --timeout=300
+13:10:04,829 DEBUG program: Return code: 0
+13:10:04,834 INFO program: Running... udevadm settle --timeout=300
+13:10:04,849 DEBUG program: Return code: 0
+13:10:05,094 INFO program: Running... hwclock --systohc --utc
+13:10:06,501 DEBUG program: Return code: 0
+13:10:06,516 INFO program: Running... udevadm settle --timeout=300
+13:10:06,533 DEBUG program: Return code: 0
+13:10:06,538 INFO program: Running... udevadm settle --timeout=300
+13:10:06,552 DEBUG program: Return code: 0
+13:10:06,559 INFO program: Running... udevadm settle --timeout=300
+13:10:06,574 DEBUG program: Return code: 0
+13:10:06,599 INFO program: Running... wipefs -f -a /dev/vda
+13:10:06,623 DEBUG program: Return code: 0
+13:10:06,624 INFO program: Running... udevadm settle --timeout=300
+13:10:06,641 DEBUG program: Return code: 0
+13:10:06,642 INFO program: Running... udevadm settle --timeout=300
+13:10:06,657 DEBUG program: Return code: 0
+13:10:06,658 INFO program: Running... udevadm settle --timeout=300
+13:10:06,672 DEBUG program: Return code: 0
+13:10:06,713 INFO program: Running... udevadm settle --timeout=300
+13:10:06,739 DEBUG program: Return code: 0
+13:10:06,740 INFO program: Running... udevadm settle --timeout=300
+13:10:06,755 DEBUG program: Return code: 0
+13:10:06,757 INFO program: Running... udevadm settle --timeout=300
+13:10:06,772 DEBUG program: Return code: 0
+13:10:06,788 INFO program: Running... dd if=/dev/zero of=/dev/vda bs=512 seek=2048 count=2048
+13:10:06,856 INFO program: 2048+0 records in
+13:10:06,858 INFO program: 2048+0 records out
+13:10:06,858 INFO program: 1048576 bytes (1.0 MB) copied, 0.0474974 s, 22.1 MB/s
+13:10:06,859 DEBUG program: Return code: 0
+13:10:06,860 INFO program: Running... udevadm settle --timeout=300
+13:10:06,880 DEBUG program: Return code: 0
+13:10:06,918 INFO program: Running... udevadm settle --timeout=300
+13:10:06,952 DEBUG program: Return code: 0
+13:10:06,959 INFO program: Running... wipefs -f -a /dev/vda1
+13:10:06,977 DEBUG program: Return code: 0
+13:10:06,978 INFO program: Running... udevadm settle --timeout=300
+13:10:06,994 DEBUG program: Return code: 0
+13:10:06,999 INFO program: Running... udevadm settle --timeout=300
+13:10:07,014 DEBUG program: Return code: 0
+13:10:07,051 INFO program: Running... udevadm settle --timeout=300
+13:10:07,066 DEBUG program: Return code: 0
+13:10:07,081 INFO program: Running... dd if=/dev/zero of=/dev/vda bs=512 seek=2099200 count=2048
+13:10:07,146 INFO program: 2048+0 records in
+13:10:07,147 INFO program: 2048+0 records out
+13:10:07,147 INFO program: 1048576 bytes (1.0 MB) copied, 0.0530702 s, 19.8 MB/s
+13:10:07,148 DEBUG program: Return code: 0
+13:10:07,149 INFO program: Running... udevadm settle --timeout=300
+13:10:07,167 DEBUG program: Return code: 0
+13:10:07,211 INFO program: Running... udevadm settle --timeout=300
+13:10:07,247 DEBUG program: Return code: 0
+13:10:07,254 INFO program: Running... wipefs -f -a /dev/vda2
+13:10:07,272 DEBUG program: Return code: 0
+13:10:07,274 INFO program: Running... udevadm settle --timeout=300
+13:10:07,293 DEBUG program: Return code: 0
+13:10:07,299 INFO program: Running... udevadm settle --timeout=300
+13:10:07,313 DEBUG program: Return code: 0
+13:10:07,350 INFO program: Running... udevadm settle --timeout=300
+13:10:07,365 DEBUG program: Return code: 0
+13:10:07,408 INFO program: Running... udevadm settle --timeout=300
+13:10:07,433 DEBUG program: Return code: 0
+13:10:07,439 INFO program: Running... mkswap -f /dev/vda2
+13:10:07,464 INFO program: Setting up swapspace version 1, size = 1048572 KiB
+13:10:07,465 INFO program: no label, UUID=f71999dc-43e4-400f-a101-2ef6b8bc1a6e
+13:10:07,465 DEBUG program: Return code: 0
+13:10:07,468 INFO program: Running... udevadm settle --timeout=300
+13:10:07,489 DEBUG program: Return code: 0
+13:10:07,492 INFO program: Running... udevadm settle --timeout=300
+13:10:07,507 DEBUG program: Return code: 0
+13:10:07,519 INFO program: Running... dd if=/dev/zero of=/dev/vda bs=512 seek=4196352 count=2048
+13:10:07,582 INFO program: 2048+0 records in
+13:10:07,583 INFO program: 2048+0 records out
+13:10:07,583 INFO program: 1048576 bytes (1.0 MB) copied, 0.0539746 s, 19.4 MB/s
+13:10:07,583 DEBUG program: Return code: 0
+13:10:07,583 INFO program: Running... udevadm settle --timeout=300
+13:10:07,605 DEBUG program: Return code: 0
+13:10:07,644 INFO program: Running... udevadm settle --timeout=300
+13:10:07,671 DEBUG program: Return code: 0
+13:10:07,678 INFO program: Running... wipefs -f -a /dev/vda3
+13:10:07,695 DEBUG program: Return code: 0
+13:10:07,697 INFO program: Running... udevadm settle --timeout=300
+13:10:07,714 DEBUG program: Return code: 0
+13:10:07,719 INFO program: Running... udevadm settle --timeout=300
+13:10:07,733 DEBUG program: Return code: 0
+13:10:07,770 INFO program: Running... udevadm settle --timeout=300
+13:10:07,784 DEBUG program: Return code: 0
+13:10:07,824 INFO program: Running... udevadm settle --timeout=300
+13:10:07,850 DEBUG program: Return code: 0
+13:10:07,855 INFO program: Running... mkfs.xfs -f /dev/vda3
+13:10:08,049 INFO program: meta-data=/dev/vda3              isize=512    agcount=4, agsize=524224 blks
+13:10:08,049 INFO program:          =                       sectsz=512   attr=2, projid32bit=1
+13:10:08,050 INFO program:          =                       crc=1        finobt=0, sparse=0
+13:10:08,050 INFO program: data     =                       bsize=4096   blocks=2096896, imaxpct=25
+13:10:08,050 INFO program:          =                       sunit=0      swidth=0 blks
+13:10:08,050 INFO program: naming   =version 2              bsize=4096   ascii-ci=0 ftype=1
+13:10:08,050 INFO program: log      =internal log           bsize=4096   blocks=2560, version=2
+13:10:08,050 INFO program:          =                       sectsz=512   sunit=0 blks, lazy-count=1
+13:10:08,051 INFO program: realtime =none                   extsz=4096   blocks=0, rtextents=0
+13:10:08,051 DEBUG program: Return code: 0
+13:10:08,054 INFO program: Running... udevadm settle --timeout=300
+13:10:08,073 DEBUG program: Return code: 0
+13:10:08,076 INFO program: Running... udevadm settle --timeout=300
+13:10:08,092 DEBUG program: Return code: 0
+13:10:08,124 INFO program: Running... udevadm settle --timeout=300
+13:10:08,154 DEBUG program: Return code: 0
+13:10:08,159 INFO program: Running... mkfs.xfs -f /dev/vda1
+13:10:08,354 INFO program: meta-data=/dev/vda1              isize=512    agcount=4, agsize=65536 blks
+13:10:08,355 INFO program:          =                       sectsz=512   attr=2, projid32bit=1
+13:10:08,355 INFO program:          =                       crc=1        finobt=0, sparse=0
+13:10:08,355 INFO program: data     =                       bsize=4096   blocks=262144, imaxpct=25
+13:10:08,355 INFO program:          =                       sunit=0      swidth=0 blks
+13:10:08,356 INFO program: naming   =version 2              bsize=4096   ascii-ci=0 ftype=1
+13:10:08,356 INFO program: log      =internal log           bsize=4096   blocks=2560, version=2
+13:10:08,356 INFO program:          =                       sectsz=512   sunit=0 blks, lazy-count=1
+13:10:08,356 INFO program: realtime =none                   extsz=4096   blocks=0, rtextents=0
+13:10:08,356 DEBUG program: Return code: 0
+13:10:08,359 INFO program: Running... udevadm settle --timeout=300
+13:10:08,376 DEBUG program: Return code: 0
+13:10:08,378 INFO program: Running... udevadm settle --timeout=300
+13:10:08,393 DEBUG program: Return code: 0
+13:10:08,505 INFO program: Running... swapon /dev/vda2
+13:10:08,524 DEBUG program: Return code: 0
+13:10:08,600 INFO program: Running... mount -t xfs -o defaults /dev/vda3 /mnt/sysimage
+13:10:08,627 DEBUG program: Return code: 0
+13:10:08,639 INFO program: Running... mount -t xfs -o defaults /dev/vda1 /mnt/sysimage/boot
+13:10:08,657 DEBUG program: Return code: 0
+13:10:08,662 INFO program: Running... mount -t bind -o bind,defaults /dev /mnt/sysimage/dev
+13:10:08,671 DEBUG program: Return code: 0
+13:10:08,675 INFO program: Running... mount -t devpts -o gid=5,mode=620 devpts /mnt/sysimage/dev/pts
+13:10:08,685 DEBUG program: Return code: 0
+13:10:08,689 INFO program: Running... mount -t tmpfs -o defaults tmpfs /mnt/sysimage/dev/shm
+13:10:08,698 DEBUG program: Return code: 0
+13:10:08,704 INFO program: Running... mount -t proc -o defaults proc /mnt/sysimage/proc
+13:10:08,716 DEBUG program: Return code: 0
+13:10:08,833 INFO program: Running... mount -t bind -o bind,defaults /run /mnt/sysimage/run
+13:10:08,843 DEBUG program: Return code: 0
+13:10:08,847 INFO program: Running... mount -t sysfs -o defaults sysfs /mnt/sysimage/sys
+13:10:08,857 DEBUG program: Return code: 0
+13:10:08,862 INFO program: Running... mount -t selinuxfs -o defaults selinuxfs /mnt/sysimage/sys/fs/selinux
+13:10:08,871 DEBUG program: Return code: 0
+13:10:08,892 INFO program: Running... systemctl status chronyd.service
+13:10:08,946 INFO program: * chronyd.service - NTP client/server
+13:10:08,948 INFO program: Loaded: loaded (/usr/lib/systemd/system/chronyd.service; enabled; vendor preset: enabled)
+13:10:08,948 INFO program: Active: inactive (dead)
+13:10:08,949 INFO program: Docs: man:chronyd(8)
+13:10:08,950 INFO program: man:chrony.conf(5)
+13:10:08,950 DEBUG program: Return code: 3
+13:10:08,978 INFO program: Running... systemd-detect-virt
+13:10:08,992 INFO program: kvm
+13:10:08,993 DEBUG program: Return code: 0
+13:10:11,646 INFO program: Running... /usr/libexec/anaconda/anaconda-yum --config /tmp/anaconda-yum.conf --tsfile /mnt/sysimage/anaconda-yum.yumtx --rpmlog /tmp/rpm-script.log --installroot /mnt/sysimage --release 7.9 --arch x86_64 --macro __dbi_htconfig hash nofsync %{__dbi_other} %{__dbi_perms} --macro _excludedocs 1 --macro _install_langs en --macro __file_context_path /etc/selinux/targeted/contexts/files/file_contexts
+13:11:57,469 INFO program: Running... systemctl disable chronyd.service
+13:11:57,487 INFO program: Operation failed: No such file or directory
+13:11:57,488 DEBUG program: Return code: 1
+13:11:58,149 INFO program: Running... systemctl enable kdump.service
+13:11:58,161 INFO program: Operation failed: No such file or directory
+13:11:58,162 DEBUG program: Return code: 1
+13:11:58,166 INFO program: Running... /bin/sh /tmp/ks-script-wwgGEf
+13:12:03,459 INFO program: Loaded plugins: ovl, product-id, search-disabled-repos, subscription-manager
+13:12:03,462 INFO program: 
+13:12:03,462 INFO program: This system is not registered with an entitlement server. You can use subscription-manager to register.
+13:12:03,463 INFO program: 
+13:12:03,463 INFO program: Resolving Dependencies
+13:12:03,464 INFO program: --> Running transaction check
+13:12:03,464 INFO program: ---> Package qemu-guest-agent.x86_64 10:2.12.0-3.el7 will be erased
+13:12:03,465 INFO program: --> Finished Dependency Resolution
+13:12:03,465 INFO program: 
+13:12:03,465 INFO program: Dependencies Resolved
+13:12:03,466 INFO program: 
+13:12:03,466 INFO program: ================================================================================
+13:12:03,467 INFO program: Package              Arch       Version                Repository         Size
+13:12:03,467 INFO program: ================================================================================
+13:12:03,468 INFO program: Removing:
+13:12:03,468 INFO program: qemu-guest-agent     x86_64     10:2.12.0-3.el7        @anaconda/7.9     297 k
+13:12:03,469 INFO program: 
+13:12:03,469 INFO program: Transaction Summary
+13:12:03,470 INFO program: ================================================================================
+13:12:03,470 INFO program: Remove  1 Package
+13:12:03,470 INFO program: 
+13:12:03,471 INFO program: Installed size: 297 k
+13:12:03,471 INFO program: Downloading packages:
+13:12:03,472 INFO program: Running transaction check
+13:12:03,472 INFO program: Running transaction test
+13:12:03,473 INFO program: Transaction test succeeded
+13:12:03,473 INFO program: Running transaction
+13:12:03,473 INFO program: Erasing    : 10:qemu-guest-agent-2.12.0-3.el7.x86_64                      1/1
+13:12:03,474 INFO program: Verifying  : 10:qemu-guest-agent-2.12.0-3.el7.x86_64                      1/1
+13:12:03,474 INFO program: 
+13:12:03,474 INFO program: Removed:
+13:12:03,475 INFO program: qemu-guest-agent.x86_64 10:2.12.0-3.el7
+13:12:03,475 INFO program: 
+13:12:03,476 INFO program: Complete!
+13:12:03,476 INFO program: Loaded plugins: ovl, product-id, search-disabled-repos, subscription-manager
+13:12:03,477 INFO program: 
+13:12:03,477 INFO program: This system is not registered with an entitlement server. You can use subscription-manager to register.
+13:12:03,478 INFO program: 
+13:12:03,478 INFO program: No Match for argument: blktrace
+13:12:03,478 INFO program: No Match for argument: ethtool
+13:12:03,479 INFO program: No Match for argument: fuse-libs
+13:12:03,479 INFO program: No Match for argument: groff-base
+13:12:03,480 INFO program: No Match for argument: hostname
+13:12:03,480 INFO program: No Match for argument: initscripts
+13:12:03,480 INFO program: No Match for argument: iproute
+13:12:03,481 INFO program: No Match for argument: iptables
+13:12:03,481 INFO program: No Match for argument: iputils
+13:12:03,482 INFO program: No Match for argument: libaio
+13:12:03,482 INFO program: No Match for argument: libmnl
+13:12:03,482 INFO program: No Match for argument: libnetfilter_conntrack
+13:12:03,483 INFO program: No Match for argument: libnfnetlink
+13:12:03,483 INFO program: No Match for argument: libsysfs
+13:12:03,484 INFO program: No Match for argument: lsscsi
+13:12:03,484 INFO program: No Match for argument: mariadb-libs
+13:12:03,484 INFO program: No Match for argument: perl
+13:12:03,485 INFO program: No Match for argument: perl-Carp
+13:12:03,485 INFO program: No Match for argument: perl-Data-Dumper
+13:12:03,486 INFO program: No Match for argument: perl-Encode
+13:12:03,486 INFO program: No Match for argument: perl-Exporter
+13:12:03,487 INFO program: No Match for argument: perl-File-Path
+13:12:03,487 INFO program: No Match for argument: perl-File-Temp
+13:12:03,487 INFO program: No Match for argument: perl-Filter
+13:12:03,488 INFO program: No Match for argument: perl-Getopt-Long
+13:12:03,488 INFO program: No Match for argument: perl-HTTP-Tiny
+13:12:03,489 INFO program: No Match for argument: perl-PathTools
+13:12:03,489 INFO program: No Match for argument: perl-Pod-Escapes
+13:12:03,490 INFO program: No Match for argument: perl-Pod-Perldoc
+13:12:03,490 INFO program: No Match for argument: perl-Pod-Simple
+13:12:03,490 INFO program: No Match for argument: perl-Pod-Usage
+13:12:03,491 INFO program: No Match for argument: perl-Scalar-List-Utils
+13:12:03,491 INFO program: No Match for argument: perl-Socket
+13:12:03,491 INFO program: No Match for argument: perl-Storable
+13:12:03,492 INFO program: No Match for argument: perl-Text-ParseWords
+13:12:03,492 INFO program: No Match for argument: perl-Time-HiRes
+13:12:03,493 INFO program: No Match for argument: perl-Time-Local
+13:12:03,493 INFO program: No Match for argument: perl-constant
+13:12:03,494 INFO program: No Match for argument: perl-libs
+13:12:03,494 INFO program: No Match for argument: perl-macros
+13:12:03,494 INFO program: No Match for argument: perl-parent
+13:12:03,495 INFO program: No Match for argument: perl-podlators
+13:12:03,495 INFO program: No Match for argument: perl-threads
+13:12:03,496 INFO program: No Match for argument: perl-threads-shared
+13:12:03,496 INFO program: No Match for argument: psmisc
+13:12:03,497 INFO program: No Match for argument: rsync
+13:12:03,497 INFO program: No Match for argument: s390utils
+13:12:03,497 INFO program: No Match for argument: s390utils-base
+13:12:03,498 INFO program: No Match for argument: s390utils-cmsfs
+13:12:03,498 INFO program: No Match for argument: s390utils-cpuplugd
+13:12:03,499 INFO program: No Match for argument: s390utils-iucvterm
+13:12:03,499 INFO program: No Match for argument: s390utils-mon_statd
+13:12:03,499 INFO program: No Match for argument: s390utils-osasnmpd
+13:12:03,500 INFO program: No Match for argument: s390utils-ziomon
+13:12:03,500 INFO program: No Match for argument: sg3_utils
+13:12:03,500 INFO program: No Match for argument: sg3_utils-libs
+13:12:03,501 INFO program: No Match for argument: sysfsutils
+13:12:03,501 INFO program: No Match for argument: systemd-sysv
+13:12:03,502 INFO program: No Match for argument: sysvinit-tools
+13:12:03,502 INFO program: No Match for argument: tcp_wrappers-libs
+13:12:03,503 INFO program: No Match for argument: device-mapper-multipath
+13:12:03,504 INFO program: No Match for argument: device-mapper-multipath-libs
+13:12:03,504 INFO program: No Match for argument: net-snmp
+13:12:03,505 INFO program: No Match for argument: net-snmp-agent-libs
+13:12:03,505 INFO program: No Match for argument: net-snmp-libs
+13:12:03,506 INFO program: No Packages marked for removal
+13:12:03,506 INFO program: /usr/share/i18n/locales/en_US:7: non-symbolic character value should not be used
+13:12:03,506 INFO program: /usr/share/i18n/locales/en_US:8: non-symbolic character value should not be used
+13:12:03,507 INFO program: /usr/share/i18n/locales/en_US:9: non-symbolic character value should not be used
+13:12:03,507 INFO program: /usr/share/i18n/locales/en_US:11: non-symbolic character value should not be used
+13:12:03,508 INFO program: /usr/share/i18n/locales/en_US:14: non-symbolic character value should not be used
+13:12:03,508 INFO program: /usr/share/i18n/locales/en_US:15: non-symbolic character value should not be used
+13:12:03,509 INFO program: /usr/share/i18n/locales/en_US:16: non-symbolic character value should not be used
+13:12:03,509 INFO program: /usr/share/i18n/locales/en_US:17: non-symbolic character value should not be used
+13:12:03,510 INFO program: /usr/share/i18n/locales/en_US:19: non-symbolic character value should not be used
+13:12:03,510 INFO program: /usr/share/i18n/locales/en_US:20: non-symbolic character value should not be used
+13:12:03,511 INFO program: /usr/share/i18n/locales/en_US:21: non-symbolic character value should not be used
+13:12:03,511 INFO program: /usr/share/i18n/locales/en_US:22: non-symbolic character value should not be used
+13:12:03,511 INFO program: /usr/share/i18n/locales/en_US:23: non-symbolic character value should not be used
+13:12:03,512 INFO program: /usr/share/i18n/locales/en_US:24: non-symbolic character value should not be used
+13:12:03,512 INFO program: /usr/share/i18n/locales/en_US:25: non-symbolic character value should not be used
+13:12:03,513 INFO program: /usr/share/i18n/locales/en_US:26: non-symbolic character value should not be used
+13:12:03,513 INFO program: /usr/share/i18n/locales/en_US:27: non-symbolic character value should not be used
+13:12:03,514 INFO program: /usr/share/i18n/locales/en_US:28: non-symbolic character value should not be used
+13:12:03,514 INFO program: /usr/share/i18n/locales/en_US:29: non-symbolic character value should not be used
+13:12:03,514 INFO program: /usr/share/i18n/locales/en_US:34: non-symbolic character value should not be used
+13:12:03,515 INFO program: /usr/share/i18n/locales/en_GB:50: non-symbolic character value should not be used
+13:12:03,515 INFO program: /usr/share/i18n/locales/i18n:1425: non-symbolic character value should not be used
+13:12:03,516 INFO program: /usr/share/i18n/locales/i18n:1674: non-symbolic character value should not be used
+13:12:03,516 INFO program: /usr/share/i18n/locales/i18n:1719: non-symbolic character value should not be used
+13:12:03,516 INFO program: /usr/share/i18n/locales/i18n:1756: non-symbolic character value should not be used
+13:12:03,517 INFO program: /usr/share/i18n/locales/en_GB:53: non-symbolic character value should not be used
+13:12:03,517 INFO program: /usr/share/i18n/locales/en_GB:59: non-symbolic character value should not be used
+13:12:03,518 INFO program: /usr/share/i18n/locales/en_GB:152: non-symbolic character value should not be used
+13:12:03,518 INFO program: /usr/share/i18n/locales/en_US:40: non-symbolic character value should not be used
+13:12:03,519 INFO program: /usr/share/i18n/locales/iso14651_t1:3: non-symbolic character value should not be used
+13:12:03,519 INFO program: /usr/share/i18n/locales/translit_neutral:10: non-symbolic character value should not be used
+13:12:03,520 INFO program: /usr/share/i18n/locales/translit_neutral:11: non-symbolic character value should not be used
+13:12:03,520 INFO program: /usr/share/i18n/locales/translit_neutral:12: non-symbolic character value should not be used
+13:12:03,521 INFO program: /usr/share/i18n/locales/translit_neutral:13: non-symbolic character value should not be used
+13:12:03,521 INFO program: /usr/share/i18n/locales/translit_neutral:14: non-symbolic character value should not be used
+13:12:03,521 INFO program: /usr/share/i18n/locales/translit_neutral:15: non-symbolic character value should not be used
+13:12:03,522 INFO program: /usr/share/i18n/locales/translit_neutral:16: non-symbolic character value should not be used
+13:12:03,522 INFO program: /usr/share/i18n/locales/translit_neutral:17: non-symbolic character value should not be used
+13:12:03,522 INFO program: LC_NAME: field `name_gen' not defined
+13:12:03,523 INFO program: LC_IDENTIFICATION: field `audience' not defined
+13:12:03,524 INFO program: LC_IDENTIFICATION: field `application' not defined
+13:12:03,524 INFO program: LC_IDENTIFICATION: field `abbreviation' not defined
+13:12:03,524 INFO program: LC_IDENTIFICATION: no identification for category `LC_MEASUREMENT'
+13:12:03,525 INFO program: LC_CTYPE: table for class "upper": 1756 bytes
+13:12:03,525 INFO program: LC_CTYPE: table for class "lower": 1756 bytes
+13:12:03,526 INFO program: LC_CTYPE: table for class "alpha": 4320 bytes
+13:12:03,526 INFO program: LC_CTYPE: table for class "digit": 600 bytes
+13:12:03,526 INFO program: LC_CTYPE: table for class "xdigit": 600 bytes
+13:12:03,527 INFO program: LC_CTYPE: table for class "space": 856 bytes
+13:12:03,527 INFO program: LC_CTYPE: table for class "print": 5976 bytes
+13:12:03,528 INFO program: LC_CTYPE: table for class "graph": 5976 bytes
+13:12:03,528 INFO program: LC_CTYPE: table for class "blank": 856 bytes
+13:12:03,528 INFO program: LC_CTYPE: table for class "cntrl": 664 bytes
+13:12:03,529 INFO program: LC_CTYPE: table for class "punct": 4824 bytes
+13:12:03,529 INFO program: LC_CTYPE: table for class "alnum": 4320 bytes
+13:12:03,530 INFO program: LC_CTYPE: table for class "combining": 3152 bytes
+13:12:03,530 INFO program: LC_CTYPE: table for class "combining_level3": 2832 bytes
+13:12:03,531 INFO program: LC_CTYPE: table for map "toupper": 16924 bytes
+13:12:03,531 INFO program: LC_CTYPE: table for map "tolower": 15388 bytes
+13:12:03,532 INFO program: LC_CTYPE: table for map "totitle": 16924 bytes
+13:12:03,532 INFO program: LC_CTYPE: table for width: 26712 bytes
+13:12:03,532 INFO program: Created symlink /etc/systemd/system/systemd-logind.service, pointing to /dev/null.
+13:12:03,533 INFO program: Created symlink /etc/systemd/system/getty.target, pointing to /dev/null.
+13:12:03,533 INFO program: Created symlink /etc/systemd/system/console-getty.service, pointing to /dev/null.
+13:12:03,533 INFO program: Created symlink /etc/systemd/system/sys-fs-fuse-connections.mount, pointing to /dev/null.
+13:12:03,534 DEBUG program: Return code: 0
+13:12:03,536 INFO program: Running... /bin/sh /tmp/ks-script-f2G4Y_
